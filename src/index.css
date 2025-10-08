@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+/* App base styles */
+:root {
+  color-scheme: light;
+  --color-primary: #0C176C;
+  --color-primary-soft: #5887F4;
+  --color-transparent: #FFFFFF00;
+  --gradient-primary: linear-gradient(180deg, var(--color-primary) 0%, var(--color-transparent) 100%);
+  --gradient-soft: linear-gradient(180deg, var(--color-primary-soft) 0%, var(--color-transparent) 100%);
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply antialiased text-slate-800 bg-gradient-to-b from-sky-50 to-white;
+}
+
+/* Typography scale helpers */
+.heading-hero {
+  @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight leading-[1.1];
+}
+
+.container-page {
+  @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+}
+
+/* Utility classes for theme colors */
+.text-primary { color: var(--color-primary); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-gradient-primary { background: var(--gradient-primary); }
+.bg-gradient-soft { background: var(--gradient-soft); }

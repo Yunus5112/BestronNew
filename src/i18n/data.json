@@ -1,0 +1,35 @@
+{
+  "TR": {
+    "nav": {
+      "home": "Ana sayfa",
+      "about": "Hakkımızda",
+      "services": "Hizmetler",
+      "projects": "Projeler",
+      "sectors": "Sektörler",
+      "why": "Neden Biz",
+      "contact": "İletişim"
+    },
+    "hero": {
+      "titleLead": "Fikrinizi gerçeğe dönüştüren",
+      "titleEmphasis": "Ar-Ge & Ürün Geliştirme ortağınız.",
+      "cta": "İletişime Geçin"
+    }
+  },
+  "EN": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "services": "Services",
+      "projects": "Projects",
+      "sectors": "Sectors",
+      "why": "Why Us",
+      "contact": "Contact"
+    },
+    "hero": {
+      "titleLead": "Turning your idea into reality,",
+      "titleEmphasis": "your R&D & Product Development partner.",
+      "cta": "Contact Us"
+    }
+  }
+}
+
