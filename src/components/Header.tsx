@@ -15,7 +15,7 @@ const navKeys = [
 export const Header = () => {
   const t = useT();
   return (
-    <header className="sticky top-0 z-50 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-slate-100">
+    <header className="sticky top-0 z-50 bg-white/60 backdrop-blur supports-[backdrop-filter]:bg-white/50">
       <Container className="flex items-center justify-between h-20">
         <a href="#" className="flex items-center gap-3">
           <img

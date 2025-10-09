@@ -5,11 +5,10 @@ const assetUrl = (filename: string) => new URL(`../assets/images/${filename}`, i
 
 export const Services = () => {
   const t = useT();
-  const desc =
-    "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience.";
+  const desc = t("services.desc");
 
   return (
-    <section className="pt-6 sm:pt-8 lg:pt-10 pb-14 sm:pb-20 lg:pb-24">
+    <section className="pt-2 sm:pt-4 lg:pt-6 pb-14 sm:pb-20 lg:pb-24">
       <Container>
         <h2 className="text-[60px] sm:text-[60px] lg:text-[60px] font-semibold leading-tight text-primary mb-4">
           {t("services.title") || "Biz ne yapıyoruz"}

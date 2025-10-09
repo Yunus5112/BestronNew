@@ -26,7 +26,7 @@ export const LanguageSwitcher = () => {
           role="listbox"
           className="absolute right-0 mt-2 w-28 rounded-xl border border-slate-200 bg-white shadow-lg overflow-hidden z-50"
         >
-          {["TR", "EN"].map((code) => (
+          {(["TR", "EN", "DE"]).map((code) => (
             <li key={code}>
               <button
                 type="button"
