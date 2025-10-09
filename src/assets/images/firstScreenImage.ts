@@ -1,3 +1,4 @@
+const firstScreenImage = `
 <svg width="467" height="553" viewBox="0 0 467 553" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_2004_30)">
 <path d="M412.251 432.002C412.583 430.594 411.712 429.183 410.305 428.85C408.899 428.518 407.489 429.39 407.157 430.798C406.825 432.206 407.696 433.617 409.103 433.95C410.51 434.282 411.919 433.41 412.251 432.002Z" fill="#C2CDF9"/>
@@ -152,3 +153,6 @@
 </clipPath>
 </defs>
 </svg>
+`;
+
+export default firstScreenImage;

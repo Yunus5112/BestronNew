@@ -1,8 +1,7 @@
 import { useCallback, useMemo, useState } from "react";
 import { Container } from "./ui/Container";
 import { useT } from "../i18n/I18nProvider";
-
-const bgUrl = new URL("../assets/images/projectsBackgroundImage.svg", import.meta.url).href;
+import projectBackgroundImage from "../assets/images/projectBackgroundImage";
 
 const asset = (name: string) => new URL(`../assets/images/projects/${name}`, import.meta.url).href;
 
@@ -19,13 +18,11 @@ export const Projects = () => {
 
   return (
     <section className="relative overflow-hidden py-8 sm:py-10 lg:py-12">
-      {/* background - centered and scaled */}
-      <img
-        src={bgUrl}
-        alt=""
-        aria-hidden
-        className="absolute left-1/2 -translate-x-1/2 top-4 -z-10 w-[680px] sm:w-[840px] lg:w-[980px] h-auto opacity-90 pointer-events-none"
-      />
+          {/* background - centered and scaled */}
+          <div 
+            className="absolute left-1/2 -translate-x-1/2 top-4 -z-10 w-[680px] sm:w-[840px] lg:w-[980px] h-auto opacity-90 pointer-events-none"
+            dangerouslySetInnerHTML={{ __html: projectBackgroundImage }}
+          />
       <Container>
         {/* Title row with arrows aligned to heading */}
         <div className="mb-6 sm:mb-8 flex items-center justify-between">

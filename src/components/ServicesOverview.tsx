@@ -13,16 +13,18 @@ export const ServicesOverview = () => {
           <div>
             <h2 className="text-[60px] leading-[1.2] font-semibold text-primary mb-4">{t("servicesOverview.title")}</h2>
             <p className="text-[#8987A1] text-[18px] leading-[1.5] max-w-xl">{t("servicesOverview.intro")}</p>
-            <div className="mt-8 rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6 max-w-md">
-              <h3 className="text-[28px] font-semibold text-primary mb-4">{t("servicesOverview.ctaTitle")}</h3>
+            <div className="mt-8 rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6 max-w-xs">
+              <h3 className="text-[28px] font-semibold text-primary mb-4">
+                {t("servicesOverview.ctaTitleLine1")}<br />{t("servicesOverview.ctaTitleLine2")}
+              </h3>
               <Button>{t("servicesOverview.ctaButton")}</Button>
             </div>
           </div>
           <div className="space-y-6">
             {items?.map((it, i) => (
               <div key={i} className="rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6">
-                <h3 className="text-[26px] font-semibold text-primary mb-2">{it.title}</h3>
-                <p className="text-[#8987A1] leading-relaxed">{it.desc}</p>
+                <h3 className="text-[30px] font-semibold text-primary mb-2">{it.title}</h3>
+                <p className="text-[#8987A1] text-[14px] leading-[1.5]">{it.desc}</p>
               </div>
             ))}
           </div>

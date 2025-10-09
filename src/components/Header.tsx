@@ -1,6 +1,7 @@
 import { Container } from "./ui/Container";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useT } from "../i18n/I18nProvider";
+import logo from "../assets/images/logo";
 
 const navKeys = [
   { key: "nav.home", href: "#" },
@@ -18,11 +19,9 @@ export const Header = () => {
     <header className="sticky top-0 z-50 bg-white/60 backdrop-blur supports-[backdrop-filter]:bg-white/50">
       <Container className="flex items-center justify-between h-20">
         <a href="#" className="flex items-center gap-3">
-          <img
-            src="/src/assets/images/logo.svg"
-            alt="Bestron Technology"
+          <div 
             className="h-10 w-auto"
-            loading="eager"
+            dangerouslySetInnerHTML={{ __html: logo }}
           />
         </a>
         <div className="hidden md:flex items-center">

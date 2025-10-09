@@ -30,11 +30,12 @@
       "title": "Projeler",
       "description": "Bestron Technology, elektronik, gömülü sistemler ve IoT alanlarında geliştirdiği projelerle fikirleri işlevsel ürünlere dönüştürür. Araç takip, enerji yönetimi, güvenlik ve medikal uygulamalarda yenilikçi çözümler sunarak her aşamada teknolojiyi değerle buluşturuyoruz."
     },
-    "servicesOverview": {
-      "title": "Hizmetlerimiz",
-      "intro": "Bestron Technology, geniş mühendislik birikimi ve disiplinler arası yaklaşımıyla müşterilerine uçtan uca çözümler sunar. Tüm hizmetlerimiz üç ana başlık altında yapılandırılmıştır:",
-      "ctaTitle": "Bir Toplantı Planlayalım",
-      "ctaButton": "Toplantı Planla",
+        "servicesOverview": {
+          "title": "Hizmetlerimiz",
+          "intro": "Bestron Technology, geniş mühendislik birikimi ve disiplinler arası yaklaşımıyla müşterilerine uçtan uca çözümler sunar. Tüm hizmetlerimiz üç ana başlık altında yapılandırılmıştır:",
+          "ctaTitleLine1": "Bir Toplantı",
+          "ctaTitleLine2": "Planlayalım",
+          "ctaButton": "Toplantı Planla",
       "items": [
         {
           "title": "Ar-Ge & Ürün Geliştirme",
@@ -49,6 +50,21 @@
           "desc": "TÜBİTAK & TEYDEB başvuru hazırlığı, proje yönetimi; Ar-Ge odaklı projelerde müşterilerine sadece teknik değil, stratejik destek de sunar."
         }
       ]
+    },
+    "contact": {
+      "titleLine1": "İletişime",
+      "titleLine2": "Geçin",
+      "form": {
+        "name": "Ad Soyad",
+        "email": "Email",
+        "message": "Mesaj",
+        "submit": "Gönder",
+        "placeholders": {
+          "name": "Ad Soyad",
+          "email": "example@email.com",
+          "message": "Mesajınızı yazın...."
+        }
+      }
     }
   },
   "EN": {
@@ -85,7 +101,8 @@
     "servicesOverview": {
       "title": "Our Services",
       "intro": "With extensive engineering know‑how and an interdisciplinary approach, Bestron Technology delivers end‑to‑end solutions. Our services are structured under three main headings:",
-      "ctaTitle": "Let’s Schedule a Meeting",
+      "ctaTitleLine1": "Let's Schedule",
+      "ctaTitleLine2": "a Meeting",
       "ctaButton": "Schedule",
       "items": [
         {
@@ -101,6 +118,21 @@
           "desc": "From TÜBİTAK/TEYDEB applications to project management, we provide not only technical but also strategic support for R&D‑focused projects."
         }
       ]
+    },
+    "contact": {
+      "titleLine1": "Get in",
+      "titleLine2": "Touch",
+      "form": {
+        "name": "Full Name",
+        "email": "Email",
+        "message": "Message",
+        "submit": "Send",
+        "placeholders": {
+          "name": "Full Name",
+          "email": "example@email.com",
+          "message": "Write your message...."
+        }
+      }
     }
   },
   "DE": {
@@ -137,7 +169,8 @@
     "servicesOverview": {
       "title": "Unsere Dienstleistungen",
       "intro": "Mit umfangreichem Engineering‑Know‑how und einem interdisziplinären Ansatz liefert Bestron Technology End‑to‑End‑Lösungen. Unsere Leistungen sind in drei Hauptbereiche gegliedert:",
-      "ctaTitle": "Lassen Sie uns ein Meeting planen",
+      "ctaTitleLine1": "Lassen Sie uns",
+      "ctaTitleLine2": "ein Meeting planen",
       "ctaButton": "Meeting planen",
       "items": [
         {
@@ -153,6 +186,21 @@
           "desc": "Von TÜBİTAK/TEYDEB‑Anträgen bis zum Projektmanagement bieten wir nicht nur technische, sondern auch strategische Unterstützung für F&E‑Projekte."
         }
       ]
+    },
+    "contact": {
+      "titleLine1": "Kontakt",
+      "titleLine2": "aufnehmen",
+      "form": {
+        "name": "Vor- und Nachname",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "submit": "Senden",
+        "placeholders": {
+          "name": "Vor- und Nachname",
+          "email": "beispiel@email.com",
+          "message": "Schreiben Sie Ihre Nachricht...."
+        }
+      }
     }
   }
 }

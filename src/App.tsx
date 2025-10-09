@@ -5,6 +5,7 @@ import Services from "./components/Services";
 import ServicesOverview from "./components/ServicesOverview";
 import Projects from "./components/Projects";
 import ComingSoon from "./components/ComingSoon";
+import Contact from "./components/Contact";
 
 const App = () => {
   const isComingSoon = import.meta.env.VITE_COMING_SOON === "true";
@@ -20,6 +21,7 @@ const App = () => {
           <Services />
           <Projects />
           <ServicesOverview />
+          <Contact />
           </main>
           <footer className="py-10 text-center text-sm text-slate-500">© {new Date().getFullYear()} Bestron Technology</footer>
         </div>
