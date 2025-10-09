@@ -17,7 +17,7 @@ export const Projects = () => {
   const next = useMemo(() => at(idx + 1), [idx, at]);
 
   return (
-    <section className="relative overflow-hidden py-8 sm:py-10 lg:py-12">
+    <section className="relative overflow-hidden py-8 sm:py-10 lg:py-12" style={{ backgroundColor: '#F6F8FF' }}>
           {/* background - centered and scaled */}
           <div 
             className="absolute left-1/2 -translate-x-1/2 top-4 -z-10 w-[680px] sm:w-[840px] lg:w-[980px] h-auto opacity-90 pointer-events-none"

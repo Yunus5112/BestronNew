@@ -7,7 +7,7 @@ export const ServicesOverview = () => {
   const items = t("servicesOverview.items") as Array<{ title: string; desc: string }>;
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20">
+    <section className="py-12 sm:py-16 lg:py-20" style={{ backgroundColor: '#F6F8FF' }}>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           <div>

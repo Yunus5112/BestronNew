@@ -1,31 +1,40 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import { I18nProvider } from "./i18n/I18nProvider";
-import Services from "./components/Services";
-import ServicesOverview from "./components/ServicesOverview";
-import Projects from "./components/Projects";
 import ComingSoon from "./components/ComingSoon";
-import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import AboutPage from "./pages/AboutPage";
+import ServicesPage from "./pages/ServicesPage";
 
 const App = () => {
   const isComingSoon = import.meta.env.VITE_COMING_SOON === "true";
+  
   return (
     <I18nProvider>
-      {isComingSoon ? (
-        <ComingSoon />
-      ) : (
-        <div className="min-h-dvh flex flex-col">
-          <Header />
-          <main className="flex-1">
-            <Hero />
-          <Services />
-          <Projects />
-          <ServicesOverview />
-          <Contact />
-          </main>
-          <footer className="py-10 text-center text-sm text-slate-500">© {new Date().getFullYear()} Bestron Technology</footer>
-        </div>
-      )}
+      <Router>
+        {isComingSoon ? (
+          <ComingSoon />
+        ) : (
+          <div className="min-h-dvh flex flex-col">
+            <Header />
+            <main className="flex-1">
+              <Routes>
+                <Route path="/" element={
+                  <>
+                    <Hero />
+                    <HomePage />
+                  </>
+                } />
+                <Route path="/about" element={<AboutPage />} />
+                <Route path="/services" element={<ServicesPage />} />
+              </Routes>
+            </main>
+            <Footer />
+          </div>
+        )}
+      </Router>
     </I18nProvider>
   );
 };

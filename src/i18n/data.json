@@ -65,6 +65,115 @@
           "message": "Mesajınızı yazın...."
         }
       }
+    },
+    "servicesPage": {
+      "mainTitle": "Ar-Ge & Ürün Geliştirme & Üretim & Süreç Yönetimi & TÜBİTAK & Destek Hizmetleri",
+      "description": "Mühendislik birikimi ve disiplinler arası yaklaşımıyla müşterilerine eksiksiz çözümler sunar. Tüm hizmetlerimiz, üç ana başlık altında yapılandırılmıştır.",
+      "services": [
+        {
+          "title": "Ar-Ge & Ürün Geliştirme",
+          "description": "Yenilikçi fikirleri hayata geçirmek için konsept aşamasından seri üretime kadar tüm süreçlerde müşterilerinin yanında yer alırız."
+        },
+        {
+          "title": "Üretim & Süreç Yönetimi", 
+          "description": "Tasarlanan ürünlerin üretim sürecine kadar tüm aşamalarda aktif rol alırız. Üretim süreçlerini kalite, maliyet ve zaman yönetimi açısından optimize ederiz."
+        },
+        {
+          "title": "Kamu Destekleri & Proje Danışmanlığı",
+          "description": "TÜBİTAK & TEYDEB başvuru hazırlığı, proje yönetimi; Ar-Ge odaklı projelerde müşterilerine sadece teknik değil, stratejik destek de sunarız."
+        }
+      ],
+      "rdSection": {
+        "title": "Ar-Ge & Ürün Geliştirme",
+        "intro": "Bestron Technology, yenilikçi fikirleri hayata geçirmek için konsept aşamasından seri üretime kadar tüm süreçlerde müşterilerinin yanında yer alır. Bu kapsamda sunduğumuz hizmetler şunlardır:",
+        "services": [
+          "Elektronik donanım ve PCB tasarımı",
+          "Gömülü sistem ve mikrodenetleyici yazılımları",
+          "Web, mobil ve bulut tabanlı yazılım geliştirme",
+          "Mekanik ve endüstriyel tasarım",
+          "Ürün prototipleme ve performans testleri",
+          "Tersine mühendislik ve ürün analizleri"
+        ],
+        "conclusion": "Her proje, ihtiyaçlara özel mühendislik ekibi tarafından yürütülür ve teknik gereksinimlere uygun şekilde optimize edilir."
+      },
+      "manufacturingSection": {
+        "title": "Üretim & Süreç Yönetimi",
+        "intro": "Bestron Technology, tasarlanan ürünlerin üretim sürecine kadar tüm aşamalarda aktif rol alır ve üretim süreçlerini kalite, maliyet ve zaman açısından optimize eder. Bu kapsamda sunduğumuz hizmetler şunlardır:",
+        "services": [
+          "Üretim öncesi tasarım doğrulama (DFM/DFT)",
+          "Malzeme seçimi ve fiyat-performans optimizasyonu",
+          "Üretim planlama, tedarik ve montaj desteği",
+          "Seri üretim yönetimi ve kalite kontrol süreçleri",
+          "Üretim sonrası test, kalibrasyon ve teknik dokümantasyon"
+        ],
+        "conclusion": "Amacımız, projelerin yalnızca prototip aşamasında değil, sahada ve üretimde de sorunsuz çalışmasını sağlamaktır.",
+        "note": {
+          "title": "Not:",
+          "items": [
+            {
+              "title": "DFM (Design for Manufacturability – Üretilebilirlik için Tasarım)",
+              "description": "Ürünün üretim sürecinde hızlı, kolay ve maliyet etkin üretilmesini sağlamak amacıyla PCB yerleşimi, malzeme ve komponent seçimi ile üretim hatasındaki riskler optimize edilir."
+            },
+            {
+              "title": "DFT (Design for Testability – Test Edilebilirlik için Tasarım)",
+              "description": "Ürünün üretim sonrası test edilebilirliğini artırmak için tasarlanır; test noktaları, ölçüm kolaylığı ve otomatik test cihazlarıyla uyumluluk dikkate alınır. Bu yaklaşımlar sayesinde üretim ve test süreçleri hızlanır, hata oranları azalır ve maliyet verimliliği sağlanır."
+            }
+          ]
+        }
+      },
+      "tubitakSection": {
+        "title": "TÜBİTAK & Destek Hizmetleri",
+        "intro": "Bestron Technology, Ar-Ge odaklı projelerde müşterilerine yalnızca teknik değil, aynı zamanda stratejik destek de sunar. TÜBİTAK, KOSGEB, Sanayi Bakanlığı ve Avrupa Birliği destekli projelerde deneyimli ekibimiz şu alanlarda profesyonel danışmanlık sağlar:",
+        "services": [
+          "Proje yazımı, teknik dokümantasyon ve bütçe hazırlığı",
+          "Başvuru ve değerlendirme süreçlerinin takibi",
+          "Proje süresince teknik ve idari raporlamalar",
+          "Denetim ve çıktı yönetimi"
+        ],
+        "conclusion": "Böylece müşterilerimizin teknolojik vizyonlarını hayata geçirirken devlet desteklerinden en etkin şekilde yararlanmaları sağlanır."
+      }
+    },
+    "footer": {
+      "companyDescription": "Bestron Technology, yüksek teknoloji odaklı bir Ar-Ge ve ürün geliştirme firmasıdır. Elektronik tasarım, gömülü sistemler, web ve mobil yazılım ile mekanik mühendislik disiplinlerini bir araya getirerek, talep eden firmalara özel çözümler sunmaktadır.",
+      "copyright": "2025 Bestron Technology Tüm Hakları Saklıdır.",
+      "phone": "+90 216 999 02 19",
+      "email": "info@bestrontechnology.com",
+      "address": {
+        "line1": "Yenişehir Mah. Sümbül Sok. STAR PORT RESIDENCE",
+        "line2": "No: 10/104, 34912 Pendik/İstanbul"
+      },
+      "mapLink": "Haritayı Gör",
+      "mapUrl": "(https://maps.app.goo.gl/BvrGQRKtaVH18nvt9)"
+    },
+    "about": {
+      "mainTitle": "Bestron Technology, yüksek teknoloji odaklı bir Ar-Ge ve ürün geliştirme firmasıdır.",
+      "description1": "Elektronik tasarım, gömülü sistemler, web ve mobil yazılım ile mekanik mühendislik disiplinlerini bir araya getirerek, talep eden firmalara özel çözümler sunmaktadır.",
+      "description2": "2016 yılında bir ortak girişimcilik ile başlayan şirket, 2024 yılının başında Bestron Technology adıyla İstanbul Ticaret Odası'na kayıtlı olarak resmî faaliyetlerine başlamıştır.",
+      "description3": "\"Hayalleri gerçeğe dönüştüren firma\" sloganıyla yola çıkan Bestron Technology, ister yenilikçi fikirler ister piyasadaki ürünler olsun, müşterilerinin projelerine bilgi birikimi ve deneyimiyle değer katmayı hedefler. Ve piyasa analizleri, tersine mühendislik ve ürün incelemeleri ile TÜBİTAK ve KOSGEB danışmanlık hizmetleri sunarak, müşterilerinin stratejik ve teknolojik hedeflerine ulaşmalarına destek olur.",
+      "section2Title": "Bestron Technology, müşterilerinin başarılarından ilham alarak sürekli gelişimi hedefler.",
+      "section2Desc1": "Müşteri portföyümüzde kendi sektörlerinde lider firmalar yer alır ve bizce lider olmak, sadece konumla değil, sürekli daha iyiyi aramakla ilgilidir. Mevcut başarıya rağmen durmamak ve sürekli ilerlemeyi sağlamak temel yaklaşımımızdır.",
+      "section2Intro": "Bunun yanı sıra şu prensiplere özenle bağlıyız:",
+      "principles": [
+        "Müşterilerimizin iş süreçlerine katma değer sağlamak,",
+        "Yaratıcı ve uygulanabilir çözümler üretmek,",
+        "Üstlendiğimiz her projede mükemmelliği hedefleyerek özveriyle çalışmak,",
+        "Müşteri bilgilerini ve projelerini her zaman gizlilik ve güvenlik önceliğiyle yönetmek,",
+        "Projelerde kalite, maliyet ve performans dengesini gözeterek en güncel teknolojileri uygun bileşenlerle tercih etmek."
+      ],
+      "section2Desc2": "Müşterilerimizin beklentilerini karşılamak için hem uluslararası standartlara uygun hem de yerel koşullara adapte edilebilir çözümler sunuyor, deneyimimiz ve yaratıcı yöntemlerimizle başarıya ulaşmalarını sağlıyoruz.",
+      "vision": {
+        "title": "Vizyon",
+        "text": "Bestron Technology'nin vizyonu, yenilikçi mühendislik çözümleriyle müşterilerinin ihtiyaçlarını en üst düzeyde karşılayarak teknoloji alanında öncü bir konuma ulaşmaktır."
+      },
+      "mission": {
+        "title": "Misyon",
+        "text": "Bestron Technology'nin misyonu, müşterilerinin iş süreçlerine değer katan, yenilikçi ve uygulanabilir mühendislik çözümleri geliştirmektir. Her projede mükemmelliği hedefleyerek özveriyle çalışmayı, müşteri bilgilerinin gizliliği ve güvenliğini en yüksek düzeyde korumayı temel ilke edinir. Ayrıca, kalite, maliyet ve performans dengesini gözeterek en güncel teknolojileri uygun bileşenlerle bir araya getirip sürdürülebilir ve verimli çözümler sunmayı amaçlar."
+      },
+      "team": {
+        "title": "Takım",
+        "text1": "Bestron Technology, alanında uzman mühendislerden oluşan güçlü bir kadroya sahiptir. Her projede, proje ihtiyaçlarına en uygun yetkinliklere sahip mühendislerden oluşan özel ekipler kurulur. Deneyimli bir proje yöneticisi liderliğinde disiplinler arası ekipler yapılandırılır ve proje süreci baştan sona profesyonel bir şekilde yönetilir.",
+        "text2": "Akademik kadromuz, projelere sağladığı danışmanlık desteğiyle inovasyon kapasitemizi bir üst seviyeye taşır."
+      }
     }
   },
   "EN": {
@@ -133,6 +242,115 @@
           "message": "Write your message...."
         }
       }
+    },
+    "servicesPage": {
+      "mainTitle": "R&D & Product Development & Manufacturing & Process Management & TÜBİTAK & Support Services",
+      "description": "We provide comprehensive solutions to our customers with our engineering expertise and interdisciplinary approach. All our services are structured under three main headings.",
+      "services": [
+        {
+          "title": "R&D & Product Development",
+          "description": "We stand by our customers throughout the entire process from concept to mass production to bring innovative ideas to life."
+        },
+        {
+          "title": "Manufacturing & Process Management", 
+          "description": "We actively participate in all stages up to manufacturing and optimize production processes in terms of quality, cost and time management."
+        },
+        {
+          "title": "Public Grants & Project Consulting",
+          "description": "We provide not only technical but also strategic support for R&D-focused projects with TÜBİTAK & TEYDEB application preparation and project management."
+        }
+      ],
+      "rdSection": {
+        "title": "R&D & Product Development",
+        "intro": "Bestron Technology stands by its customers in all processes, from concept phase to mass production, to bring innovative ideas to life. The services we offer in this scope are:",
+        "services": [
+          "Electronic hardware and PCB design",
+          "Embedded systems and microcontroller software",
+          "Web, mobile, and cloud-based software development",
+          "Mechanical and industrial design",
+          "Product prototyping and performance tests",
+          "Reverse engineering and product analysis"
+        ],
+        "conclusion": "Each project is carried out by a specialized engineering team tailored to the needs and optimized according to technical requirements."
+      },
+      "manufacturingSection": {
+        "title": "Manufacturing & Process Management",
+        "intro": "Bestron Technology actively participates in all stages up to manufacturing and optimizes production processes in terms of quality, cost and time. The services we offer in this scope are:",
+        "services": [
+          "Pre-production design validation (DFM/DFT)",
+          "Material selection and price-performance optimization",
+          "Production planning, supply and assembly support",
+          "Mass production management and quality control processes",
+          "Post-production testing, calibration and technical documentation"
+        ],
+        "conclusion": "Our goal is to ensure that projects work seamlessly not only in the prototype phase, but also in the field and in production.",
+        "note": {
+          "title": "Note:",
+          "items": [
+            {
+              "title": "DFM (Design for Manufacturability)",
+              "description": "PCB layout, material and component selection and manufacturing defect risks are optimized to enable fast, easy and cost-effective production of the product in the manufacturing process."
+            },
+            {
+              "title": "DFT (Design for Testability)",
+              "description": "It is designed to increase the testability of the product after production; test points, measurement ease and compatibility with automatic test equipment are taken into account. Thanks to these approaches, production and testing processes are accelerated, error rates are reduced and cost efficiency is achieved."
+            }
+          ]
+        }
+      },
+      "tubitakSection": {
+        "title": "TÜBİTAK & Support Services",
+        "intro": "Bestron Technology provides not only technical but also strategic support to its customers in R&D-focused projects. Our experienced team provides professional consultancy in the following areas in TÜBİTAK, KOSGEB, Ministry of Industry and European Union supported projects:",
+        "services": [
+          "Project writing, technical documentation and budget preparation",
+          "Tracking of application and evaluation processes",
+          "Technical and administrative reporting during the project",
+          "Audit and output management"
+        ],
+        "conclusion": "Thus, our customers are enabled to benefit most effectively from government supports while realizing their technological visions."
+      }
+    },
+    "footer": {
+      "companyDescription": "Bestron Technology is an R&D and product development company focused on high technology. It offers specialized solutions to demanding companies by bringing together electronic design, embedded systems, web and mobile software, and mechanical engineering disciplines.",
+      "copyright": "2025 Bestron Technology All Rights Reserved.",
+      "phone": "+90 216 999 02 19",
+      "email": "info@bestrontechnology.com",
+      "address": {
+        "line1": "Yenişehir Mah. Sümbül Sok. STAR PORT RESIDENCE",
+        "line2": "No: 10/104, 34912 Pendik/İstanbul"
+      },
+      "mapLink": "View Map",
+      "mapUrl": "(https://maps.app.goo.gl/BvrGQRKtaVH18nvt9)"
+    },
+    "about": {
+      "mainTitle": "Bestron Technology is a high technology-focused R&D and product development company.",
+      "description1": "By bringing together electronic design, embedded systems, web and mobile software, and mechanical engineering disciplines, it offers special solutions to demanding companies.",
+      "description2": "The company, which started as a joint venture in 2016, officially began its operations by registering with the Istanbul Chamber of Commerce under the name Bestron Technology at the beginning of 2024.",
+      "description3": "Bestron Technology, which set out with the slogan \"The company that turns dreams into reality\", aims to add value to its customers' projects with its knowledge and experience, whether innovative ideas or products in the market. And by providing TÜBİTAK and KOSGEB consulting services with market analysis, reverse engineering and product reviews, it supports its customers to reach their strategic and technological goals.",
+      "section2Title": "Bestron Technology aims for continuous development by taking inspiration from the successes of its customers.",
+      "section2Desc1": "Leading companies in their sectors are in our customer portfolio, and we believe that being a leader is not just about position, but about constantly seeking better. Not stopping despite existing success and ensuring continuous progress is our basic approach.",
+      "section2Intro": "In addition to this, we carefully adhere to the following principles:",
+      "principles": [
+        "Adding value to our customers' business processes,",
+        "Producing creative and applicable solutions,",
+        "Working with dedication by aiming for excellence in every project we undertake,",
+        "Always managing customer information and projects with priority of confidentiality and security,",
+        "Preferring the most up-to-date technologies with appropriate components by considering the balance of quality, cost and performance in projects."
+      ],
+      "section2Desc2": "We provide solutions that are both compatible with international standards and adaptable to local conditions to meet our customers' expectations, and ensure their success with our experience and creative methods.",
+      "vision": {
+        "title": "Vision",
+        "text": "Bestron Technology's vision is to reach a leading position in the technology field by meeting the needs of its customers at the highest level with innovative engineering solutions."
+      },
+      "mission": {
+        "title": "Mission",
+        "text": "Bestron Technology's mission is to develop innovative and applicable engineering solutions that add value to customers' business processes. It adopts as a fundamental principle working with dedication by aiming for excellence in every project, protecting the confidentiality and security of customer information at the highest level. It also aims to bring together the most up-to-date technologies with appropriate components by considering the balance of quality, cost and performance, and to offer sustainable and efficient solutions."
+      },
+      "team": {
+        "title": "Team",
+        "text1": "Bestron Technology has a strong team of expert engineers in its field. For each project, special teams consisting of engineers with the most suitable competencies are formed according to project needs. Interdisciplinary teams are structured under the leadership of an experienced project manager, and the project process is managed professionally from start to finish.",
+        "text2": "Our academic staff takes our innovation capacity to the next level with the consultancy support they provide to projects."
+      }
     }
   },
   "DE": {
@@ -200,6 +418,115 @@
           "email": "beispiel@email.com",
           "message": "Schreiben Sie Ihre Nachricht...."
         }
+      }
+    },
+    "servicesPage": {
+      "mainTitle": "F&E & Produktentwicklung & Fertigung & Prozessmanagement & TÜBİTAK & Support-Dienstleistungen",
+      "description": "Wir bieten umfassende Lösungen für unsere Kunden mit unserer Ingenieursexpertise und unserem interdisziplinären Ansatz. Alle unsere Dienstleistungen sind in drei Hauptbereiche strukturiert.",
+      "services": [
+        {
+          "title": "F&E & Produktentwicklung",
+          "description": "Wir stehen unseren Kunden während des gesamten Prozesses von der Idee bis zur Serienproduktion zur Seite, um innovative Ideen zum Leben zu erwecken."
+        },
+        {
+          "title": "Fertigung & Prozessmanagement", 
+          "description": "Wir wirken aktiv in allen Phasen bis zur Fertigung mit und optimieren Fertigungsprozesse in Bezug auf Qualität, Kosten und Zeitmanagement."
+        },
+        {
+          "title": "Öffentliche Förderungen & Projektberatung",
+          "description": "Wir bieten nicht nur technische, sondern auch strategische Unterstützung für F&E-Projekte mit TÜBİTAK & TEYDEB-Antragsbereitung und Projektmanagement."
+        }
+      ],
+      "rdSection": {
+        "title": "F&E & Produktentwicklung",
+        "intro": "Bestron Technology steht seinen Kunden in allen Prozessen von der Konzeptphase bis zur Serienproduktion zur Seite, um innovative Ideen zum Leben zu erwecken. Die Dienstleistungen, die wir in diesem Bereich anbieten, sind:",
+        "services": [
+          "Elektronik-Hardware und PCB-Design",
+          "Eingebettete Systeme und Mikrocontroller-Software",
+          "Web-, Mobile- und Cloud-basierte Softwareentwicklung",
+          "Mechanisches und industrielles Design",
+          "Produktprototyping und Leistungstests",
+          "Reverse Engineering und Produktanalysen"
+        ],
+        "conclusion": "Jedes Projekt wird von einem spezialisierten Ingenieursteam durchgeführt, das auf die Bedürfnisse zugeschnitten und entsprechend den technischen Anforderungen optimiert ist."
+      },
+      "manufacturingSection": {
+        "title": "Fertigung & Prozessmanagement",
+        "intro": "Bestron Technology wirkt aktiv in allen Phasen bis zur Fertigung mit und optimiert Fertigungsprozesse in Bezug auf Qualität, Kosten und Zeit. Die Dienstleistungen, die wir in diesem Bereich anbieten, sind:",
+        "services": [
+          "Vorfabrikations-Designvalidierung (DFM/DFT)",
+          "Materialauswahl und Preis-Leistungs-Optimierung",
+          "Fertigungsplanung, Beschaffung und Montageunterstützung",
+          "Serienfertigungsmanagement und Qualitätskontrollprozesse",
+          "Nachproduktions-Tests, Kalibrierung und technische Dokumentation"
+        ],
+        "conclusion": "Unser Ziel ist es sicherzustellen, dass Projekte nicht nur in der Prototyp-Phase, sondern auch im Feld und in der Produktion nahtlos funktionieren.",
+        "note": {
+          "title": "Hinweis:",
+          "items": [
+            {
+              "title": "DFM (Design for Manufacturability – Design für Fertigbarkeit)",
+              "description": "PCB-Layout, Material- und Komponentenauswahl sowie Fertigungsfehlerrisiken werden optimiert, um eine schnelle, einfache und kosteneffektive Produktion des Produkts im Fertigungsprozess zu ermöglichen."
+            },
+            {
+              "title": "DFT (Design for Testability – Design für Testbarkeit)",
+              "description": "Es ist darauf ausgelegt, die Testbarkeit des Produkts nach der Produktion zu erhöhen; Testpunkte, Messbarkeit und Kompatibilität mit automatischen Testgeräten werden berücksichtigt. Dank dieser Ansätze werden Produktions- und Testprozesse beschleunigt, Fehlerraten reduziert und Kosteneffizienz erreicht."
+            }
+          ]
+        }
+      },
+      "tubitakSection": {
+        "title": "TÜBİTAK & Support-Dienstleistungen",
+        "intro": "Bestron Technology bietet seinen Kunden in F&E-fokussierten Projekten nicht nur technische, sondern auch strategische Unterstützung. Unser erfahrenes Team bietet professionelle Beratung in den folgenden Bereichen in TÜBİTAK-, KOSGEB-, Industrieministerium- und EU-unterstützten Projekten:",
+        "services": [
+          "Projektschreibung, technische Dokumentation und Budgetvorbereitung",
+          "Verfolgung von Antrags- und Bewertungsprozessen",
+          "Technische und administrative Berichterstattung während des Projekts",
+          "Audit und Output-Management"
+        ],
+        "conclusion": "So werden unsere Kunden in die Lage versetzt, von staatlichen Unterstützungen am effektivsten zu profitieren, während sie ihre technologischen Visionen verwirklichen."
+      }
+    },
+    "footer": {
+      "companyDescription": "Bestron Technology ist ein F&E- und Produktentwicklungsunternehmen mit Fokus auf Hochtechnologie. Es bietet maßgeschneiderte Lösungen für anspruchsvolle Unternehmen, indem es elektronisches Design, eingebettete Systeme, Web- und Mobilsoftware sowie mechanische Ingenieursdisziplinen zusammenführt.",
+      "copyright": "2025 Bestron Technology Alle Rechte vorbehalten.",
+      "phone": "+90 216 999 02 19",
+      "email": "info@bestrontechnology.com",
+      "address": {
+        "line1": "Yenişehir Mah. Sümbül Sok. STAR PORT RESIDENCE",
+        "line2": "No: 10/104, 34912 Pendik/İstanbul"
+      },
+      "mapLink": "Karte anzeigen",
+      "mapUrl": "(https://maps.app.goo.gl/BvrGQRKtaVH18nvt9)"
+    },
+    "about": {
+      "mainTitle": "Bestron Technology ist ein auf Hochtechnologie ausgerichtetes F&E- und Produktentwicklungsunternehmen.",
+      "description1": "Durch die Zusammenführung von elektronischem Design, eingebetteten Systemen, Web- und Mobilsoftware sowie mechanischen Ingenieursdisziplinen bietet es maßgeschneiderte Lösungen für anspruchsvolle Unternehmen.",
+      "description2": "Das Unternehmen, das 2016 als Joint Venture begann, hat seine offiziellen Aktivitäten Anfang 2024 unter dem Namen Bestron Technology bei der Istanbuler Handelskammer registriert.",
+      "description3": "Bestron Technology, das mit dem Slogan \"Das Unternehmen, das Träume in die Realität verwandelt\" angetreten ist, zielt darauf ab, den Projekten seiner Kunden mit seinem Wissen und seiner Erfahrung Wert zu verleihen, sei es bei innovativen Ideen oder Produkten auf dem Markt. Und durch die Bereitstellung von TÜBİTAK- und KOSGEB-Beratungsdiensten mit Marktanalyse, Reverse Engineering und Produktbewertungen unterstützt es seine Kunden dabei, ihre strategischen und technologischen Ziele zu erreichen.",
+      "section2Title": "Bestron Technology strebt kontinuierliche Entwicklung an, indem es sich von den Erfolgen seiner Kunden inspirieren lässt.",
+      "section2Desc1": "Führende Unternehmen in ihren Branchen befinden sich in unserem Kundenportfolio, und wir glauben, dass Führung nicht nur mit der Position, sondern mit dem ständigen Streben nach dem Besseren zu tun hat. Trotz bestehender Erfolge nicht stehen zu bleiben und kontinuierlichen Fortschritt zu gewährleisten, ist unser grundlegender Ansatz.",
+      "section2Intro": "Darüber hinaus halten wir uns sorgfältig an folgende Grundsätze:",
+      "principles": [
+        "Wertschöpfung für die Geschäftsprozesse unserer Kunden,",
+        "Kreative und anwendbare Lösungen entwickeln,",
+        "Mit Hingabe arbeiten, indem wir Exzellenz in jedem Projekt anstreben, das wir übernehmen,",
+        "Kundeninformationen und -projekte immer mit Priorität auf Vertraulichkeit und Sicherheit verwalten,",
+        "Die neuesten Technologien mit geeigneten Komponenten bevorzugen, indem wir das Gleichgewicht zwischen Qualität, Kosten und Leistung in Projekten berücksichtigen."
+      ],
+      "section2Desc2": "Wir bieten Lösungen an, die sowohl mit internationalen Standards kompatibel als auch an lokale Bedingungen anpassbar sind, um die Erwartungen unserer Kunden zu erfüllen, und stellen ihren Erfolg mit unserer Erfahrung und kreativen Methoden sicher.",
+      "vision": {
+        "title": "Vision",
+        "text": "Bestron Technologys Vision ist es, eine führende Position im Technologiebereich zu erreichen, indem wir die Bedürfnisse unserer Kunden auf höchstem Niveau mit innovativen Ingenieurslösungen erfüllen."
+      },
+      "mission": {
+        "title": "Mission",
+        "text": "Bestron Technologys Mission ist es, innovative und anwendbare Ingenieurslösungen zu entwickeln, die den Geschäftsprozessen der Kunden Mehrwert verleihen. Es macht es sich zum Grundprinzip, mit Hingabe zu arbeiten, indem es Exzellenz in jedem Projekt anstrebt und die Vertraulichkeit und Sicherheit von Kundeninformationen auf höchstem Niveau schützt. Darüber hinaus zielt es darauf ab, die neuesten Technologien mit geeigneten Komponenten zusammenzubringen, indem es das Gleichgewicht zwischen Qualität, Kosten und Leistung berücksichtigt, und nachhaltige und effiziente Lösungen anzubieten."
+      },
+      "team": {
+        "title": "Team",
+        "text1": "Bestron Technology verfügt über ein starkes Team von Fachexperten auf seinem Gebiet. Für jedes Projekt werden spezielle Teams aus Ingenieuren mit den am besten geeigneten Kompetenzen gebildet. Interdisziplinäre Teams werden unter der Leitung eines erfahrenen Projektmanagers strukturiert und der Projektprozess wird von Anfang bis Ende professionell verwaltet.",
+        "text2": "Unser akademisches Personal bringt unsere Innovationskapazität mit der Beratungsunterstützung, die es für Projekte bietet, auf die nächste Stufe."
       }
     }
   }

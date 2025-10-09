@@ -15,7 +15,7 @@ export const Services = () => {
   const desc = t("services.desc");
 
   return (
-    <section className="pt-2 sm:pt-4 lg:pt-6 pb-14 sm:pb-20 lg:pb-24">
+    <section className="pt-2 sm:pt-4 lg:pt-6 pb-14 sm:pb-20 lg:pb-24" style={{ backgroundColor: '#F6F8FF' }}>
       <Container>
         <h2 className="text-[60px] sm:text-[60px] lg:text-[60px] font-semibold leading-tight text-primary mb-4">
           {t("services.title") || "Biz ne yapıyoruz"}
@@ -26,7 +26,7 @@ export const Services = () => {
           <div className="rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6 lg:row-span-2">
                 <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
                   <div 
-                    className="h-5 w-5"
+                    className="w-5 h-5 flex items-center justify-center"
                     dangerouslySetInnerHTML={{ __html: rdIcon }}
                   />
                 </div>
@@ -43,7 +43,7 @@ export const Services = () => {
           <div className="rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6">
                 <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
                   <div 
-                    className="h-5 w-5"
+                    className="w-5 h-5 flex items-center justify-center"
                     dangerouslySetInnerHTML={{ __html: managementIcon }}
                   />
                 </div>
@@ -55,7 +55,7 @@ export const Services = () => {
           <div className="rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6">
                 <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
                   <div 
-                    className="h-5 w-5"
+                    className="w-5 h-5 flex items-center justify-center"
                     dangerouslySetInnerHTML={{ __html: sunIcon }}
                   />
                 </div>
@@ -67,7 +67,7 @@ export const Services = () => {
           <div className="rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6">
                 <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
                   <div 
-                    className="h-5 w-5"
+                    className="w-5 h-5 flex items-center justify-center"
                     dangerouslySetInnerHTML={{ __html: starIcon }}
                   />
                 </div>
@@ -100,7 +100,7 @@ export const Services = () => {
           <div className="rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6">
                 <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
                   <div 
-                    className="h-5 w-5"
+                    className="w-5 h-5 flex items-center justify-center"
                     dangerouslySetInnerHTML={{ __html: codeIcon }}
                   />
                 </div>
