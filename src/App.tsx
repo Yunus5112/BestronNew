@@ -7,6 +7,9 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";
 import ProjectsPage from "./pages/ProjectsPage";
+import SectorsPage from "./pages/SectorsPage";
+import WhyUsPage from "./pages/WhyUsPage";
+import ContactPage from "./pages/ContactPage";
 
 const App = () => {
   const isComingSoon = import.meta.env.VITE_COMING_SOON === "true";
@@ -26,6 +29,9 @@ const App = () => {
                 <Route path="/about" element={<AboutPage />} />
                 <Route path="/services" element={<ServicesPage />} />
                 <Route path="/projects" element={<ProjectsPage />} />
+                <Route path="/sectors" element={<SectorsPage />} />
+                <Route path="/why" element={<WhyUsPage />} />
+                <Route path="/contact" element={<ContactPage />} />
               </Routes>
             </main>
           </div>

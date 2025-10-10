@@ -18,9 +18,9 @@ export const Footer = () => {
     { key: "nav.about", href: "/about" },
     { key: "nav.services", href: "/services" },
     { key: "nav.projects", href: "/projects" },
-    { key: "nav.sectors", href: "#sectors" },
-    { key: "nav.whyUs", href: "#why" },
-    { key: "nav.contact", href: "#contact" }
+    { key: "nav.sectors", href: "/sectors" },
+    { key: "nav.why", href: "/why" },
+    { key: "nav.contact", href: "/contact" }
   ];
 
   return (
@@ -70,35 +70,17 @@ export const Footer = () => {
 
             {/* Sağ taraf - Navigasyon ve iletişim */}
             <div className="space-y-8 lg:col-span-2">
-              {/* Navigasyon ve dil seçici */}
-              <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
-                {/* Navigasyon linkleri */}
-                <nav className="flex flex-wrap gap-6">
-                  {navItems.map((item, index) => {
-                    const isHashLink = item.href.startsWith('#');
-                    const isActive = location.pathname === item.href;
-                    
-                    if (isHashLink) {
-                      return (
-                        <a
-                          key={index}
-                          href={item.href}
-                          className={`text-[16px] font-medium transition-colors ${
-                            isActive 
-                              ? "text-primary" 
-                              : "hover:text-primary"
-                          }`}
-                          style={!isActive ? { color: '#8987A1' } : undefined}
-                        >
-                          {t(item.key)}
-                        </a>
-                      );
-                    }
-                    
+              {/* Navigasyon linkleri */}
+              <nav className="flex flex-wrap gap-6">
+                {navItems.map((item, index) => {
+                  const isHashLink = item.href.startsWith('#');
+                  const isActive = location.pathname === item.href;
+                  
+                  if (isHashLink) {
                     return (
-                      <Link
+                      <a
                         key={index}
-                        to={item.href}
+                        href={item.href}
                         className={`text-[16px] font-medium transition-colors ${
                           isActive 
                             ? "text-primary" 
@@ -107,30 +89,47 @@ export const Footer = () => {
                         style={!isActive ? { color: '#8987A1' } : undefined}
                       >
                         {t(item.key)}
-                      </Link>
+                      </a>
                     );
-                  })}
-                </nav>
-
-                {/* Dil seçici */}
-                <LanguageSwitcher />
-              </div>
+                  }
+                  
+                  return (
+                    <Link
+                      key={index}
+                      to={item.href}
+                      className={`text-[16px] font-medium transition-colors ${
+                        isActive 
+                          ? "text-primary" 
+                          : "hover:text-primary"
+                      }`}
+                      style={!isActive ? { color: '#8987A1' } : undefined}
+                    >
+                      {t(item.key)}
+                    </Link>
+                  );
+                })}
+              </nav>
 
               {/* İletişim bilgileri */}
               <div className="space-y-4">
-                {/* Telefon */}
-                <div className="flex items-center gap-3">
-                  <div
-                    className="w-5 h-5 flex-shrink-0"
-                    dangerouslySetInnerHTML={{ __html: phoneIcon }}
-                  />
-                  <a 
-                    href="tel:+902169990219" 
-                    className="text-[16px] hover:text-primary transition-colors"
-                    style={{ color: '#8987A1' }}
-                  >
-                    {t("footer.phone")}
-                  </a>
+                {/* Telefon ve Dil seçici */}
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-3">
+                    <div
+                      className="w-5 h-5 flex-shrink-0"
+                      dangerouslySetInnerHTML={{ __html: phoneIcon }}
+                    />
+                    <a 
+                      href="tel:+902169990219" 
+                      className="text-[16px] hover:text-primary transition-colors"
+                      style={{ color: '#8987A1' }}
+                    >
+                      {t("footer.phone")}
+                    </a>
+                  </div>
+                  
+                  {/* Dil seçici */}
+                  <LanguageSwitcher />
                 </div>
 
                 {/* Email */}

@@ -17,14 +17,20 @@ export const Contact = () => {
             dangerouslySetInnerHTML={{ __html: contactPageSvg }}
           />
           
-          {/* Başlık - Sol üst köşeye yakın */}
-          <div className="relative z-10 pt-8 lg:pt-8">
+          {/* Başlık ve Açıklama - Sol üst köşeye yakın */}
+          <div className="relative z-10 pt-8 lg:pt-8 space-y-4">
             <h1 
               className="text-[60px] font-semibold text-primary leading-[1.2]"
               style={{ fontFamily: "Inter, ui-sans-serif, system-ui" }}
             >
-              {t("contact.titleLine1")}<br />{t("contact.titleLine2")}
+              {t("contact.title")}
             </h1>
+            <p 
+              className="text-[20px] leading-[1.5] text-primary"
+              style={{ fontFamily: "Inter, ui-sans-serif, system-ui" }}
+            >
+              {t("contact.subtitle")}
+            </p>
           </div>
         </div>
 

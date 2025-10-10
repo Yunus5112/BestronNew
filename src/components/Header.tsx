@@ -9,9 +9,9 @@ const navKeys = [
   { key: "nav.about", href: "/about" },
   { key: "nav.services", href: "/services" },
   { key: "nav.projects", href: "/projects" },
-  { key: "nav.sectors", href: "#sectors" },
-  { key: "nav.why", href: "#why" },
-  { key: "nav.contact", href: "#contact" },
+  { key: "nav.sectors", href: "/sectors" },
+  { key: "nav.why", href: "/why" },
+  { key: "nav.contact", href: "/contact" },
 ] as const;
 
 export const Header = () => {
