@@ -1,6 +1,7 @@
 import { Container } from "../ui/Container";
 import { GoogleMap } from "./GoogleMap";
 import { ContactInfoCard } from "./ContactInfoCard";
+import { Colors } from "../lib/theme";
 
 interface ContactMapSectionProps {
   className?: string;
@@ -8,7 +9,10 @@ interface ContactMapSectionProps {
 
 export const ContactMapSection = ({ className = "" }: ContactMapSectionProps) => {
   return (
-    <section className={`py-8 lg:py-12 ${className}`} style={{ backgroundColor: '#F6F8FF' }}>
+    <section 
+      className={`py-8 lg:py-12 ${className}`} 
+      style={{ backgroundColor: Colors.background }}
+    >
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
           {/* Sol taraf - Harita (2/3) */}

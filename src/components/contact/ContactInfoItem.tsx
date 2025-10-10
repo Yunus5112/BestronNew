@@ -1,4 +1,5 @@
 import type { ContactInfo } from "./ContactInfoCard";
+import { Colors, Typography } from "../lib/theme";
 
 interface ContactInfoItemProps extends ContactInfo {
   className?: string;
@@ -39,13 +40,25 @@ export const ContactInfoItem = ({
   );
 
   const contentElement = isMultiLine ? (
-    <div className={textClasses.address} style={{ color: '#8987A1' }}>
+    <div 
+      className={textClasses.address} 
+      style={{ 
+        fontFamily: Typography.fontFamily,
+        color: Colors.textSecondary 
+      }}
+    >
       {lines.map((line, index) => (
         <p key={index}>{line}</p>
       ))}
     </div>
   ) : (
-    <span className={textClasses[type]} style={{ color: type === 'map' ? undefined : '#8987A1' }}>
+    <span 
+      className={textClasses[type]} 
+      style={{ 
+        fontFamily: Typography.fontFamily,
+        color: type === 'map' ? Colors.primary : Colors.textSecondary 
+      }}
+    >
       {value}
     </span>
   );
@@ -56,7 +69,10 @@ export const ContactInfoItem = ({
       target={target}
       rel={rel}
       className={textClasses[type]}
-      style={{ color: type === 'map' ? undefined : '#8987A1' }}
+      style={{ 
+        fontFamily: Typography.fontFamily,
+        color: type === 'map' ? Colors.primary : Colors.textSecondary 
+      }}
       aria-label={`${type === 'phone' ? 'Call' : type === 'email' ? 'Email' : 'Open map'}: ${value}`}
     >
       {contentElement}

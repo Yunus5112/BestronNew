@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
 import { ProjectSectionConfig } from '../../data/projectSections';
+import { Colors } from '../lib/theme';
 
 // Lazy load ProjectSection component for better performance
 const ProjectSection = lazy(() => import('./ProjectSection').then(module => ({ 
@@ -13,7 +14,10 @@ interface LazyProjectSectionProps extends ProjectSectionConfig {
 export const LazyProjectSection = (props: LazyProjectSectionProps) => {
   return (
     <Suspense fallback={
-      <section className="py-4 lg:py-8" style={{ backgroundColor: '#F6F8FF' }}>
+      <section 
+        className="py-4 lg:py-8" 
+        style={{ backgroundColor: Colors.background }}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div className="animate-pulse">
