@@ -1,0 +1,70 @@
+import { ReactNode } from "react";
+import { Colors, Typography } from "../lib/theme";
+
+interface SectorContentBlockProps {
+  title?: string;
+  subtitle?: string;
+  children: ReactNode;
+  image?: string;
+  imagePosition?: "left" | "right";
+}
+
+export const SectorContentBlock = ({ 
+  title, 
+  subtitle, 
+  children, 
+  image,
+  imagePosition = "right" 
+}: SectorContentBlockProps) => {
+  const contentBlock = (
+    <div className="space-y-6 md:space-y-8">
+      {title && (
+        <h2 
+          className={`${Typography.sizes.h2} font-semibold`}
+          style={{ 
+            fontFamily: Typography.fontFamily,
+            color: Colors.primary
+          }}
+        >
+          {title}
+        </h2>
+      )}
+
+      {subtitle && (
+        <p 
+          className={`${Typography.sizes.body} leading-[1.5]`}
+          style={{ 
+            fontFamily: Typography.fontFamily,
+            color: Colors.primary
+          }}
+        >
+          {subtitle}
+        </p>
+      )}
+
+      <div className="space-y-6 md:space-y-8">
+        {children}
+      </div>
+    </div>
+  );
+
+  const imageBlock = image ? (
+    <div className="relative">
+      <div 
+        className="w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg"
+        style={{ backgroundImage: `url(${image})` }}
+        role="img"
+        aria-label="Sector illustration"
+      />
+    </div>
+  ) : null;
+
+  return (
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
+      {imagePosition === "left" && imageBlock}
+      {contentBlock}
+      {imagePosition === "right" && imageBlock}
+    </div>
+  );
+};
+
