@@ -11,11 +11,11 @@ export const ServicesPage = () => {
     <>
       {/* İlk bölüm - Arka plan görseli ile */}
       <section className="relative min-h-screen overflow-hidden">
-        {/* Arka plan görseli - tam ekran */}
+        {/* Arka plan görseli - aboutBg.png */}
         <div 
           className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
           style={{
-            backgroundImage: `url(${assetUrl("servicesPageImage.png")})`,
+            backgroundImage: `url(${assetUrl("../about/aboutBg.png")})`,
             filter: "sepia(0.3) saturate(1.5) hue-rotate(200deg) brightness(0.8)"
           }}
         />
@@ -26,7 +26,18 @@ export const ServicesPage = () => {
         {/* Sol tarafta yarı saydam beyaz overlay */}
         <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent z-20" />
 
-        {/* Metin içeriği */}
+        {/* Sağ taraf - servicesPageImage.png (2/3) - Full Height with gradient mask */}
+        <div 
+          className="absolute top-0 right-0 w-2/3 h-full bg-cover bg-center bg-no-repeat z-5"
+          style={{
+            backgroundImage: `url(${assetUrl("servicesPageImage.png")})`,
+            filter: "sepia(0.3) saturate(1.5) hue-rotate(200deg) brightness(0.8)",
+            maskImage: "linear-gradient(to left, black 70%, transparent 100%)",
+            WebkitMaskImage: "linear-gradient(to left, black 70%, transparent 100%)"
+          }}
+        />
+
+        {/* Metin içeriği - Sol tarafta */}
         <div className="relative z-30 py-16 lg:py-20 min-h-screen flex items-center">
           <div className="max-w-4xl px-8 lg:px-16">
             {/* Ana başlık */}
@@ -105,9 +116,14 @@ export const ServicesPage = () => {
               </p>
             </div>
 
-            {/* Sağ taraf - Boş alan (1/2) */}
+            {/* Sağ taraf - Görsel alanı (1/2) */}
             <div className="relative">
-              {/* Bu alan boş bırakıldı, sadece layout için */}
+              <div 
+                className="w-full h-[400px] lg:h-[500px] bg-cover bg-center bg-no-repeat rounded-2xl"
+                style={{
+                  backgroundImage: `url(${assetUrl("servicesPageImage1.png")})`,
+                }}
+              />
             </div>
           </div>
         </Container>
@@ -117,9 +133,14 @@ export const ServicesPage = () => {
       <section className="py-4 lg:py-8" style={{ backgroundColor: '#F6F8FF' }}>
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-            {/* Sol taraf - Boş alan (1/2) */}
+            {/* Sol taraf - Görsel alanı (1/2) */}
             <div className="relative">
-              {/* Bu alan boş bırakıldı, sadece layout için */}
+              <div 
+                className="w-full h-[400px] lg:h-[750px] bg-cover bg-center bg-no-repeat rounded-2xl"
+                style={{
+                  backgroundImage: `url(${assetUrl("servicesPageImage2.png")})`
+                }}
+              />
             </div>
 
             {/* Sağ taraf - Metin içeriği (1/2) */}
@@ -266,7 +287,7 @@ export const ServicesPage = () => {
             <div className="relative">
               <div className="bg-white rounded-2xl p-8 shadow-sm">
                 <div 
-                  className="w-full h-auto"
+                  className="w-full h-auto flex items-center justify-center"
                   dangerouslySetInnerHTML={{ __html: kosgebAndTeydeb }}
                 />
               </div>

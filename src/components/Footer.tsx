@@ -1,6 +1,7 @@
 import { Container } from "./ui/Container";
 import { useT } from "../i18n/I18nProvider";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/logo";
 import phoneIcon from "../assets/phoneIcon";
 import mailIcon from "../assets/mailIcon";
@@ -10,15 +11,16 @@ import footerImage from "../assets/footerImage";
 
 export const Footer = () => {
   const t = useT();
+  const location = useLocation();
 
   const navItems = [
-    { key: "nav.home", href: "#" },
-    { key: "nav.about", href: "#" },
-    { key: "nav.services", href: "#" },
-    { key: "nav.projects", href: "#" },
-    { key: "nav.sectors", href: "#" },
-    { key: "nav.whyUs", href: "#" },
-    { key: "nav.contact", href: "#" }
+    { key: "nav.home", href: "/" },
+    { key: "nav.about", href: "/about" },
+    { key: "nav.services", href: "/services" },
+    { key: "nav.projects", href: "/projects" },
+    { key: "nav.sectors", href: "#sectors" },
+    { key: "nav.whyUs", href: "#why" },
+    { key: "nav.contact", href: "#contact" }
   ];
 
   return (
@@ -72,20 +74,42 @@ export const Footer = () => {
               <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
                 {/* Navigasyon linkleri */}
                 <nav className="flex flex-wrap gap-6">
-                  {navItems.map((item, index) => (
-                    <a
-                      key={index}
-                      href={item.href}
-                      className={`text-[16px] font-medium transition-colors ${
-                        index === 0 
-                          ? "text-primary" 
-                          : "hover:text-primary"
-                      }`}
-                      style={index !== 0 ? { color: '#8987A1' } : undefined}
-                    >
-                      {t(item.key)}
-                    </a>
-                  ))}
+                  {navItems.map((item, index) => {
+                    const isHashLink = item.href.startsWith('#');
+                    const isActive = location.pathname === item.href;
+                    
+                    if (isHashLink) {
+                      return (
+                        <a
+                          key={index}
+                          href={item.href}
+                          className={`text-[16px] font-medium transition-colors ${
+                            isActive 
+                              ? "text-primary" 
+                              : "hover:text-primary"
+                          }`}
+                          style={!isActive ? { color: '#8987A1' } : undefined}
+                        >
+                          {t(item.key)}
+                        </a>
+                      );
+                    }
+                    
+                    return (
+                      <Link
+                        key={index}
+                        to={item.href}
+                        className={`text-[16px] font-medium transition-colors ${
+                          isActive 
+                            ? "text-primary" 
+                            : "hover:text-primary"
+                        }`}
+                        style={!isActive ? { color: '#8987A1' } : undefined}
+                      >
+                        {t(item.key)}
+                      </Link>
+                    );
+                  })}
                 </nav>
 
                 {/* Dil seçici */}

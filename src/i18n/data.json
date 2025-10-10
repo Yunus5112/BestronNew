@@ -133,6 +133,122 @@
         "conclusion": "Böylece müşterilerimizin teknolojik vizyonlarını hayata geçirirken devlet desteklerinden en etkin şekilde yararlanmaları sağlanır."
       }
     },
+    "projectsPage": {
+      "mainTitle": "Yenilikçi Çözümlerle Gerçekleştirdiğimiz Projeler",
+      "description": "Bestron Technology, elektronik ve gömülü sistemlerde ileri düzey çözümler sunar. Donanım ve yazılım entegrasyonunu optimize ederek, IoT, endüstriyel otomasyon ve akıllı cihaz uygulamalarında yüksek performans ve güvenilirlik sağlar.",
+      "electronicsSection": {
+        "title": "Elektronik ve Gömülü Sistemler",
+        "telemetry": {
+          "title": "Telemetri Cihazları",
+          "description": "Endüstriyel ve lojistik alanlarda uzaktan veri toplama ve izleme çözümleri sunar. Gerçek zamanlı veriler sayesinde operasyonel süreçler optimize edilir; cihazlar aracılığıyla sıcaklık, basınç, hız gibi kritik parametreler izlenir ve raporlanır."
+        },
+        "vehicleTracking": {
+          "title": "Araç Takip Sistemleri",
+          "description": "Canlı konum takibi, geçmiş rota analizi ve sürüş raporlamasıyla filo yönetiminde güvenilir bir çözüm sunar. Özellikle lojistik ve ulaşım sektörlerinde operasyonel verimliliği ve güvenliği artırır.",
+          "details": "Araç takip sistemleri, konum, hız, rota ve performans verilerini gerçek zamanlı izlemeye ve yönetmeye olanak tanır. GPS, GSM/4G/5G, Wi-Fi ve telematik teknolojileriyle çalışır; verileri mobil uygulama veya merkezi yazılım platformları üzerinden kullanıcıya iletir.",
+          "benefits": "Bu sistemler, filo yönetimi, rota optimizasyonu, yakıt tasarrufu, sürücü davranış analizi, bakım planlaması ve güvenlik konularında işletmelere önemli avantajlar sağlar.",
+          "features": "Geofence (bölge) bildirimleriyle belirlenen alanlara giriş-çıkışlar izlenebilir, hız ve acil durum alarmlarıyla hem güvenlik hem de operasyonel kontrol sağlanır. Modern sistemler; geçmiş veri kaydı, raporlama ve entegrasyon özellikleriyle lojistik, kargo, yolcu taşımacılığı ve bireysel araç sahipleri için kapsamlı yönetim çözümleri sunar."
+        },
+        "motorcycleTracking": {
+          "title": "Motosiklet Takip Cihazı",
+          "description": "Kompakt ve düşük enerji tüketimli tasarımıyla motosikletlerin konum ve hareket takibini güvenli ve pratik şekilde gerçekleştirir. GPS ve veri aktarım teknolojileriyle entegre çalışır.",
+          "applications": "Bu cihazlar yalnızca hırsızlığa karşı güvenlik sağlamakla kalmaz; pizza ve sıcak yemek teslimatları, kargo dağıtımı ve motokurye operasyonları için de etkili lojistik çözümler sunar.",
+          "features": "Gerçek zamanlı konum takibi, rota optimizasyonu, tahmini varış süresi (ETA) gösterimi, teslimat durumu güncellemeleri ve geofence bildirimleri sayesinde işletmeler teslimat süreçlerini hızlandırır ve müşteri memnuniyetini artırır.",
+          "advancedFeatures": "Ayrıca teslimat doğrulama (fotoğraf veya imza entegrasyonu), sürücü performans analitiği, geçmiş rota kaydı, entegrasyon API'leri ve sıcaklık/gövde sensörleri gibi ek donanımlarla kalite kontrol sağlanır."
+        },
+        "coldChainTracking": {
+          "title": "Isı Zinciri Takip Sistemleri",
+          "description": "Soğuk zincir lojistiğinde ürünlerin sıcaklık ve nem değerlerini sürekli izler, kritik ürünlerin güvenli taşınmasını sağlar ve olası sapmaları anlık olarak raporlar.",
+          "details": "İlaç, aşı, laboratuvar malzemeleri ve gıda ürünleri için özel olarak tasarlanmıştır. Sensörler, veri kaydediciler, GPS ve telematik teknolojileri sayesinde ürünlerin belirlenen sıcaklık aralığında kalması sağlanır.",
+          "benefits": "Sıcaklık sınırları dışına çıkıldığında sistem uyarı veya alarm gönderir. Bulut tabanlı veri yönetimi ve raporlama özellikleriyle lojistik süreçlerin optimize edilmesine ve yasal düzenlemelere tam uyum sağlanmasına katkıda bulunur."
+        },
+        "tachographTaximeter": {
+          "title": "Takograf ve Taksimetre Sistemleri",
+          "description": "Sürüş süresi, hız ve mesafe ölçümü yaparak sürücü performansını ve yasal uyumluluğu artırır.",
+          "tachographDetails": "Takograf sistemleri, ticari araçlarda sürücülerin sürüş ve dinlenme sürelerini, hız ve mesafe bilgilerini kaydeder; hem güvenliği hem de mevzuata uygunluğu sağlar. Modern takograflar GPS ve telematik verilerini kullanarak gerçek zamanlı takip ve analiz imkânı sunar.",
+          "taximeterDetails": "Taksimetre sistemleri ise yolcu taşımacılığında gidilen mesafe ve geçen süreye göre ücret hesaplaması yapar, doğru ve şeffaf ücretlendirme sağlar."
+        },
+        "aggressiveDrivingAnalysis": {
+          "title": "Agresif Sürüş Analiz Sistemleri",
+          "description": "Araç sürüş davranışlarını analiz ederek güvenli sürüşü teşvik eder. Ani hızlanma, sert frenleme, keskin dönüş veya agresif manevralar gibi sürüş paternlerini tespit eder ve raporlar.",
+          "technology": "Araç içi sensörler, GPS, ivmeölçer ve jiroskop kullanarak sürüş kalitesini değerlendirir.",
+          "benefits": "Sistem, kazaları azaltmayı, yakıt verimliliğini artırmayı ve filo yönetimini optimize etmeyi hedefler.",
+          "reporting": "Veriler gerçek zamanlı olarak bulut veya mobil uygulamalar üzerinden raporlanabilir; sürücü performansı sürekli takip edilir. Özellikle ticari filolarda, sigorta maliyetlerini düşürmek ve güvenliği artırmak amacıyla yaygın şekilde kullanılır."
+        },
+        "mpptChargeControl": {
+          "title": "MPPT Şarj Kontrol Sistemleri",
+          "description": "Güneş enerjisi sistemlerinde maksimum enerji verimliliği sağlar. Panel ve batarya entegrasyonunu optimize ederek enerji kayıplarını minimize eder ve sistem ömrünü uzatır.",
+          "technology": "MPPT (Maximum Power Point Tracking – Maksimum Güç Noktası Takibi) teknolojisi, güneş panelleri gibi değişken enerji kaynaklarından en yüksek verimi elde etmek için geliştirilmiştir.",
+          "operation": "Panelin ürettiği voltaj ve akımı sürekli izleyerek maksimum güç noktasını belirler ve bataryaya aktarır. Bu sayede batarya hızlı ve verimli şekilde şarj olur, enerji üretimi artar ve toplam sistem verimliliği yükselir."
+        },
+        "cgmSensorIntegration": {
+          "title": "CGM Sensör Entegrasyonu",
+          "description": "Sürekli glikoz izleme (CGM) sistemleriyle veri toplama, analiz ve mobil uygulama entegrasyonu sağlar. CGM sensörü, kan şekeri seviyelerini 7/24 ölçen gelişmiş bir medikal cihazdır.",
+          "applications": "Diyabet yönetiminde kullanılan bu teknoloji, özellikle Tip 1 ve Tip 2 diyabet hastaları için büyük kolaylık sunar.",
+          "technology": "Geleneksel parmak ucu ölçümlerinden farklı olarak, vücuda yapıştırılarak yerleştirilen sensör sayesinde glikoz (şeker) seviyeleri kesintisiz izlenir ve veriler anlık olarak mobil uygulamalara aktarılır.",
+          "benefits": "Bu sayede diyabet yönetimi güvenli ve etkin biçimde gerçekleştirilir; kullanıcı, hipoglisemi (düşük şeker) veya hiperglisemi (yüksek şeker) durumlarını erken fark ederek gerekli önlemleri zamanında alabilir."
+        },
+        "autoGlassMeasurement": {
+          "title": "Otocam Bombe Ölçüm Sistemi",
+          "description": "Otomotiv camlarının kalite ve güvenliğini sağlamak amacıyla geliştirilmiş bir sistemdir. Ön, yan ve arka camların yüzey eğriliği (bombe), radyus, sagitta ve optik distorsiyon gibi kritik parametrelerini yüksek hassasiyetle ve tekrarlanabilir şekilde ölçer.",
+          "technology": "Sistem; lazer profilometre, structured light veya temaslı prob gibi modern ölçüm teknolojilerini kullanarak camların geometrik ve optik özelliklerini analiz eder.",
+          "dataAnalysis": "Ölçüm verileri, curvature map ve sagitta raporları şeklinde merkezi yazılım platformuna aktarılır.",
+          "benefits": "Bu sayede üretim hattında hatalı parçalar hızlıca tespit edilir, laboratuvar ortamında yüksek doğrulukta kalite kontrol sağlanır ve lamine camlardaki optik sapmalar (wedge) izlenebilir.",
+          "implementation": "Proje kapsamında; referans düzlemi sabitleme, veri toplama ve analiz yazılımı entegrasyonu gerçekleştirilerek, seri üretim ve laboratuvar ihtiyaçları dengelenmiştir. Böylece araç camlarının ECE R43 gibi uluslararası güvenlik standartlarına uygunluğu ve sürücü görüş güvenliği garanti altına alınmıştır."
+        },
+        "vehicleSecurity": {
+          "title": "Araç Güvenliği",
+          "description": "Araç güvenliği çözümü, otomotiv sektöründe fiziksel araçlara erişim ve kontrol süreçlerini dijital platformlar üzerinden güvenli bir şekilde yönetmeyi sağlayan ileri teknoloji tabanlı bir sistemdir.",
+          "technology": "Bu çözümler; akıllı anahtarlar, mobil uygulamalar, telematik ve IoT teknolojileri ile entegre çalışarak araç sahiplerine kapı kilitleri, motor çalıştırma, alarm sistemleri ve konum takibi gibi güvenlik fonksiyonlarını uzaktan kontrol etme olanağı sunar.",
+          "security": "Kimlik doğrulama, şifreleme ve gerçek zamanlı veri iletimi sayesinde yalnızca yetkili kullanıcılar aracın dijital anahtarına erişebilir. Böylece hırsızlık ve yetkisiz kullanım riskleri en aza indirilir.",
+          "benefits": "Bu yaklaşım, geleneksel fiziksel anahtarların ötesine geçerek araç güvenliğini dijitalleşme ile birleştirir ve kullanıcıya daha akıllı, güvenli ve sezgisel bir deneyim sunar."
+        },
+        "rfCommunicationSystems": {
+          "title": "RF ve Haberleşme Sistemleri",
+          "rfConverter": {
+            "title": "RF Down Converter / IF Sinyal Dönüştürücü",
+            "description": "Radyo frekans (RF) sinyallerini alıp işleyerek yüksek veri doğruluğu sağlayan bir dönüştürme sistemidir.",
+            "technology": "Yüksek frekanstaki RF sinyallerini daha düşük ve işlenebilir bir ara frekansa (IF) dönüştürerek, sinyal işleme maliyetlerini düşürür ve doğruluğu artırır.",
+            "applications": "Bu teknoloji; radyo, radar, uydu iletişimi ve haberleşme sistemlerinde yüksek performanslı sinyal işleme süreçlerinin temel bileşeni olarak kullanılır."
+          },
+          "remoteControl": {
+            "title": "Uzaktan Kontrol Sistemleri",
+            "description": "Elektrik, elektronik veya mekanik cihazların fiziksel konumdan bağımsız olarak yönetilmesini sağlayan entegre kontrol çözümleridir.",
+            "technology": "Bluetooth, Wi-Fi, 4G/LTE ve 5G gibi kablosuz iletişim teknolojileri sayesinde cihazlar, mobil uygulama veya web arayüzleri üzerinden güvenli bir şekilde kontrol edilebilir.",
+            "applications": "Bu sistemler; endüstriyel makinelerin, enerji altyapılarının veya üretim hatlarının yönetiminde; ayrıca akıllı ev otomasyonlarında (aydınlatma, iklimlendirme, güvenlik vb.) aktif olarak kullanılır.",
+            "benefits": "Sonuç olarak, verimliliği artıran, insan hatasını azaltan ve acil durumlara hızlı müdahale imkânı sunan güvenilir bir haberleşme altyapısı oluşturur."
+          }
+        },
+        "opticalSecuritySystems": {
+          "title": "Optik ve Güvenlik Sistemleri",
+          "laserSystems": {
+            "title": "Lazer Sistemleri",
+            "description": "Endüstriyel üretim, kalite kontrol ve güvenlik uygulamalarında kullanılmak üzere geliştirilen lazer tabanlı çözümler sunar. Bu sistemler; hassas ölçüm, tarama ve denetim süreçlerinde yüksek doğruluk ve tekrarlanabilirlik sağlar. Lazer teknolojisi, otomotivden savunmaya kadar geniş bir yelpazede, üretim hatlarının otomasyonu ve güvenlik izleme mekanizmalarının güçlendirilmesinde etkin bir rol oynar."
+          },
+          "cameraSecuritySystems": {
+            "title": "Kamera Güvenlik Sistemleri",
+            "description": "Tır dorselerinde yük güvenliğini sağlamak ve yasa dışı giriş/çıkış faaliyetlerini önlemek amacıyla geliştirilmiş entegre bir güvenlik çözümüdür. Çok kameralı görüntüleme, hareket algılama, sensör entegrasyonu ve akıllı video analizleri sayesinde stowaway (kaçak yolcu) girişimleri ve hırsızlık teşebbüsleri gerçek zamanlı olarak tespit edilir.",
+            "technology": "Sistem; edge işlem, 4G/LTE mobil iletişim, GNSS konumlandırma, olay tabanlı fotoğraf kaydı ve anlık alarm/bildirim özellikleriyle operasyonel müdahaleyi hızlandırır. Toplanan veriler, filo yönetim sistemleriyle entegre edilerek riskli güzergâhların, tekrar eden güvenlik ihlallerinin ve operasyonel zafiyetlerin analizi yapılır.",
+            "security": "Tüm veri akışı şifrelenmiş iletişim protokolleri ve erişim denetimleri ile korunur; böylece gizlilik ve veri güvenliği gereksinimlerine tam uyum sağlanır."
+          }
+        },
+        "occupationalHealthSafetySystems": {
+          "title": "İş Sağlığı ve Güvenliği (İSG) Kamera Sistemleri",
+          "cameraSystems": {
+            "title": "İSG Kamera Sistemleri",
+            "description": "IP tabanlı veya analog kamera altyapılarıyla 7/24 izleme ve kayıt olanağı sunar. Gerçek zamanlı analiz ve alarm entegrasyonu ile iş güvenliğini destekler.",
+            "features": "Sistemler; yükleme–boşaltma süreçlerinde tehlikeli davranışların tespiti, koruyucu ekipman (PPE) kullanımının izlenmesi, izin dışı bölge giriş uyarıları ve riskli hareket analizi gibi fonksiyonlara sahiptir.",
+            "benefits": "Bu sayede iş kazalarının önlenmesi, çalışan güvenliği bilincinin artırılması ve yasal uyumluluk etkin bir biçimde desteklenir."
+          },
+          "windowSecurityBarriers": {
+            "title": "Pencere Güvenlik Bariyerleri",
+            "description": "Binalarda ve endüstriyel tesislerde güvenliği artırmak için tasarlanmış mekanik ve sensör tabanlı sistemlerdir.",
+            "detection": "Optik algılayıcılar olası tehdit veya tehlikeleri anlık olarak tespit eder, kontrol merkezine veya güvenlik sistemine bildirim gönderir.",
+            "securityLevel": "Sistem, hem fiziksel bariyer hem de akıllı algılama teknolojilerini bir arada kullanarak yüksek güvenlik seviyesi sağlar ve bina güvenliğini proaktif biçimde güçlendirir."
+          }
+        }
+      }
+    },
     "footer": {
       "companyDescription": "Bestron Technology, yüksek teknoloji odaklı bir Ar-Ge ve ürün geliştirme firmasıdır. Elektronik tasarım, gömülü sistemler, web ve mobil yazılım ile mekanik mühendislik disiplinlerini bir araya getirerek, talep eden firmalara özel çözümler sunmaktadır.",
       "copyright": "2025 Bestron Technology Tüm Hakları Saklıdır.",
@@ -310,6 +426,122 @@
         "conclusion": "Thus, our customers are enabled to benefit most effectively from government supports while realizing their technological visions."
       }
     },
+    "projectsPage": {
+      "mainTitle": "Projects We Realize with Innovative Solutions",
+      "description": "Bestron Technology provides advanced solutions in electronics and embedded systems. By optimizing hardware and software integration, it ensures high performance and reliability in IoT, industrial automation and smart device applications.",
+      "electronicsSection": {
+        "title": "Electronics and Embedded Systems",
+        "telemetry": {
+          "title": "Telemetry Devices",
+          "description": "Provides remote data collection and monitoring solutions in industrial and logistics areas. Operational processes are optimized thanks to real-time data; critical parameters such as temperature, pressure, and speed are monitored and reported through devices."
+        },
+        "vehicleTracking": {
+          "title": "Vehicle Tracking Systems",
+          "description": "Provides a reliable solution in fleet management with live location tracking, historical route analysis and driving reporting. It especially increases operational efficiency and safety in logistics and transportation sectors.",
+          "details": "Vehicle tracking systems enable real-time monitoring and management of location, speed, route and performance data. It works with GPS, GSM/4G/5G, Wi-Fi and telematics technologies; transmits data to the user through mobile application or central software platforms.",
+          "benefits": "These systems provide significant advantages to businesses in fleet management, route optimization, fuel savings, driver behavior analysis, maintenance planning and security issues.",
+          "features": "Entry and exit to designated areas can be monitored with geofence notifications, and both security and operational control are ensured with speed and emergency alarms. Modern systems offer comprehensive management solutions for logistics, cargo, passenger transportation and individual vehicle owners with historical data recording, reporting and integration features."
+        },
+        "motorcycleTracking": {
+          "title": "Motorcycle Tracking Device",
+          "description": "Provides secure and practical tracking of motorcycle location and movement with its compact and low power consumption design. Works integrated with GPS and data transmission technologies.",
+          "applications": "These devices not only provide security against theft; they also offer effective logistics solutions for pizza and hot meal deliveries, cargo distribution and motorcycle courier operations.",
+          "features": "Real-time location tracking, route optimization, estimated time of arrival (ETA) display, delivery status updates and geofence notifications enable businesses to speed up delivery processes and increase customer satisfaction.",
+          "advancedFeatures": "Additionally, quality control is ensured with additional hardware such as delivery verification (photo or signature integration), driver performance analytics, historical route recording, integration APIs and temperature/body sensors."
+        },
+        "coldChainTracking": {
+          "title": "Cold Chain Tracking Systems",
+          "description": "Continuously monitors temperature and humidity values of products in cold chain logistics, ensuring safe transportation of critical products and instantly reporting possible deviations.",
+          "details": "Specially designed for medicines, vaccines, laboratory materials, and food products. Thanks to sensors, data loggers, GPS, and telematics technologies, products are ensured to remain within the specified temperature range.",
+          "benefits": "The system sends warnings or alarms when temperature limits are exceeded. With cloud-based data management and reporting features, it contributes to optimizing logistics processes and ensuring full compliance with legal regulations."
+        },
+        "tachographTaximeter": {
+          "title": "Tachograph and Taximeter Systems",
+          "description": "Increases driver performance and legal compliance by measuring driving time, speed, and distance.",
+          "tachographDetails": "Tachograph systems record driving and rest times, speed, and distance information for drivers in commercial vehicles; ensuring both safety and regulatory compliance. Modern tachographs offer real-time tracking and analysis using GPS and telematics data.",
+          "taximeterDetails": "Taximeter systems, on the other hand, calculate fares based on distance traveled and time elapsed in passenger transportation, ensuring accurate and transparent pricing."
+        },
+        "aggressiveDrivingAnalysis": {
+          "title": "Aggressive Driving Analysis Systems",
+          "description": "Analyzes vehicle driving behaviors to promote safe driving. Detects and reports driving patterns such as sudden acceleration, hard braking, sharp turns, or aggressive maneuvers.",
+          "technology": "Evaluates driving quality using in-vehicle sensors, GPS, accelerometer, and gyroscope.",
+          "benefits": "The system aims to reduce accidents, increase fuel efficiency, and optimize fleet management.",
+          "reporting": "Data can be reported in real-time via cloud or mobile applications; driver performance is continuously monitored. It is widely used, especially in commercial fleets, to reduce insurance costs and increase safety."
+        },
+        "mpptChargeControl": {
+          "title": "MPPT Charge Control Systems",
+          "description": "Ensures maximum energy efficiency in solar energy systems. Optimizes panel and battery integration, minimizing energy losses and extending system life.",
+          "technology": "MPPT (Maximum Power Point Tracking) technology is developed to obtain the highest efficiency from variable energy sources like solar panels.",
+          "operation": "It continuously monitors the voltage and current produced by the panel, determines the maximum power point, and transfers it to the battery. This way, the battery charges quickly and efficiently, energy production increases, and overall system efficiency improves."
+        },
+        "cgmSensorIntegration": {
+          "title": "CGM Sensor Integration",
+          "description": "Provides data collection, analysis and mobile application integration with continuous glucose monitoring (CGM) systems. CGM sensor is an advanced medical device that measures blood sugar levels 24/7.",
+          "applications": "This technology used in diabetes management offers great convenience especially for Type 1 and Type 2 diabetes patients.",
+          "technology": "Unlike traditional fingertip measurements, glucose (sugar) levels are continuously monitored through a sensor attached to the body and data is transferred to mobile applications instantly.",
+          "benefits": "Thus, diabetes management is carried out safely and effectively; users can notice hypoglycemia (low sugar) or hyperglycemia (high sugar) conditions early and take necessary precautions in time."
+        },
+        "autoGlassMeasurement": {
+          "title": "Auto Glass Curvature Measurement System",
+          "description": "A system developed to ensure the quality and safety of automotive glass. It measures critical parameters such as surface curvature (bombe), radius, sagitta and optical distortion of front, side and rear glass with high precision and repeatability.",
+          "technology": "The system analyzes the geometric and optical properties of glass using modern measurement technologies such as laser profilometer, structured light or contact probe.",
+          "dataAnalysis": "Measurement data is transferred to the central software platform in the form of curvature maps and sagitta reports.",
+          "benefits": "This way, faulty parts are quickly detected in the production line, high accuracy quality control is provided in the laboratory environment, and optical deviations (wedge) in laminated glass can be monitored.",
+          "implementation": "Within the scope of the project; reference plane fixation, data collection and analysis software integration has been realized, balancing serial production and laboratory needs. Thus, compliance of vehicle glass with international safety standards such as ECE R43 and driver vision safety is guaranteed."
+        },
+        "vehicleSecurity": {
+          "title": "Vehicle Security",
+          "description": "Vehicle security solution is an advanced technology-based system that enables secure management of physical vehicle access and control processes through digital platforms in the automotive sector.",
+          "technology": "These solutions work integrated with smart keys, mobile applications, telematics and IoT technologies, offering vehicle owners the opportunity to remotely control security functions such as door locks, engine starting, alarm systems and location tracking.",
+          "security": "Thanks to authentication, encryption and real-time data transmission, only authorized users can access the vehicle's digital key. Thus, risks of theft and unauthorized use are minimized.",
+          "benefits": "This approach goes beyond traditional physical keys, combining vehicle security with digitalization and offers users a smarter, safer and more intuitive experience."
+        },
+        "rfCommunicationSystems": {
+          "title": "RF and Communication Systems",
+          "rfConverter": {
+            "title": "RF Down Converter / IF Signal Converter",
+            "description": "A conversion system that receives and processes radio frequency (RF) signals to ensure high data accuracy.",
+            "technology": "By converting high-frequency RF signals to a lower and processable intermediate frequency (IF), it reduces signal processing costs and increases accuracy.",
+            "applications": "This technology is used as a fundamental component of high-performance signal processing processes in radio, radar, satellite communication and communication systems."
+          },
+          "remoteControl": {
+            "title": "Remote Control Systems",
+            "description": "Integrated control solutions that enable management of electrical, electronic or mechanical devices regardless of physical location.",
+            "technology": "Thanks to wireless communication technologies such as Bluetooth, Wi-Fi, 4G/LTE and 5G, devices can be controlled securely through mobile applications or web interfaces.",
+            "applications": "These systems are actively used in the management of industrial machines, energy infrastructures or production lines; also in smart home automation (lighting, air conditioning, security, etc.).",
+            "benefits": "As a result, it creates a reliable communication infrastructure that increases efficiency, reduces human error and enables rapid intervention in emergency situations."
+          }
+        },
+        "opticalSecuritySystems": {
+          "title": "Optical and Security Systems",
+          "laserSystems": {
+            "title": "Laser Systems",
+            "description": "Offers laser-based solutions developed for use in industrial production, quality control and security applications. These systems provide high accuracy and repeatability in precise measurement, scanning and inspection processes. Laser technology plays an active role in automating production lines and strengthening security monitoring mechanisms across a wide range from automotive to defense."
+          },
+          "cameraSecuritySystems": {
+            "title": "Camera Security Systems",
+            "description": "It is an integrated security solution developed to ensure cargo security in truck trailers and prevent illegal entry/exit activities. Thanks to multi-camera imaging, motion detection, sensor integration and smart video analytics, stowaway attempts and theft attempts are detected in real time.",
+            "technology": "The system accelerates operational intervention with edge processing, 4G/LTE mobile communication, GNSS positioning, event-based photo recording and instant alarm/notification features. The collected data is integrated with fleet management systems to analyze risky routes, recurring security breaches and operational weaknesses.",
+            "security": "All data flow is protected by encrypted communication protocols and access controls; thus, full compliance with privacy and data security requirements is ensured."
+          }
+        },
+        "occupationalHealthSafetySystems": {
+          "title": "Occupational Health and Safety (OHS) Camera Systems",
+          "cameraSystems": {
+            "title": "OHS Camera Systems",
+            "description": "Provides 24/7 monitoring and recording capabilities with IP-based or analog camera infrastructures. Supports occupational safety with real-time analysis and alarm integration.",
+            "features": "The systems have functions such as detecting dangerous behaviors during loading-unloading processes, monitoring the use of personal protective equipment (PPE), unauthorized area entry warnings, and risky movement analysis.",
+            "benefits": "This effectively supports the prevention of occupational accidents, increasing employee safety awareness, and legal compliance."
+          },
+          "windowSecurityBarriers": {
+            "title": "Window Security Barriers",
+            "description": "Mechanical and sensor-based systems designed to enhance security in buildings and industrial facilities.",
+            "detection": "Optical sensors instantly detect potential threats or dangers, sending notifications to the control center or security system.",
+            "securityLevel": "The system provides a high level of security by combining both physical barriers and smart detection technologies, proactively strengthening building security."
+          }
+        }
+      }
+    },
     "footer": {
       "companyDescription": "Bestron Technology is an R&D and product development company focused on high technology. It offers specialized solutions to demanding companies by bringing together electronic design, embedded systems, web and mobile software, and mechanical engineering disciplines.",
       "copyright": "2025 Bestron Technology All Rights Reserved.",
@@ -485,6 +717,122 @@
           "Audit und Output-Management"
         ],
         "conclusion": "So werden unsere Kunden in die Lage versetzt, von staatlichen Unterstützungen am effektivsten zu profitieren, während sie ihre technologischen Visionen verwirklichen."
+      }
+    },
+    "projectsPage": {
+      "mainTitle": "Projekte, die wir mit innovativen Lösungen realisieren",
+      "description": "Bestron Technology bietet fortschrittliche Lösungen in der Elektronik und eingebetteten Systemen. Durch die Optimierung der Hardware- und Softwareintegration gewährleistet es hohe Leistung und Zuverlässigkeit in IoT-, Industrieautomatisierungs- und Smart-Device-Anwendungen.",
+      "electronicsSection": {
+        "title": "Elektronik und eingebettete Systeme",
+        "telemetry": {
+          "title": "Telemetrie-Geräte",
+          "description": "Bietet Fernüberwachungs- und Datenübertragungslösungen in industriellen und logistischen Bereichen. Betriebsprozesse werden durch Echtzeitdaten optimiert; kritische Parameter wie Temperatur, Druck und Geschwindigkeit werden über Geräte überwacht und gemeldet."
+        },
+        "vehicleTracking": {
+          "title": "Fahrzeugverfolgungssysteme",
+          "description": "Bietet eine zuverlässige Lösung im Flottenmanagement mit Live-Standortverfolgung, historischer Routenanalyse und Fahrberichterstattung. Es steigert insbesondere die operative Effizienz und Sicherheit in den Bereichen Logistik und Transport.",
+          "details": "Fahrzeugverfolgungssysteme ermöglichen die Echtzeitüberwachung und -verwaltung von Standort-, Geschwindigkeits-, Routen- und Leistungsdaten. Es arbeitet mit GPS-, GSM/4G/5G-, Wi-Fi- und Telematik-Technologien; überträgt Daten über mobile Anwendungen oder zentrale Softwareplattformen an den Benutzer.",
+          "benefits": "Diese Systeme bieten Unternehmen erhebliche Vorteile bei Flottenmanagement, Routenoptimierung, Kraftstoffeinsparungen, Fahrerverhaltensanalyse, Wartungsplanung und Sicherheitsfragen.",
+          "features": "Ein- und Ausfahrten zu festgelegten Bereichen können mit Geofence-Benachrichtigungen überwacht werden, und sowohl Sicherheit als auch operative Kontrolle werden durch Geschwindigkeits- und Notfallalarme gewährleistet. Moderne Systeme bieten umfassende Managementlösungen für Logistik, Fracht, Personenbeförderung und einzelne Fahrzeugeigentümer mit historischer Datenspeicherung, Berichterstattung und Integrationsfunktionen."
+        },
+        "motorcycleTracking": {
+          "title": "Motorrad-Verfolgungsgerät",
+          "description": "Bietet sichere und praktische Verfolgung von Motorradstandort und -bewegung mit seinem kompakten und stromsparenden Design. Arbeitet integriert mit GPS- und Datenübertragungstechnologien.",
+          "applications": "Diese Geräte bieten nicht nur Sicherheit gegen Diebstahl; sie bieten auch effektive Logistiklösungen für Pizza- und heiße Mahlzeitlieferungen, Frachtverteilung und Motorradkurierbetriebe.",
+          "features": "Echtzeit-Standortverfolgung, Routenoptimierung, geschätzte Ankunftszeit (ETA) Anzeige, Lieferstatus-Updates und Geofence-Benachrichtigungen ermöglichen es Unternehmen, Lieferprozesse zu beschleunigen und die Kundenzufriedenheit zu steigern.",
+          "advancedFeatures": "Zusätzlich wird Qualitätskontrolle mit zusätzlicher Hardware wie Lieferverifikation (Foto- oder Unterschriftenintegration), Fahrerleistungsanalytik, historische Routenaufzeichnung, Integrations-APIs und Temperatur-/Körpersensoren gewährleistet."
+        },
+        "coldChainTracking": {
+          "title": "Kühlketten-Verfolgungssysteme",
+          "description": "Überwacht kontinuierlich Temperatur- und Feuchtigkeitswerte von Produkten in der Kühlkettenlogistik, gewährleistet den sicheren Transport kritischer Produkte und meldet mögliche Abweichungen sofort.",
+          "details": "Speziell für Medikamente, Impfstoffe, Labormaterialien und Lebensmittelprodukte entwickelt. Dank Sensoren, Datenloggern, GPS und Telematik-Technologien wird sichergestellt, dass Produkte im vorgegebenen Temperaturbereich bleiben.",
+          "benefits": "Das System sendet Warnungen oder Alarme, wenn Temperaturgrenzen überschritten werden. Mit cloudbasierten Datenmanagement- und Berichtsfunktionen trägt es zur Optimierung logistischer Prozesse und zur vollständigen Einhaltung gesetzlicher Vorschriften bei."
+        },
+        "tachographTaximeter": {
+          "title": "Tachograph- und Taxametersysteme",
+          "description": "Erhöht die Fahrerleistung und die Einhaltung gesetzlicher Vorschriften durch Messung von Fahrzeit, Geschwindigkeit und Entfernung.",
+          "tachographDetails": "Tachograph-Systeme erfassen in Nutzfahrzeugen die Fahr- und Ruhezeiten, Geschwindigkeits- und Entfernungsdaten der Fahrer; sie gewährleisten sowohl Sicherheit als auch die Einhaltung gesetzlicher Bestimmungen. Moderne Tachographen bieten Echtzeitverfolgung und -analyse mithilfe von GPS- und Telematikdaten.",
+          "taximeterDetails": "Taxametersysteme hingegen berechnen im Personenverkehr den Fahrpreis basierend auf der zurückgelegten Strecke und der verstrichenen Zeit und gewährleisten eine genaue und transparente Preisgestaltung."
+        },
+        "aggressiveDrivingAnalysis": {
+          "title": "Systeme zur Analyse aggressiven Fahrverhaltens",
+          "description": "Analysiert das Fahrverhalten von Fahrzeugen, um sicheres Fahren zu fördern. Erkennt und meldet Fahrmuster wie plötzliches Beschleunigen, hartes Bremsen, scharfe Kurven oder aggressive Manöver.",
+          "technology": "Bewertet die Fahrqualität mithilfe von Fahrzeugsensoren, GPS, Beschleunigungsmesser und Gyroskop.",
+          "benefits": "Das System zielt darauf ab, Unfälle zu reduzieren, die Kraftstoffeffizienz zu steigern und das Flottenmanagement zu optimieren.",
+          "reporting": "Daten können in Echtzeit über Cloud- oder mobile Anwendungen gemeldet werden; die Fahrerleistung wird kontinuierlich überwacht. Es wird insbesondere in kommerziellen Flotten weit verbreitet eingesetzt, um Versicherungskosten zu senken und die Sicherheit zu erhöhen."
+        },
+        "mpptChargeControl": {
+          "title": "MPPT-Laderegelsysteme",
+          "description": "Gewährleistet maximale Energieeffizienz in Solarenergiesystemen. Optimiert die Integration von Panel und Batterie, minimiert Energieverluste und verlängert die Systemlebensdauer.",
+          "technology": "Die MPPT-Technologie (Maximum Power Point Tracking) wurde entwickelt, um die höchste Effizienz aus variablen Energiequellen wie Solarmodulen zu erzielen.",
+          "operation": "Sie überwacht kontinuierlich die von der Platte erzeugte Spannung und den Strom, bestimmt den maximalen Leistungspunkt und überträgt ihn an die Batterie. Auf diese Weise wird die Batterie schnell und effizient geladen, die Energieerzeugung steigt und die Gesamtsystemeffizienz verbessert sich."
+        },
+        "cgmSensorIntegration": {
+          "title": "CGM-Sensorintegration",
+          "description": "Bietet Datensammlung, Analyse und mobile Anwendungsintegration mit kontinuierlichen Glukoseüberwachungssystemen (CGM). CGM-Sensor ist ein fortschrittliches medizinisches Gerät, das Blutzuckerspiegel 24/7 misst.",
+          "applications": "Diese in der Diabetesbehandlung verwendete Technologie bietet große Bequemlichkeit, insbesondere für Typ-1- und Typ-2-Diabetiker.",
+          "technology": "Im Gegensatz zu traditionellen Fingerkuppenmessungen werden Glukose- (Zucker-) Spiegel kontinuierlich durch einen am Körper befestigten Sensor überwacht und Daten werden sofort an mobile Anwendungen übertragen.",
+          "benefits": "So wird die Diabetesbehandlung sicher und effektiv durchgeführt; Benutzer können Hypoglykämie (niedriger Zucker) oder Hyperglykämie (hoher Zucker) Zustände früh erkennen und rechtzeitig notwendige Vorsichtsmaßnahmen treffen."
+        },
+        "autoGlassMeasurement": {
+          "title": "Auto-Glas-Krümmungsmesssystem",
+          "description": "Ein System zur Gewährleistung der Qualität und Sicherheit von Autoglas. Es misst kritische Parameter wie Oberflächenkrümmung (bombe), Radius, Sagitta und optische Verzerrung von Front-, Seiten- und Heckscheiben mit hoher Präzision und Wiederholbarkeit.",
+          "technology": "Das System analysiert die geometrischen und optischen Eigenschaften von Glas mit modernen Messtechnologien wie Laser-Profilometer, strukturiertem Licht oder Kontaktsonde.",
+          "dataAnalysis": "Messdaten werden in Form von Krümmungskarten und Sagitta-Berichten an die zentrale Softwareplattform übertragen.",
+          "benefits": "Auf diese Weise werden fehlerhafte Teile in der Produktionslinie schnell erkannt, hochgenaue Qualitätskontrolle in der Laborumgebung bereitgestellt und optische Abweichungen (Keil) in laminiertem Glas können überwacht werden.",
+          "implementation": "Im Rahmen des Projekts; Referenzebenenfixierung, Datensammlung und Analysesoftwareintegration wurde realisiert, wobei Serienproduktion und Laborbedürfnisse ausgeglichen wurden. So wird die Einhaltung von Autoglas an internationale Sicherheitsstandards wie ECE R43 und die Fahrersichtsicherheit garantiert."
+        },
+        "vehicleSecurity": {
+          "title": "Fahrzeugsicherheit",
+          "description": "Die Fahrzeugsicherheitslösung ist ein fortschrittliches technologiebasiertes System, das die sichere Verwaltung von physischen Fahrzeugzugriffs- und Kontrollprozessen über digitale Plattformen in der Automobilbranche ermöglicht.",
+          "technology": "Diese Lösungen arbeiten integriert mit intelligenten Schlüsseln, mobilen Anwendungen, Telematik- und IoT-Technologien und bieten Fahrzeugbesitzern die Möglichkeit, Sicherheitsfunktionen wie Türschlösser, Motorstart, Alarmsysteme und Standortverfolgung fernzusteuern.",
+          "security": "Dank Authentifizierung, Verschlüsselung und Echtzeit-Datenübertragung können nur autorisierte Benutzer auf den digitalen Schlüssel des Fahrzeugs zugreifen. So werden Diebstahl- und unbefugte Nutzungsrisiken minimiert.",
+          "benefits": "Dieser Ansatz geht über traditionelle physische Schlüssel hinaus, kombiniert Fahrzeugsicherheit mit Digitalisierung und bietet Benutzern ein intelligenteres, sichereres und intuitiveres Erlebnis."
+        },
+        "rfCommunicationSystems": {
+          "title": "HF- und Kommunikationssysteme",
+          "rfConverter": {
+            "title": "HF Down Converter / IF Signalwandler",
+            "description": "Ein Wandlersystem, das Funkfrequenz (HF) Signale empfängt und verarbeitet, um hohe Datengenauigkeit zu gewährleisten.",
+            "technology": "Durch die Umwandlung hochfrequenter HF-Signale in eine niedrigere und verarbeitbare Zwischenfrequenz (IF) reduziert es die Signalbearbeitungskosten und erhöht die Genauigkeit.",
+            "applications": "Diese Technologie wird als grundlegende Komponente hochleistungsfähiger Signalverarbeitungsprozesse in Funk, Radar, Satellitenkommunikation und Kommunikationssystemen verwendet."
+          },
+          "remoteControl": {
+            "title": "Fernsteuerungssysteme",
+            "description": "Integrierte Steuerungslösungen, die die Verwaltung von elektrischen, elektronischen oder mechanischen Geräten unabhängig von der physischen Position ermöglichen.",
+            "technology": "Dank drahtloser Kommunikationstechnologien wie Bluetooth, Wi-Fi, 4G/LTE und 5G können Geräte sicher über mobile Anwendungen oder Web-Schnittstellen gesteuert werden.",
+            "applications": "Diese Systeme werden aktiv in der Verwaltung von Industrieanlagen, Energieinfrastrukturen oder Produktionslinien eingesetzt; auch in Smart-Home-Automatisierung (Beleuchtung, Klimatisierung, Sicherheit usw.).",
+            "benefits": "Als Ergebnis schafft es eine zuverlässige Kommunikationsinfrastruktur, die die Effizienz steigert, menschliche Fehler reduziert und schnelle Interventionen in Notfällen ermöglicht."
+          }
+        },
+        "opticalSecuritySystems": {
+          "title": "Optische und Sicherheitssysteme",
+          "laserSystems": {
+            "title": "Lasersysteme",
+            "description": "Bietet laserbasierte Lösungen, die für den Einsatz in industriellen Produktions-, Qualitätskontroll- und Sicherheitsanwendungen entwickelt wurden. Diese Systeme bieten hohe Genauigkeit und Wiederholbarkeit bei präzisen Mess-, Scan- und Inspektionsprozessen. Die Lasertechnologie spielt eine aktive Rolle bei der Automatisierung von Produktionslinien und der Stärkung von Sicherheitsüberwachungsmechanismen in einem breiten Spektrum von der Automobilindustrie bis zur Verteidigung."
+          },
+          "cameraSecuritySystems": {
+            "title": "Kamera-Sicherheitssysteme",
+            "description": "Es handelt sich um eine integrierte Sicherheitslösung, die entwickelt wurde, um die Ladungssicherheit in LKW-Anhängern zu gewährleisten und illegale Ein- und Ausreiseaktivitäten zu verhindern. Dank Multi-Kamera-Bildgebung, Bewegungserkennung, Sensorintegration und intelligenter Videoanalyse werden Stowaway-Versuche und Diebstahlversuche in Echtzeit erkannt.",
+            "technology": "Das System beschleunigt operative Eingriffe mit Edge-Verarbeitung, 4G/LTE-Mobilkommunikation, GNSS-Positionierung, ereignisbasierter Fotoaufzeichnung und sofortigen Alarm-/Benachrichtigungsfunktionen. Die gesammelten Daten werden in Flottenmanagementsysteme integriert, um riskante Routen, wiederkehrende Sicherheitsverletzungen und operative Schwachstellen zu analysieren.",
+            "security": "Der gesamte Datenfluss wird durch verschlüsselte Kommunikationsprotokolle und Zugriffskontrollen geschützt; somit wird die vollständige Einhaltung der Anforderungen an Datenschutz und Datensicherheit gewährleistet."
+          }
+        },
+        "occupationalHealthSafetySystems": {
+          "title": "Arbeitsschutz- und Sicherheitssysteme (ASS)",
+          "cameraSystems": {
+            "title": "ASS-Kamerasysteme",
+            "description": "Bietet 24/7 Überwachungs- und Aufzeichnungsfunktionen mit IP-basierten oder analogen Kamerainfrastrukturen. Unterstützt die Arbeitssicherheit durch Echtzeitanalyse und Alarmintegration.",
+            "features": "Die Systeme verfügen über Funktionen wie die Erkennung gefährlicher Verhaltensweisen während des Be- und Entladens, die Überwachung der Verwendung persönlicher Schutzausrüstung (PSA), Warnungen bei unbefugtem Betreten von Bereichen und die Analyse riskanter Bewegungen.",
+            "benefits": "Dies unterstützt effektiv die Vermeidung von Arbeitsunfällen, die Sensibilisierung der Mitarbeiter für Sicherheit und die Einhaltung gesetzlicher Vorschriften."
+          },
+          "windowSecurityBarriers": {
+            "title": "Fenstersicherheitsbarrieren",
+            "description": "Mechanische und sensorbasierte Systeme zur Erhöhung der Sicherheit in Gebäuden und Industrieanlagen.",
+            "detection": "Optische Sensoren erkennen potenzielle Bedrohungen oder Gefahren sofort und senden Benachrichtigungen an die Leitstelle oder das Sicherheitssystem.",
+            "securityLevel": "Das System bietet ein hohes Maß an Sicherheit, indem es sowohl physische Barrieren als auch intelligente Erkennungstechnologien kombiniert und die Gebäudesicherheit proaktiv stärkt."
+          }
+        }
       }
     },
     "footer": {

@@ -8,7 +8,7 @@ const navKeys = [
   { key: "nav.home", href: "/" },
   { key: "nav.about", href: "/about" },
   { key: "nav.services", href: "/services" },
-  { key: "nav.projects", href: "#projects" },
+  { key: "nav.projects", href: "/projects" },
   { key: "nav.sectors", href: "#sectors" },
   { key: "nav.why", href: "#why" },
   { key: "nav.contact", href: "#contact" },
@@ -36,10 +36,10 @@ export const Header = () => {
                   <Link
                     key={item.href}
                     to={item.href}
-                    className={`text-sm font-medium transition-colors ${
+                    className={`text-sm transition-colors ${
                       isActive 
-                        ? "text-blue-900" 
-                        : "hover:text-blue-900"
+                        ? "text-blue-900 font-bold" 
+                        : "font-medium hover:text-blue-900"
                     }`}
                   >
                     {t(item.key)}
