@@ -1,5 +1,6 @@
 import { useT } from "../i18n/I18nProvider";
 import { Container } from "../components/ui/Container";
+import { Footer } from "../components/Footer";
 import kosgebAndTeydeb from "../assets/images/services/kosgebAndTeydeb";
 
 const assetUrl = (filename: string) => new URL(`../assets/images/services/${filename}`, import.meta.url).href;
@@ -295,6 +296,9 @@ export const ServicesPage = () => {
           </div>
         </Container>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 };
