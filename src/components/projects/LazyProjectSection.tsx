@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { ProjectSectionConfig } from '../../data/projectSections';
+import type { ProjectSectionConfig } from '../../data/projectSections';
 import { Colors } from '../lib/theme';
 
 // Lazy load ProjectSection component for better performance

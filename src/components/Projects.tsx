@@ -30,7 +30,7 @@ export const Projects = () => {
         <NavigationArrow 
           direction="next" 
           onClick={() => (window as unknown as { projectCarouselNavigation?: { next: () => void } }).projectCarouselNavigation?.next()} 
-          className="mr-16 sm:mr-28 lg:mr-40"
+          className="mr-16 sm:mr-28 lg:ml-40"
         />
       </ProjectHeader>
 

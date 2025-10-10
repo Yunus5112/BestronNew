@@ -1,4 +1,4 @@
-import { Colors, Typography } from "../lib/theme";
+import { Colors } from "../lib/theme";
 
 interface FormFieldProps {
   id: string;

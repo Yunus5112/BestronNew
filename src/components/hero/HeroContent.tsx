@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Colors, Typography } from "../lib/theme";
 import Button from "../ui/Button";
 

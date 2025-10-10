@@ -1,5 +1,4 @@
 import { useCallback, useMemo, useState } from "react";
-import { Colors, Typography } from "../lib/theme";
 
 interface ProjectCarouselProps {
   images: string[];

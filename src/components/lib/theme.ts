@@ -14,12 +14,12 @@ export const Gradients = {
 export const Typography = {
   fontFamily: "Inter, ui-sans-serif, system-ui",
   sizes: {
-    h1: "text-[40px]",
-    h2: "text-[32px]",
-    h3: "text-[24px]",
-    body: "text-[18px]",
-    bodyLarge: "text-[24px]",
-    label: "text-[16px]",
+    h1: "text-[32px] sm:text-[40px] lg:text-[48px]",
+    h2: "text-[28px] sm:text-[32px] lg:text-[40px]",
+    h3: "text-[20px] sm:text-[24px] lg:text-[28px]",
+    body: "text-[16px] sm:text-[18px]",
+    bodyLarge: "text-[20px] sm:text-[24px]",
+    label: "text-[14px] sm:text-[16px]",
   },
 } as const;
 

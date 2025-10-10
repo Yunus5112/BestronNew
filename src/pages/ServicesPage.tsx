@@ -30,6 +30,7 @@ export const ServicesPage = () => {
           conclusion={t("servicesPage.rdSection.conclusion")}
           image={servicesImage("servicesPageImage1.png")}
           imagePosition="right"
+          imageHeight="h-[300px] md:h-[450px] lg:h-[500px]"
         >
           <ServiceList items={t<string[]>("servicesPage.rdSection.services")} />
         </ServiceContentBlock>

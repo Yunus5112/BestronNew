@@ -47,7 +47,8 @@ export const SectorsPage = () => {
             images={[
               sectorsImage("sectorsPageImage2.png"),
               sectorsImage("sectorsPageImage3.png")
-            ]} 
+            ]}
+            imageHeight="h-[180px] md:h-[220px] lg:h-[250px]"
           />
           <div className="space-y-6 md:space-y-8">
             <SectorItem

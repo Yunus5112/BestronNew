@@ -32,7 +32,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage1.png",
     imagePosition: "right",
-    imageHeight: "lg:h-[700px]"
+    imageHeight: "h-[400px] md:h-[600px] lg:h-[850px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.motorcycleTracking.title",
@@ -71,7 +71,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage3.png",
     imagePosition: "right",
-    imageHeight: "lg:h-[700px]"
+    imageHeight: "lg:h-[750px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.aggressiveDrivingAnalysis.title",
@@ -95,7 +95,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage4.png",
     imagePosition: "left",
-    imageHeight: "lg:h-[750px]"
+    imageHeight: "lg:h-[800px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.cgmSensorIntegration.title",
@@ -162,7 +162,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage7.png",
     imagePosition: "right",
-    imageHeight: "lg:h-[750px]"
+    imageHeight: "lg:h-[800px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.opticalSecuritySystems.title",
@@ -183,7 +183,7 @@ export const projectSections: ProjectSectionConfig[] = [
       }
     ],
     imageFilename: "projectsPageImage8.png",
-    imagePosition: "right",
+    imagePosition: "left",
     imageHeight: "lg:h-[750px]"
   },
   {
@@ -207,7 +207,7 @@ export const projectSections: ProjectSectionConfig[] = [
       }
     ],
     imageFilename: "projectsPageImage9.png",
-    imagePosition: "left",
-    imageHeight: "lg:h-[700px]"
+    imagePosition: "right",
+    imageHeight: "lg:h-[750px]"
   }
 ];
