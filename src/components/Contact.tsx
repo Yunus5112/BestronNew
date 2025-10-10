@@ -1,94 +1,31 @@
-import { Container } from "./ui/Container";
-import Button from "./ui/Button";
 import { useT } from "../i18n/I18nProvider";
 import contactPageSvg from "../assets/images/contactPageSvg";
+import { ContactSection } from "./contact/ContactSection";
+import { ContactHero } from "./contact/ContactHero";
+import { ContactForm } from "./contact/ContactForm";
 
 export const Contact = () => {
   const t = useT();
 
+  const handleFormSubmit = (formData: FormData) => {
+    // Form submission logic here
+    console.log('Form submitted:', {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      message: formData.get('message')
+    });
+  };
+
   return (
-    <section className="py-4 lg:py-8" style={{ backgroundColor: '#F6F8FF' }}>
-      <Container className="grid grid-cols-1 lg:grid-cols-2">
-        {/* Sol taraf - Arka plan ve başlık */}
-        <div className="relative flex items-start justify-start p-8 lg:p-12">
-          {/* Arka plan SVG */}
-          <div 
-            className="absolute inset-0 w-full h-full opacity-10"
-            dangerouslySetInnerHTML={{ __html: contactPageSvg }}
-          />
-          
-          {/* Başlık ve Açıklama - Sol üst köşeye yakın */}
-          <div className="relative z-10 pt-8 lg:pt-8 space-y-4">
-            <h1 
-              className="text-[60px] font-semibold text-primary leading-[1.2]"
-              style={{ fontFamily: "Inter, ui-sans-serif, system-ui" }}
-            >
-              {t("contact.title")}
-            </h1>
-            <p 
-              className="text-[20px] leading-[1.5] text-primary"
-              style={{ fontFamily: "Inter, ui-sans-serif, system-ui" }}
-            >
-              {t("contact.subtitle")}
-            </p>
-          </div>
-        </div>
+    <ContactSection>
+      <ContactHero
+        title={t("contact.title")}
+        subtitle={t("contact.subtitle")}
+        backgroundSvg={contactPageSvg}
+      />
 
-        {/* Sağ taraf - İletişim formu */}
-        <div className="flex items-start justify-center pt-16 lg:pt-16">
-          <div className="w-full max-w-md">
-            <form className="space-y-6">
-              {/* Ad Soyad */}
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-primary mb-2">
-                  {t("contact.form.name")}
-                </label>
-                <input
-                  type="text"
-                  id="name"
-                  name="name"
-                  placeholder={t("contact.form.placeholders.name")}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                />
-              </div>
-
-              {/* Email */}
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-primary mb-2">
-                  {t("contact.form.email")}
-                </label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder={t("contact.form.placeholders.email")}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"
-                />
-              </div>
-
-              {/* Mesaj */}
-              <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-primary mb-2">
-                  {t("contact.form.message")}
-                </label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows={5}
-                  placeholder={t("contact.form.placeholders.message")}
-                  className="w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
-                />
-              </div>
-
-              {/* Gönder butonu */}
-              <Button fullWidth type="submit">
-                {t("contact.form.submit")}
-              </Button>
-            </form>
-          </div>
-        </div>
-      </Container>
-    </section>
+      <ContactForm onSubmit={handleFormSubmit} />
+    </ContactSection>
   );
 };
 
