@@ -7,6 +7,7 @@ interface FormFieldProps {
   placeholder: string;
   rows?: number;
   required?: boolean;
+  disabled?: boolean;
   className?: string;
 }
 
@@ -17,9 +18,10 @@ export const FormField = ({
   placeholder, 
   rows = 5,
   required = false,
+  disabled = false,
   className = "" 
 }: FormFieldProps) => {
-  const baseInputClasses = "w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent";
+  const baseInputClasses = "w-full px-4 py-3 rounded-xl border border-slate-300 bg-white text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent disabled:opacity-60 disabled:cursor-not-allowed";
   const textareaClasses = `${baseInputClasses} resize-none`;
 
   return (
@@ -40,6 +42,7 @@ export const FormField = ({
           rows={rows}
           placeholder={placeholder}
           required={required}
+          disabled={disabled}
           className={textareaClasses}
         />
       ) : (
@@ -49,6 +52,7 @@ export const FormField = ({
           name={id}
           placeholder={placeholder}
           required={required}
+          disabled={disabled}
           className={baseInputClasses}
         />
       )}
