@@ -1,11 +1,14 @@
 import emailjs from '@emailjs/browser';
+import { format } from 'date-fns';
+import { tr } from 'date-fns/locale';
 
 // EmailJS Configuration
 // TODO: Replace these with your actual EmailJS credentials
 // Get them from: https://www.emailjs.com/
 const EMAILJS_CONFIG = {
   serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID',
-  templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || 'YOUR_TEMPLATE_ID',
+  contactTemplateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID || 'YOUR_CONTACT_TEMPLATE_ID',
+  meetingTemplateId: import.meta.env.VITE_EMAILJS_MEETING_TEMPLATE_ID || 'YOUR_MEETING_TEMPLATE_ID',
   publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY',
 };
 
@@ -13,6 +16,14 @@ interface ContactEmailParams {
   name: string;
   email: string;
   message: string;
+}
+
+interface MeetingRequestParams {
+  name: string;
+  email: string;
+  message: string;
+  date: Date;
+  time: string;
 }
 
 interface EmailResult {
@@ -49,10 +60,10 @@ export const sendContactEmail = async (
     // Check if EmailJS is configured
     if (
       EMAILJS_CONFIG.serviceId === 'YOUR_SERVICE_ID' ||
-      EMAILJS_CONFIG.templateId === 'YOUR_TEMPLATE_ID' ||
+      EMAILJS_CONFIG.contactTemplateId === 'YOUR_CONTACT_TEMPLATE_ID' ||
       EMAILJS_CONFIG.publicKey === 'YOUR_PUBLIC_KEY'
     ) {
-      console.warn('EmailJS is not configured yet. Please set up your credentials.');
+      console.warn('EmailJS (Contact Form) is not configured yet. Please set up your credentials.');
       // For development: log the email instead
       console.log('📧 Email would be sent:', {
         to: 'info@bestrontechnology.com',
@@ -68,7 +79,7 @@ export const sendContactEmail = async (
     // Send email using EmailJS
     const response = await emailjs.send(
       EMAILJS_CONFIG.serviceId,
-      EMAILJS_CONFIG.templateId,
+      EMAILJS_CONFIG.contactTemplateId,
       {
         to_email: 'info@bestrontechnology.com',
         from_name: params.name,
@@ -92,6 +103,69 @@ export const sendContactEmail = async (
     }
   } catch (error) {
     console.error('❌ Email send error:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+};
+
+
+/**
+ * Sends a meeting request email using EmailJS
+ * @param params - Meeting request data
+ * @returns Promise with success status
+ */
+export const sendMeetingRequestEmail = async (
+  params: MeetingRequestParams
+): Promise<EmailResult> => {
+  try {
+    // Basic validation
+    if (!params.name || !params.email || !params.date || !params.time) {
+      return { success: false, error: 'Missing required fields' };
+    }
+
+    // Check if EmailJS is configured for meetings
+    if (
+      EMAILJS_CONFIG.serviceId === 'YOUR_SERVICE_ID' ||
+      EMAILJS_CONFIG.meetingTemplateId === 'YOUR_MEETING_TEMPLATE_ID' ||
+      EMAILJS_CONFIG.publicKey === 'YOUR_PUBLIC_KEY'
+    ) {
+      console.warn('EmailJS (Meeting Scheduler) is not configured yet. Please set up your credentials.');
+      console.log('📧 Meeting request would be sent:', {
+        to: 'info@bestrontechnology.com',
+        ...params,
+        formattedDate: format(params.date, 'EEEE, d MMMM yyyy', { locale: tr }),
+      });
+      return { success: true };
+    }
+    
+    // Format date for the email template
+    const templateParams = {
+      to_email: 'info@bestrontechnology.com',
+      from_name: params.name,
+      from_email: params.email,
+      meeting_date: format(params.date, 'EEEE, d MMMM yyyy', { locale: tr }),
+      meeting_time: params.time,
+      message: params.message,
+      reply_to: params.email,
+    };
+
+    const response = await emailjs.send(
+      EMAILJS_CONFIG.serviceId,
+      EMAILJS_CONFIG.meetingTemplateId,
+      templateParams,
+      EMAILJS_CONFIG.publicKey
+    );
+
+    if (response.status === 200) {
+      console.log('✅ Meeting request sent successfully');
+      return { success: true };
+    } else {
+      return { success: false, error: 'Failed to send meeting request' };
+    }
+  } catch (error) {
+    console.error('❌ Meeting request send error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Unknown error',
