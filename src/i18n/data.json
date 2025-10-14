@@ -18,12 +18,12 @@
       "title": "Biz ne yapıyoruz",
       "desc": "Fikirden lansmana kadar, markanızı güçlendiren ve kitlenizi etkileyen kullanıcı odaklı çözümler üretiyoruz.",
       "items": {
-        "r_and_d": { "title": "Arge Ürün Geliştirme", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "production_management": { "title": "Üretim & Süreç Yönetimi", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "web_mobile": { "title": "Web Tasarım & Mobil Yazılım", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "ui_ux": { "title": "UI/UX Tasarım", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "public_grants": { "title": "Kamu Destekleri & Proje Danışmanlığı", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "embedded_custom": { "title": "Özel geliştirme & Gömülü Sistemler", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." }
+        "r_and_d": { "title": "Arge Ürün Geliştirme", "desc": "Bestron Technology, fikirden prototipe, prototipten seri üretime kadar tüm süreçlerde yenilikçi çözümler sunar." },
+        "production_management": { "title": "Üretim & Süreç Yönetimi", "desc": "Tasarımdan seri üretime kadar tüm süreçleri yönetir ve kalite, maliyet ile zamanı dengede tutarak verimli çözümler sunar." },
+        "web_mobile": { "title": "Web Tasarım & Mobil Yazılım", "desc": "Kullanıcı odaklı web ve mobil uygulamalar geliştirir, modern teknolojilerle güvenli, hızlı ve ölçeklenebilir çözümler sunar." },
+        "ui_ux": { "title": "UI/UX Tasarım", "desc": "Kullanıcı deneyimini önceliklendiren tasarımlar ile etkileşimi artırır, sezgisel ve estetik arayüzler oluşturur." },
+        "public_grants": { "title": "Kamu Destekleri & Proje Danışmanlığı", "desc": "TÜBİTAK, KOSGEB ve diğer kamu destekli projelerde danışmanlık sağlar; proje yazımı, bütçe hazırlığı süreçlerinde müşterilerimizin yanında yer alır." },
+        "embedded_custom": { "title": "Özel geliştirme & Gömülü Sistemler", "desc": "Gömülü sistemler ve özel geliştirmelerle, ürünlerinizi yüksek performans ve verimlilikle hayata geçiriyoruz." }
       }
     },
     "projects": {
@@ -393,12 +393,12 @@
       "title": "What we do",
       "desc": "From concept to launch, we deliver user‑centric solutions that elevate your brand and engage your audience.",
       "items": {
-        "r_and_d": { "title": "R&D Product Development", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "production_management": { "title": "Manufacturing & Process Management", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "web_mobile": { "title": "Web Design & Mobile Software", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "ui_ux": { "title": "UI/UX Design", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "public_grants": { "title": "Public Grants & Project Consulting", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." },
-        "embedded_custom": { "title": "Custom Development & Embedded Systems", "desc": "From concept to launch, we create stunning, user-centric websites that elevate your brand and engage your audience." }
+        "r_and_d": { "title": "R&D Product Development", "desc": "Bestron Technology offers innovative solutions throughout all processes, from idea to prototype and from prototype to mass production." },
+        "production_management": { "title": "Manufacturing & Process Management", "desc": "Manages all processes from design to mass production, delivering efficient solutions by balancing quality, cost, and time." },
+        "web_mobile": { "title": "Web Design & Mobile Software", "desc": "Develops user-centric web and mobile applications, delivering secure, fast, and scalable solutions with modern technologies." },
+        "ui_ux": { "title": "UI/UX Design", "desc": "Enhances engagement through user experience-focused designs, creating intuitive and aesthetic interfaces." },
+        "public_grants": { "title": "Public Grants & Project Consulting", "desc": "Provides consulting for TÜBİTAK, KOSGEB, and other publicly funded projects; supports clients in project writing and budget preparation processes." },
+        "embedded_custom": { "title": "Custom Development & Embedded Systems", "desc": "We bring your products to life with high performance and efficiency through embedded systems and custom development." }
       }
     },
     "projects": {
@@ -768,12 +768,12 @@
       "title": "Was wir tun",
       "desc": "Von der Idee bis zum Launch liefern wir nutzerzentrierte Lösungen, die Ihre Marke stärken und Ihr Publikum begeistern.",
       "items": {
-        "r_and_d": { "title": "F&E Produktentwicklung", "desc": "Von der Idee bis zum Launch schaffen wir beeindruckende, nutzerzentrierte Lösungen, die Ihre Marke stärken und Ihr Publikum begeistern." },
-        "production_management": { "title": "Produktion & Prozessmanagement", "desc": "Von der Idee bis zum Launch schaffen wir beeindruckende, nutzerzentrierte Lösungen, die Ihre Marke stärken und Ihr Publikum begeistern." },
-        "web_mobile": { "title": "Webdesign & Mobile Software", "desc": "Von der Idee bis zum Launch schaffen wir beeindruckende, nutzerzentrierte Lösungen, die Ihre Marke stärken und Ihr Publikum begeistern." },
-        "ui_ux": { "title": "UI/UX Design", "desc": "Von der Idee bis zum Launch schaffen wir beeindruckende, nutzerzentrierte Lösungen, die Ihre Marke stärken und Ihr Publikum begeistern." },
-        "public_grants": { "title": "Öffentliche Förderungen & Projektberatung", "desc": "Von der Idee bis zum Launch schaffen wir beeindruckende, nutzerzentrierte Lösungen, die Ihre Marke stärken und Ihr Publikum begeistern." },
-        "embedded_custom": { "title": "Individuelle Entwicklung & Eingebettete Systeme", "desc": "Von der Idee bis zum Launch schaffen wir beeindruckende, nutzerzentrierte Lösungen, die Ihre Marke stärken und Ihr Publikum begeistern." }
+        "r_and_d": { "title": "F&E Produktentwicklung", "desc": "Bestron Technology bietet innovative Lösungen in allen Prozessen, von der Idee zum Prototyp und vom Prototyp zur Serienproduktion." },
+        "production_management": { "title": "Produktion & Prozessmanagement", "desc": "Verwaltet alle Prozesse vom Design bis zur Serienproduktion und bietet effiziente Lösungen durch Ausgleich von Qualität, Kosten und Zeit." },
+        "web_mobile": { "title": "Webdesign & Mobile Software", "desc": "Entwickelt benutzerzentrierte Web- und Mobilanwendungen und bietet sichere, schnelle und skalierbare Lösungen mit modernen Technologien." },
+        "ui_ux": { "title": "UI/UX Design", "desc": "Steigert die Interaktion durch benutzererfahrungsorientierte Designs und erstellt intuitive und ästhetische Benutzeroberflächen." },
+        "public_grants": { "title": "Öffentliche Förderungen & Projektberatung", "desc": "Bietet Beratung für TÜBİTAK, KOSGEB und andere öffentlich geförderte Projekte; unterstützt Kunden bei Projektschreibung und Budgetvorbereitung." },
+        "embedded_custom": { "title": "Individuelle Entwicklung & Eingebettete Systeme", "desc": "Wir bringen Ihre Produkte mit hoher Leistung und Effizienz durch eingebettete Systeme und individuelle Entwicklungen zum Leben." }
       }
     },
     "projects": {
