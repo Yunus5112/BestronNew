@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import type { ReactNode } from "react";
 import { Container } from "../ui/Container";
 import { Colors, Typography } from "../lib/theme";
 

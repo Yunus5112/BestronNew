@@ -1,5 +1,4 @@
 import type { ReactNode } from "react";
-import { Colors, Typography } from "../lib/theme";
 
 interface AboutContentBlockProps {
   children: ReactNode;

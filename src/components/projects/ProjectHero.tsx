@@ -1,26 +1,29 @@
+import { useT } from "../../i18n/I18nProvider";
 import { Colors, Typography } from "../lib/theme";
 
-interface SectorHeroProps {
-  title: string;
-  description: string;
-  backgroundImage: string;
-  overlayImage: string;
+interface ProjectHeroProps {
+  titleKey: string;
+  descriptionKey: string;
+  backgroundImageUrl: string;
+  overlayImageUrl: string;
 }
 
-export const SectorHero = ({ 
-  title, 
-  description, 
-  backgroundImage, 
-  overlayImage 
-}: SectorHeroProps) => {
+export const ProjectHero = ({
+  titleKey,
+  descriptionKey,
+  backgroundImageUrl,
+  overlayImageUrl,
+}: ProjectHeroProps) => {
+  const t = useT();
+
   return (
     <section className="relative min-h-screen overflow-hidden">
       {/* Background image */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
+        style={{ backgroundImage: `url(${backgroundImageUrl})` }}
         role="img"
-        aria-label="Sectors background"
+        aria-label="Projects background"
       />
       
       {/* Blue overlay */}
@@ -33,13 +36,13 @@ export const SectorHero = ({
       <div 
         className="absolute top-0 right-0 w-full md:w-2/3 h-full bg-cover bg-center bg-no-repeat z-5"
         style={{
-          backgroundImage: `url(${overlayImage})`,
+          backgroundImage: `url(${overlayImageUrl})`,
           filter: "sepia(0.3) saturate(1.5) hue-rotate(200deg) brightness(0.8)",
           maskImage: "linear-gradient(to left, black 70%, transparent 100%)",
           WebkitMaskImage: "linear-gradient(to left, black 70%, transparent 100%)"
         }}
         role="img"
-        aria-label="Sectors overview"
+        aria-label="Projects overview"
       />
 
       {/* Content */}
@@ -52,7 +55,7 @@ export const SectorHero = ({
               color: Colors.primary
             }}
           >
-            {title}
+            {t(titleKey)}
           </h1>
 
           <p 
@@ -62,11 +65,13 @@ export const SectorHero = ({
               color: Colors.primary
             }}
           >
-            {description}
+            {t(descriptionKey)}
           </p>
         </div>
       </div>
     </section>
   );
 };
+
+export default ProjectHero;
 
