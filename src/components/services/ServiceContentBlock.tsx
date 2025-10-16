@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { Colors, Typography } from "../lib/theme";
+import { Heading } from "../ui/Heading";
+import { Text } from "../ui/Text";
 
 interface ServiceContentBlockProps {
   title: string;
@@ -26,41 +27,10 @@ export const ServiceContentBlock = ({
 }: ServiceContentBlockProps) => {
   const contentBlock = (
     <div className={`space-y-6 ${className}`}>
-      <h2 
-        className={`${Typography.sizes.h2} font-semibold`}
-        style={{ 
-          fontFamily: Typography.fontFamily,
-          color: Colors.primary
-        }}
-      >
-        {title}
-      </h2>
-
-      {intro && (
-        <p 
-          className={`${Typography.sizes.body} leading-[1.5]`}
-          style={{ 
-            fontFamily: Typography.fontFamily,
-            color: Colors.primary
-          }}
-        >
-          {intro}
-        </p>
-      )}
-
+      <Heading level="h2">{title}</Heading>
+      {intro && <Text>{intro}</Text>}
       {children}
-
-      {conclusion && (
-        <p 
-          className={`${Typography.sizes.body} leading-[1.5]`}
-          style={{ 
-            fontFamily: Typography.fontFamily,
-            color: Colors.primary
-          }}
-        >
-          {conclusion}
-        </p>
-      )}
+      {conclusion && <Text>{conclusion}</Text>}
     </div>
   );
 

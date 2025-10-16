@@ -1,4 +1,5 @@
-import { Colors, Typography } from "../lib/theme";
+import { Heading } from "../ui/Heading";
+import { Text } from "../ui/Text";
 
 interface SectorItemProps {
   title: string;
@@ -9,24 +10,8 @@ interface SectorItemProps {
 export const SectorItem = ({ title, description, className = "" }: SectorItemProps) => {
   return (
     <div className={`space-y-4 ${className}`}>
-      <h3 
-        className={`${Typography.sizes.h3} font-semibold`}
-        style={{ 
-          fontFamily: Typography.fontFamily,
-          color: Colors.primary
-        }}
-      >
-        • {title}
-      </h3>
-      <p 
-        className={`${Typography.sizes.body} leading-[1.5]`}
-        style={{ 
-          fontFamily: Typography.fontFamily,
-          color: Colors.primary
-        }}
-      >
-        {description}
-      </p>
+      <Heading level="h3">• {title}</Heading>
+      <Text>{description}</Text>
     </div>
   );
 };

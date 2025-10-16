@@ -1,4 +1,5 @@
-import { Colors, Typography } from "../lib/theme";
+import { Heading } from "../ui/Heading";
+import { Text } from "../ui/Text";
 
 interface CompetencyItemProps {
   title: string;
@@ -15,24 +16,10 @@ export const CompetencyItem = ({
 }: CompetencyItemProps) => {
   return (
     <div className={`space-y-4 ${className}`}>
-      <h3 
-        className={`${Typography.sizes.h3} font-semibold`}
-        style={{ 
-          fontFamily: Typography.fontFamily,
-          color: Colors.primary
-        }}
-      >
+      <Heading level="h3">
         {showBullet ? "• " : ""}{title}
-      </h3>
-      <p 
-        className={`${Typography.sizes.body} leading-[1.5]`}
-        style={{ 
-          fontFamily: Typography.fontFamily,
-          color: Colors.primary
-        }}
-      >
-        {description}
-      </p>
+      </Heading>
+      <Text>{description}</Text>
     </div>
   );
 };

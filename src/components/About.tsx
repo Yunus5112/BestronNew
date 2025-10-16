@@ -6,7 +6,8 @@ import { AboutTextSection } from "./about/AboutTextSection";
 import { AboutContentBlock } from "./about/AboutContentBlock";
 import { AboutList } from "./about/AboutList";
 import { VisionMissionSection } from "./about/VisionMissionSection";
-import { Colors, Typography } from "./lib/theme";
+import { Text } from "./ui/Text";
+import { Heading } from "./ui/Heading";
 
 export const About = () => {
   const t = useT();
@@ -38,47 +39,11 @@ export const About = () => {
           image={aboutImage("aboutPageImage2.png")}
           imagePosition="right"
         >
-          <p 
-            className={`${Typography.sizes.body} leading-[1.5]`}
-            style={{ 
-              fontFamily: Typography.fontFamily,
-              color: Colors.primary
-            }}
-          >
-            {t("about.section2Title")}
-          </p>
-
-          <p 
-            className={`${Typography.sizes.body} leading-[1.5]`}
-            style={{ 
-              fontFamily: Typography.fontFamily,
-              color: Colors.primary
-            }}
-          >
-            {t("about.section2Desc1")}
-          </p>
-
-          <p 
-            className={`${Typography.sizes.body} leading-[1.5]`}
-            style={{ 
-              fontFamily: Typography.fontFamily,
-              color: Colors.primary
-            }}
-          >
-            {t("about.section2Intro")}
-          </p>
-
+          <Text>{t("about.section2Title")}</Text>
+          <Text>{t("about.section2Desc1")}</Text>
+          <Text>{t("about.section2Intro")}</Text>
           <AboutList items={t<string[]>("about.principles")} />
-
-          <p 
-            className={`${Typography.sizes.body} leading-[1.5]`}
-            style={{ 
-              fontFamily: Typography.fontFamily,
-              color: Colors.primary
-            }}
-          >
-            {t("about.section2Desc2")}
-          </p>
+          <Text>{t("about.section2Desc2")}</Text>
         </AboutContentBlock>
       </AboutSection>
 
@@ -103,35 +68,9 @@ export const About = () => {
           imagePosition="left"
           imageHeight="h-[200px] md:h-[250px] lg:h-[300px]"
         >
-          <h2 
-            className={`${Typography.sizes.h2} font-semibold`}
-            style={{ 
-              fontFamily: Typography.fontFamily,
-              color: Colors.primary
-            }}
-          >
-            {t("about.team.title")}
-          </h2>
-
-          <p 
-            className={`${Typography.sizes.body} leading-[1.5]`}
-            style={{ 
-              fontFamily: Typography.fontFamily,
-              color: Colors.primary
-            }}
-          >
-            {t("about.team.text1")}
-          </p>
-
-          <p 
-            className={`${Typography.sizes.body} leading-[1.5]`}
-            style={{ 
-              fontFamily: Typography.fontFamily,
-              color: Colors.primary
-            }}
-          >
-            {t("about.team.text2")}
-          </p>
+          <Heading level="h2">{t("about.team.title")}</Heading>
+          <Text>{t("about.team.text1")}</Text>
+          <Text>{t("about.team.text2")}</Text>
         </AboutContentBlock>
       </AboutSection>
     </>

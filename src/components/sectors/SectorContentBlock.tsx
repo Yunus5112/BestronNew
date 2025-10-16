@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
-import { Colors, Typography } from "../lib/theme";
+import { Heading } from "../ui/Heading";
+import { Text } from "../ui/Text";
 
 interface SectorContentBlockProps {
   title?: string;
@@ -18,30 +19,8 @@ export const SectorContentBlock = ({
 }: SectorContentBlockProps) => {
   const contentBlock = (
     <div className="space-y-6 md:space-y-8">
-      {title && (
-        <h2 
-          className={`${Typography.sizes.h2} font-semibold`}
-          style={{ 
-            fontFamily: Typography.fontFamily,
-            color: Colors.primary
-          }}
-        >
-          {title}
-        </h2>
-      )}
-
-      {subtitle && (
-        <p 
-          className={`${Typography.sizes.body} leading-[1.5]`}
-          style={{ 
-            fontFamily: Typography.fontFamily,
-            color: Colors.primary
-          }}
-        >
-          {subtitle}
-        </p>
-      )}
-
+      {title && <Heading level="h2">{title}</Heading>}
+      {subtitle && <Text>{subtitle}</Text>}
       <div className="space-y-6 md:space-y-8">
         {children}
       </div>

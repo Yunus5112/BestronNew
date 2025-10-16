@@ -20,6 +20,7 @@ export const AboutList = ({ items, className = "" }: AboutListProps) => {
           <span 
             className="w-2 h-2 rounded-full mt-3 mr-3 flex-shrink-0"
             style={{ backgroundColor: Colors.primary }}
+            aria-hidden="true"
           />
           <span>{item}</span>
         </li>

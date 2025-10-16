@@ -1,7 +1,9 @@
 import { useT } from "../../i18n/I18nProvider";
 import type { ProjectSectionConfig } from "../../data/projectSections";
 import { Container } from "../ui/Container";
-import { Colors, Typography } from "../lib/theme";
+import { Colors } from "../lib/theme";
+import { Heading } from "../ui/Heading";
+import { Text } from "../ui/Text";
 
 interface LazyProjectSectionProps extends ProjectSectionConfig {
   imageUrl: string;
@@ -18,41 +20,18 @@ export const LazyProjectSection = ({
 
   const contentBlock = (
     <div className="space-y-6">
-      <h2 
-        className={`${Typography.sizes.h2} font-semibold`}
-        style={{ 
-          fontFamily: Typography.fontFamily,
-          color: Colors.primary
-        }}
-      >
-        {t(titleKey)}
-      </h2>
+      <Heading level="h2">{t(titleKey)}</Heading>
 
       {sections.map((section, sectionIndex) => (
         <div key={`section-${sectionIndex}`} className="space-y-4">
           {section.subtitleKey && (
-            <h3 
-              className={`${Typography.sizes.h3} font-semibold`}
-              style={{ 
-                fontFamily: Typography.fontFamily,
-                color: Colors.primary
-              }}
-            >
-              {t(section.subtitleKey)}
-            </h3>
+            <Heading level="h3">{t(section.subtitleKey)}</Heading>
           )}
 
           {section.contentKeys.map((contentKey, contentIndex) => (
-            <p
-              key={`content-${contentIndex}`}
-              className={`${Typography.sizes.body} leading-[1.5]`}
-              style={{ 
-                fontFamily: Typography.fontFamily,
-                color: Colors.primary
-              }}
-            >
+            <Text key={`content-${contentIndex}`}>
               {t(contentKey)}
-            </p>
+            </Text>
           ))}
         </div>
       ))}
