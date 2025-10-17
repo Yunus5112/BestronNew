@@ -32,8 +32,8 @@ export const ContactForm = ({
   }, [submitStatus]);
 
   return (
-    <div className={`flex items-start justify-center pt-8 md:pt-12 lg:pt-16 ${className}`}>
-      <div className="w-full max-w-md">
+    <div className={`flex items-start justify-start pt-8 md:pt-12 lg:pt-16 ${className}`}>
+      <div className="w-full">
         <form ref={formRef} onSubmit={handleSubmit} className="space-y-6">
           {/* Honeypot field for spam prevention */}
           <input type="text" name="company" className="hidden" tabIndex={-1} autoComplete="off" />

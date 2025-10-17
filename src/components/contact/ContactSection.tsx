@@ -13,10 +13,10 @@ export const ContactSection = ({
 }: ContactSectionProps) => {
   return (
     <section 
-      className={`py-8 lg:py-12 ${className}`}
+      className={`relative py-8 lg:py-12 overflow-hidden ${className}`}
       style={{ backgroundColor: Colors.background }}
     >
-      <Container className="grid grid-cols-1 lg:grid-cols-2">
+      <Container className="relative z-10 grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
         {children}
       </Container>
     </section>

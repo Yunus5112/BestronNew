@@ -39,19 +39,36 @@ export const Contact = () => {
   };
 
   return (
-    <ContactSection>
-      <ContactHero
-        title={t("contact.title")}
-        subtitle={t("contact.subtitle")}
-        backgroundSvg={contactPageSvg}
-      />
+    <>
+      <ContactSection>
+        {/* Background SVG - positioned absolutely from left edge */}
+        <div 
+          className="absolute top-0 w-full h-full opacity-10 pointer-events-none"
+          style={{
+            left: 'calc(-1 * (100vw - 100%) / 2)',
+            width: '100vw'
+          }}
+          dangerouslySetInnerHTML={{ __html: contactPageSvg }}
+          role="img"
+          aria-label="Contact page background decoration"
+        />
+        
+        <div className="lg:col-span-2">
+          <ContactHero
+            title={t("contact.title")}
+            subtitle={t("contact.subtitle")}
+          />
+        </div>
 
-      <ContactForm 
-        onSubmit={handleFormSubmit}
-        isSubmitting={isSubmitting}
-        submitStatus={submitStatus}
-      />
-    </ContactSection>
+        <div className="lg:col-span-3">
+          <ContactForm 
+            onSubmit={handleFormSubmit}
+            isSubmitting={isSubmitting}
+            submitStatus={submitStatus}
+          />
+        </div>
+      </ContactSection>
+    </>
   );
 };
 

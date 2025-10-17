@@ -14,8 +14,8 @@ export const ServicesOverview = () => {
   return (
     <>
       <OverviewSection>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
+          <div className="lg:col-span-2">
             <OverviewHeader
               title={t("servicesOverview.title")}
               intro={t("servicesOverview.intro")}
@@ -29,7 +29,9 @@ export const ServicesOverview = () => {
             />
           </div>
 
-          <OverviewItemsList items={items} />
+          <div className="lg:col-span-3">
+            <OverviewItemsList items={items} />
+          </div>
         </div>
       </OverviewSection>
 
