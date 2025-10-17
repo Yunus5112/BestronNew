@@ -22,19 +22,12 @@ export const SectorHero = ({
         role="img"
         aria-label="Sectors background"
       />
-      
-      {/* Blue overlay */}
-      <div className="absolute inset-0 bg-blue-900/20 z-10" />
-
-      {/* Left semi-transparent white overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-white/90 via-white/60 to-transparent z-20" />
 
       {/* Right side image */}
       <div 
         className="absolute top-0 right-0 w-full md:w-2/3 h-full bg-cover bg-center bg-no-repeat z-5"
         style={{
           backgroundImage: `url(${overlayImage})`,
-          filter: "sepia(0.3) saturate(1.5) hue-rotate(200deg) brightness(0.8)",
           maskImage: "linear-gradient(to left, black 70%, transparent 100%)",
           WebkitMaskImage: "linear-gradient(to left, black 70%, transparent 100%)"
         }}
