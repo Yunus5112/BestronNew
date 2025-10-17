@@ -16,9 +16,9 @@ export const ContactMapSection = ({ className = "" }: ContactMapSectionProps) =>
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
           {/* Sol taraf - Harita (1/2) */}
-          <div className="overflow-hidden">
+          <div className="overflow-hidden rounded-[15px]">
             <GoogleMap
-              height="h-[300px] lg:h-[350px]"
+              height="h-[250px] lg:h-[280px]"
               loading="lazy"
               onLoad={() => console.log('Map loaded successfully')}
               onError={(error) => console.error('Map loading error:', error)}
