@@ -14,7 +14,7 @@ export const AboutHero = ({
   overlayImage 
 }: AboutHeroProps) => {
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[60vh] lg:min-h-screen overflow-hidden">
       {/* Background image */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
@@ -27,7 +27,7 @@ export const AboutHero = ({
  
       {/* Right side image */}
       <div 
-        className="absolute top-0 right-0 w-full md:w-2/3 h-full bg-cover bg-center bg-no-repeat z-5"
+        className="absolute top-0 right-0 w-1/2 lg:w-2/3 h-full bg-cover bg-center bg-no-repeat z-5"
         style={{
           backgroundImage: `url(${overlayImage})`,
           maskImage: "linear-gradient(to left, black 70%, transparent 100%)",
@@ -38,10 +38,10 @@ export const AboutHero = ({
       />
 
       {/* Content */}
-      <div className="relative z-30 py-12 lg:py-20 min-h-screen flex items-center">
-        <div className="max-w-4xl px-6 md:px-8 lg:px-16">
+      <div className="relative z-30 py-8 lg:py-20 min-h-[60vh] lg:min-h-screen flex items-center">
+        <div className="max-w-[50%] lg:max-w-4xl px-4 sm:px-6 lg:px-16">
           <h1 
-            className={`${Typography.sizes.h1} font-semibold leading-[1.2] mb-6 md:mb-8`}
+            className="text-[20px] sm:text-[28px] md:text-[36px] lg:text-[56px] font-semibold leading-[1.2] mb-4 md:mb-8"
             style={{ 
               fontFamily: Typography.fontFamily,
               color: Colors.primary
@@ -51,7 +51,7 @@ export const AboutHero = ({
           </h1>
 
           <p 
-            className={`${Typography.sizes.bodyLarge} leading-[1.5]`}
+            className="text-[12px] sm:text-[14px] md:text-[16px] lg:text-[18px] leading-[1.5]"
             style={{ 
               fontFamily: Typography.fontFamily,
               color: Colors.primary

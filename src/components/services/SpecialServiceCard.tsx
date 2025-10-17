@@ -16,7 +16,7 @@ export const SpecialServiceCard = ({
   className = "" 
 }: SpecialServiceCardProps) => {
   return (
-    <div className={`rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6 lg:col-span-2 flex flex-col lg:flex-row items-center justify-between gap-6 ${className}`}>
+    <div className={`rounded-2xl border border-slate-200 bg-white/70 shadow-sm p-6 lg:col-span-2 flex flex-col lg:flex-row items-center justify-between gap-6 overflow-hidden ${className}`}>
       <div className="flex-1">
         <div className="h-10 w-10 rounded-xl bg-blue-50 flex items-center justify-center mb-4">
           <div 
@@ -48,7 +48,7 @@ export const SpecialServiceCard = ({
         </p>
       </div>
       
-      <div className="rounded-2xl bg-white/80 flex items-center justify-center p-6 min-w-[180px]">
+      <div className="hidden lg:flex rounded-2xl bg-white/80 items-center justify-center p-6 min-w-[180px] overflow-hidden">
         <div 
           className="h-24 w-auto -translate-y-15"
           dangerouslySetInnerHTML={{ __html: logoSvg }}
