@@ -20,9 +20,9 @@ export const HeroContent = ({
   className = "" 
 }: HeroContentProps) => {
   return (
-    <div className={`order-2 lg:order-1 ${className}`}>
+    <div className={`order-2 lg:order-1 w-full ${className}`}>
       <h1
-        className="text-[40px] sm:text-[48px] lg:text-[60px] leading-[1.24] font-semibold tracking-normal"
+        className="text-[28px] sm:text-[36px] md:text-[44px] lg:text-[56px] leading-[1.24] font-semibold tracking-normal"
         style={{ 
           fontFamily: Typography.fontFamily,
           color: Colors.primary
@@ -34,7 +34,7 @@ export const HeroContent = ({
       
       {children}
       
-      <div className="mt-10">
+      <div className="mt-6 sm:mt-8 lg:mt-10">
         <Button onClick={onCtaClick}>
           {ctaText}
         </Button>
