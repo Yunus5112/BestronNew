@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import { I18nProvider } from "./i18n/I18nProvider";
 import ComingSoon from "./components/ComingSoon";
-import ScrollToTop from "./components/ScrollToTop";
+import { ScrollToTop } from "./components/ScrollToTop";
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ServicesPage from "./pages/ServicesPage";

@@ -67,7 +67,7 @@
       }
     },
     "servicesPage": {
-      "mainTitle": "Ar-Ge & Ürün Geliştirme & Üretim & Süreç Yönetimi & TÜBİTAK & Destek Hizmetleri",
+      "mainTitle": "Ar-Ge & Ürün Geliştirme &\nÜretim & Süreç Yönetimi &\nTÜBİTAK & Destek Hizmetleri",
       "description": "Mühendislik birikimi ve disiplinler arası yaklaşımıyla müşterilerine eksiksiz çözümler sunar. Tüm hizmetlerimiz, üç ana başlık altında yapılandırılmıştır.",
       "services": [
         {
@@ -442,7 +442,7 @@
       }
     },
     "servicesPage": {
-      "mainTitle": "R&D & Product Development & Manufacturing & Process Management & TÜBİTAK & Support Services",
+      "mainTitle": "R&D & Product Development &\nManufacturing & Process Management &\nTÜBİTAK & Support Services",
       "description": "We provide comprehensive solutions to our customers with our engineering expertise and interdisciplinary approach. All our services are structured under three main headings.",
       "services": [
         {
@@ -817,7 +817,7 @@
       }
     },
     "servicesPage": {
-      "mainTitle": "F&E & Produktentwicklung & Fertigung & Prozessmanagement & TÜBİTAK & Support-Dienstleistungen",
+      "mainTitle": "F&E & Produktentwicklung &\nFertigung & Prozessmanagement &\nTÜBİTAK & Support-Dienstleistungen",
       "description": "Wir bieten umfassende Lösungen für unsere Kunden mit unserer Ingenieursexpertise und unserem interdisziplinären Ansatz. Alle unsere Dienstleistungen sind in drei Hauptbereiche strukturiert.",
       "services": [
         {
