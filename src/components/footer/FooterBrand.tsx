@@ -32,7 +32,7 @@ export const FooterBrand = ({ description, copyright }: FooterBrandProps) => {
 
       {/* Copyright */}
       <p 
-        className="text-[14px] leading-[1.5]"
+        className="text-[14px] leading-[1.5] mt-16"
         style={{ 
           fontFamily: Typography.fontFamily,
           color: Colors.textSecondary
