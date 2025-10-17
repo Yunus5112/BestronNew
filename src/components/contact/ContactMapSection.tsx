@@ -14,18 +14,18 @@ export const ContactMapSection = ({ className = "" }: ContactMapSectionProps) =>
       style={{ backgroundColor: Colors.background }}
     >
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
-          {/* Sol taraf - Harita (2/3) */}
-          <div className="lg:col-span-2">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
+          {/* Sol taraf - Harita (1/2) */}
+          <div className="overflow-hidden">
             <GoogleMap
-              height="h-[400px] lg:h-[500px]"
+              height="h-[300px] lg:h-[350px]"
               loading="lazy"
               onLoad={() => console.log('Map loaded successfully')}
               onError={(error) => console.error('Map loading error:', error)}
             />
           </div>
 
-          {/* Sağ taraf - İletişim Bilgileri (1/3) */}
+          {/* Sağ taraf - İletişim Bilgileri (1/2) */}
           <div className="flex flex-col justify-center">
             <ContactInfoCard />
           </div>

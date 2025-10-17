@@ -21,7 +21,7 @@ export const ContactInfoItem = ({
     phone: "w-5 h-5 flex-shrink-0",
     email: "w-6 h-5 flex-shrink-0",
     address: "w-5 h-6 flex-shrink-0 mt-0.5",
-    map: "w-6 h-6 bg-slate-200 rounded flex items-center justify-center flex-shrink-0"
+    map: "w-[31px] h-[31px] flex-shrink-0"
   };
 
   const textClasses = {
@@ -36,6 +36,7 @@ export const ContactInfoItem = ({
       className={iconClasses[type]}
       dangerouslySetInnerHTML={{ __html: icon }}
       aria-hidden="true"
+      style={type === 'map' ? { display: 'flex', alignItems: 'center', justifyContent: 'center' } : undefined}
     />
   );
 
@@ -75,7 +76,11 @@ export const ContactInfoItem = ({
       }}
       aria-label={`${type === 'phone' ? 'Call' : type === 'email' ? 'Email' : 'Open map'}: ${value}`}
     >
-      {contentElement}
+      {type === 'map' ? (
+        <>
+          {value} <span style={{ color: Colors.textSecondary }}>({href})</span>
+        </>
+      ) : contentElement}
     </a>
   ) : contentElement;
 
@@ -83,11 +88,6 @@ export const ContactInfoItem = ({
     <div className={`${baseClasses} ${className}`}>
       {iconElement}
       {wrappedContent}
-      {type === 'map' && (
-        <span className="text-primary text-[14px] ml-2">
-          {value}
-        </span>
-      )}
     </div>
   );
 };

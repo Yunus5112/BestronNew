@@ -2,6 +2,7 @@ import { Colors, Typography } from "../lib/theme";
 import phoneIcon from "../../assets/phoneIcon";
 import mailIcon from "../../assets/mailIcon";
 import locationIcon from "../../assets/locationIcon";
+import mapIcon from "../../assets/images/mapIcon";
 import LanguageSwitcher from "../LanguageSwitcher";
 
 interface FooterContactInfoProps {
@@ -83,22 +84,11 @@ export const FooterContactInfo = ({
 
       {/* Map link */}
       <div className="flex items-center gap-3 pt-2">
-        <div className="w-6 h-6 bg-slate-200 rounded flex items-center justify-center flex-shrink-0">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path 
-              d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" 
-              stroke={Colors.textSecondary}
-              strokeWidth="2"
-            />
-            <circle 
-              cx="12" 
-              cy="10" 
-              r="3" 
-              stroke={Colors.textSecondary}
-              strokeWidth="2"
-            />
-          </svg>
-        </div>
+        <div
+          className="w-[31px] h-[31px] flex-shrink-0"
+          dangerouslySetInnerHTML={{ __html: mapIcon }}
+          aria-hidden="true"
+        />
         <a 
           href={mapHref}
           target="_blank"

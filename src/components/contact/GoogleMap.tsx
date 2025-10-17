@@ -18,15 +18,12 @@ export const GoogleMap = ({
   const [isLoaded, setIsLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
 
-  // Configuration - could be moved to environment variables
-  const mapConfig = {
-    coordinates: "29.2345678,40.8765432",
-    zoom: "15",
-    location: "STAR PORT RESIDENCE",
-    language: "tr"
-  };
-
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.1234567890123!2d${mapConfig.coordinates.split(',')[0]}!3d${mapConfig.coordinates.split(',')[1]}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2s${encodeURIComponent(mapConfig.location)}!5e0!3m2!1s${mapConfig.language}!2s${mapConfig.language}!4v1234567890123!5m2!1s${mapConfig.language}!2s${mapConfig.language}`;
+  // Bestron Technology Location - STAR PORT RESIDENCE, Pendik/İstanbul
+  // Address: Yenişehir Mah. Sümbül Sok. STAR PORT RESIDENCE No: 10/104, 34912 Pendik/İstanbul
+  // Google Maps Share Link: https://maps.app.goo.gl/BvrGQRKtaVH18nvt9
+  const locationName = "Bestron Technology";
+  const address = "Yenişehir Mah. Sümbül Sok. STAR PORT RESIDENCE No: 10/104, 34912 Pendik/İstanbul";
+  const mapUrl = `https://maps.google.com/maps?q=${encodeURIComponent(locationName + ", " + address)}&t=&z=16&ie=UTF8&iwloc=&output=embed`;
 
   const handleLoad = useCallback(() => {
     setIsLoaded(true);
@@ -40,7 +37,7 @@ export const GoogleMap = ({
 
   if (hasError) {
     return (
-      <div className={`${height} ${className} flex items-center justify-center bg-gray-100 rounded-2xl`}>
+      <div className={`${height} ${className} flex items-center justify-center bg-gray-100`}>
         <div className="text-center">
           <div className="w-12 h-12 mx-auto mb-4 bg-gray-300 rounded-full flex items-center justify-center">
             <svg className="w-6 h-6 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -60,7 +57,7 @@ export const GoogleMap = ({
   }
 
   return (
-    <div className={`w-full ${height} rounded-2xl overflow-hidden relative ${className}`}>
+    <div className={`w-full ${height} overflow-hidden relative ${className}`}>
       {!isLoaded && (
         <div className="absolute inset-0 bg-gray-100 flex items-center justify-center z-10">
           <div className="text-center">
