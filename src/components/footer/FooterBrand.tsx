@@ -8,7 +8,7 @@ interface FooterBrandProps {
 
 export const FooterBrand = ({ description, copyright }: FooterBrandProps) => {
   return (
-    <div className="space-y-6 lg:col-span-1">
+    <div className="space-y-4 lg:space-y-6 lg:col-span-1">
       {/* Logo */}
       <div className="flex items-center gap-3">
         <div
@@ -32,7 +32,7 @@ export const FooterBrand = ({ description, copyright }: FooterBrandProps) => {
 
       {/* Copyright */}
       <p 
-        className="text-[14px] leading-[1.5] mt-16"
+        className="text-[14px] leading-[1.5] mt-8 lg:mt-16"
         style={{ 
           fontFamily: Typography.fontFamily,
           color: Colors.textSecondary

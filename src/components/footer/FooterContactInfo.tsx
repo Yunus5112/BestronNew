@@ -30,9 +30,9 @@ export const FooterContactInfo = ({
   };
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-3 lg:space-y-4">
       {/* Phone and Language switcher */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between flex-wrap gap-2">
         <div className="flex items-center gap-3">
           <div
             className="w-5 h-5 flex-shrink-0"
@@ -103,7 +103,7 @@ export const FooterContactInfo = ({
           {mapLinkText}
         </a>
         <span 
-          className="text-[14px]"
+          className="hidden lg:inline text-[14px]"
           style={{ 
             fontFamily: Typography.fontFamily,
             color: Colors.primary

@@ -59,7 +59,7 @@ export const Services = () => {
 
         <ServiceCard
           iconSvg={codeIcon}
-          title={t("services.items.embedded_custom.title") ?? "Özel geliştirme & Gömülü Sistemler"}
+          title={t("services.items.embedded_custom.title") ?? "Gömülü Sistemler & Özel geliştirme"}
           description={t("services.items.embedded_custom.desc") ?? "Gömülü sistemler ve özel geliştirmelerle, ürünlerinizi yüksek performans ve verimlilikle hayata geçiriyoruz."}
         />
       </ServicesGrid>

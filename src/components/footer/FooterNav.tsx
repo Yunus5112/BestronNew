@@ -15,7 +15,7 @@ export const FooterNav = ({ items, t }: FooterNavProps) => {
   const location = useLocation();
 
   return (
-    <nav className="flex flex-wrap gap-6">
+    <nav className="flex flex-wrap gap-4 lg:gap-6">
       {items.map((item, index) => {
         const isHashLink = item.href.startsWith('#');
         const isActive = location.pathname === item.href;

@@ -24,9 +24,9 @@ export const FooterSection = ({ children }: FooterSectionProps) => {
         aria-hidden="true"
       />
       
-      <Container className="relative z-10 py-16 lg:py-20">
+      <Container className="relative z-10 py-12 lg:py-20">
         {/* Main white container */}
-        <div className="bg-white rounded-3xl p-8 lg:p-12 shadow-lg">
+        <div className="bg-white rounded-3xl p-6 lg:p-12 shadow-lg">
           {children}
         </div>
       </Container>

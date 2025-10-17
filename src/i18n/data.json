@@ -23,7 +23,7 @@
         "web_mobile": { "title": "Web Tasarım & Mobil Yazılım", "desc": "Kullanıcı odaklı web ve mobil uygulamalar geliştirir, modern teknolojilerle güvenli, hızlı ve ölçeklenebilir çözümler sunar." },
         "ui_ux": { "title": "UI/UX Tasarım", "desc": "Kullanıcı deneyimini önceliklendiren tasarımlar ile etkileşimi artırır, sezgisel ve estetik arayüzler oluşturur." },
         "public_grants": { "title": "Kamu Destekleri & Proje Danışmanlığı", "desc": "TÜBİTAK, KOSGEB ve diğer kamu destekli projelerde danışmanlık sağlar; proje yazımı, bütçe hazırlığı süreçlerinde müşterilerimizin yanında yer alır." },
-        "embedded_custom": { "title": "Özel geliştirme & Gömülü Sistemler", "desc": "Gömülü sistemler ve özel geliştirmelerle, ürünlerinizi yüksek performans ve verimlilikle hayata geçiriyoruz." }
+        "embedded_custom": { "title": "Gömülü Sistemler & Özel geliştirme", "desc": "Gömülü sistemler ve özel geliştirmelerle, ürünlerinizi yüksek performans ve verimlilikle hayata geçiriyoruz." }
       }
     },
     "projects": {
@@ -398,7 +398,7 @@
         "web_mobile": { "title": "Web Design & Mobile Software", "desc": "Develops user-centric web and mobile applications, delivering secure, fast, and scalable solutions with modern technologies." },
         "ui_ux": { "title": "UI/UX Design", "desc": "Enhances engagement through user experience-focused designs, creating intuitive and aesthetic interfaces." },
         "public_grants": { "title": "Public Grants & Project Consulting", "desc": "Provides consulting for TÜBİTAK, KOSGEB, and other publicly funded projects; supports clients in project writing and budget preparation processes." },
-        "embedded_custom": { "title": "Custom Development & Embedded Systems", "desc": "We bring your products to life with high performance and efficiency through embedded systems and custom development." }
+        "embedded_custom": { "title": "Embedded Systems & Custom Development", "desc": "We bring your products to life with high performance and efficiency through embedded systems and custom development." }
       }
     },
     "projects": {
@@ -773,7 +773,7 @@
         "web_mobile": { "title": "Webdesign & Mobile Software", "desc": "Entwickelt benutzerzentrierte Web- und Mobilanwendungen und bietet sichere, schnelle und skalierbare Lösungen mit modernen Technologien." },
         "ui_ux": { "title": "UI/UX Design", "desc": "Steigert die Interaktion durch benutzererfahrungsorientierte Designs und erstellt intuitive und ästhetische Benutzeroberflächen." },
         "public_grants": { "title": "Öffentliche Förderungen & Projektberatung", "desc": "Bietet Beratung für TÜBİTAK, KOSGEB und andere öffentlich geförderte Projekte; unterstützt Kunden bei Projektschreibung und Budgetvorbereitung." },
-        "embedded_custom": { "title": "Individuelle Entwicklung & Eingebettete Systeme", "desc": "Wir bringen Ihre Produkte mit hoher Leistung und Effizienz durch eingebettete Systeme und individuelle Entwicklungen zum Leben." }
+        "embedded_custom": { "title": "Eingebettete Systeme & Individuelle Entwicklung", "desc": "Wir bringen Ihre Produkte mit hoher Leistung und Effizienz durch eingebettete Systeme und individuelle Entwicklungen zum Leben." }
       }
     },
     "projects": {
