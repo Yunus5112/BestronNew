@@ -19,15 +19,17 @@ export const Footer = () => {
 
   return (
     <FooterSection>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
         {/* Left side - Company info */}
-        <FooterBrand
-          description={t("footer.companyDescription")}
-          copyright={t("footer.copyright")}
-        />
+        <div className="lg:col-span-2">
+          <FooterBrand
+            description={t("footer.companyDescription")}
+            copyright={t("footer.copyright")}
+          />
+        </div>
 
         {/* Right side - Navigation and contact */}
-        <div className="space-y-8 lg:col-span-2">
+        <div className="space-y-8 lg:col-span-3">
           <FooterNav items={navItems} t={t} />
           
           <FooterContactInfo
