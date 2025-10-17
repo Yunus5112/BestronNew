@@ -12,14 +12,14 @@ export const FooterSection = ({ children }: FooterSectionProps) => {
     <footer className="relative overflow-hidden">
       {/* Background gradients - full footer background */}
       <div
-        className="absolute inset-0 -z-20 w-full h-full opacity-90"
+        className="absolute inset-0 -z-20 w-full h-full opacity-100"
         dangerouslySetInnerHTML={{ __html: footerBackground }}
         aria-hidden="true"
       />
 
       {/* Circuit board pattern - footer's bottom right corner */}
       <div
-        className="absolute bottom-0 right-0 w-[205px] h-[345px] opacity-90 pointer-events-none -z-10"
+        className="absolute bottom-0 right-0 w-[120px] h-[200px] sm:w-[150px] sm:h-[250px] md:w-[180px] md:h-[300px] lg:w-[205px] lg:h-[345px] opacity-100 pointer-events-none -z-10"
         dangerouslySetInnerHTML={{ __html: footerImage }}
         aria-hidden="true"
       />
