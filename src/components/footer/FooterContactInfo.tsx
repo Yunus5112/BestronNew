@@ -10,9 +10,9 @@ interface FooterContactInfoProps {
   email: string;
   addressLine1: string;
   addressLine2: string;
-  mapLinkText: string;
-  mapUrl: string;
-  mapHref: string;
+  mapLinkText?: string;
+  mapUrl?: string;
+  mapHref?: string;
 }
 
 export const FooterContactInfo = ({ 
@@ -82,36 +82,38 @@ export const FooterContactInfo = ({
         </div>
       </div>
 
-      {/* Map link */}
-      <div className="flex items-center gap-3 pt-2">
-        <div
-          className="w-[31px] h-[31px] flex-shrink-0"
-          dangerouslySetInnerHTML={{ __html: mapIcon }}
-          aria-hidden="true"
-        />
-        <a 
-          href={mapHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-[16px] hover:underline"
-          style={{ 
-            fontFamily: Typography.fontFamily,
-            color: Colors.primary
-          }}
-          aria-label="Open location in Google Maps"
-        >
-          {mapLinkText}
-        </a>
-        <span 
-          className="hidden lg:inline text-[14px]"
-          style={{ 
-            fontFamily: Typography.fontFamily,
-            color: Colors.primary
-          }}
-        >
-          {mapUrl}
-        </span>
-      </div>
+      {/* Map link - Only show if props are provided */}
+      {mapLinkText && mapUrl && mapHref && (
+        <div className="flex items-center gap-3 pt-2">
+          <div
+            className="w-[31px] h-[31px] flex-shrink-0"
+            dangerouslySetInnerHTML={{ __html: mapIcon }}
+            aria-hidden="true"
+          />
+          <a 
+            href={mapHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[16px] hover:underline"
+            style={{ 
+              fontFamily: Typography.fontFamily,
+              color: Colors.primary
+            }}
+            aria-label="Open location in Google Maps"
+          >
+            {mapLinkText}
+          </a>
+          <span 
+            className="hidden lg:inline text-[14px]"
+            style={{ 
+              fontFamily: Typography.fontFamily,
+              color: Colors.primary
+            }}
+          >
+            {mapUrl}
+          </span>
+        </div>
+      )}
     </div>
   );
 };

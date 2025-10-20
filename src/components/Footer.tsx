@@ -4,7 +4,11 @@ import { FooterBrand } from "./footer/FooterBrand";
 import { FooterNav } from "./footer/FooterNav";
 import { FooterContactInfo } from "./footer/FooterContactInfo";
 
-export const Footer = () => {
+interface FooterProps {
+  showMapLink?: boolean;
+}
+
+export const Footer = ({ showMapLink = false }: FooterProps) => {
   const t = useT();
 
   const navItems = [
@@ -37,9 +41,9 @@ export const Footer = () => {
             email={t("footer.email")}
             addressLine1={t("footer.address.line1")}
             addressLine2={t("footer.address.line2")}
-            mapLinkText={t("footer.mapLink")}
-            mapUrl={t("footer.mapUrl")}
-            mapHref="https://maps.app.goo.gl/BvrGQRKtaVH18nvt9"
+            mapLinkText={showMapLink ? t("footer.mapLink") : undefined}
+            mapUrl={showMapLink ? t("footer.mapUrl") : undefined}
+            mapHref={showMapLink ? "https://maps.app.goo.gl/BvrGQRKtaVH18nvt9" : undefined}
           />
         </div>
       </div>

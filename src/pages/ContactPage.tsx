@@ -11,8 +11,8 @@ export const ContactPage = () => {
       {/* Map and Contact Info Section */}
       <ContactMapSection />
 
-      {/* Footer */}
-      <Footer />
+      {/* Footer - Show map link only on contact page */}
+      <Footer showMapLink={true} />
     </>
   );
 };
