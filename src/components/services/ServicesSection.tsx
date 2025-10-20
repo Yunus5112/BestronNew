@@ -20,7 +20,7 @@ export const ServicesSection = ({
     >
       <Container>
         <h2 
-          className="text-[60px] sm:text-[60px] lg:text-[60px] font-semibold leading-tight mb-4"
+          className="text-[24px] md:text-[36px] lg:text-[60px] font-semibold leading-tight mb-4"
           style={{ 
             fontFamily: Typography.fontFamily,
             color: Colors.primary
