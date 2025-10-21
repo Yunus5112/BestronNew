@@ -32,7 +32,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage1.jpg",
     imagePosition: "right",
-    imageHeight: "h-[400px] md:h-[600px] lg:h-[850px]"
+    imageHeight: "h-[400px] md:h-[600px] lg:h-[750px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.motorcycleTracking.title",
@@ -48,7 +48,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage2.jpg",
     imagePosition: "left",
-    imageHeight: "lg:h-[500px]"
+    imageHeight: "h-[300px] md:h-[400px] lg:h-[450px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.coldChainTracking.title",
@@ -71,7 +71,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage3.jpg",
     imagePosition: "right",
-    imageHeight: "lg:h-[750px]"
+    imageHeight: "h-[350px] md:h-[500px] lg:h-[650px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.aggressiveDrivingAnalysis.title",
@@ -95,7 +95,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage4.jpg",
     imagePosition: "left",
-    imageHeight: "lg:h-[800px]"
+    imageHeight: "h-[400px] md:h-[550px] lg:h-[700px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.cgmSensorIntegration.title",
@@ -121,7 +121,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage5.jpg",
     imagePosition: "right",
-    imageHeight: "lg:h-[1000px]"
+    imageHeight: "h-[500px] md:h-[750px] lg:h-[1000px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.vehicleSecurity.title",
@@ -137,7 +137,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage6.jpg",
     imagePosition: "left",
-    imageHeight: "lg:h-[500px]"
+    imageHeight: "h-[300px] md:h-[400px] lg:h-[450px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.rfCommunicationSystems.title",
@@ -162,7 +162,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage7.jpg",
     imagePosition: "right",
-    imageHeight: "lg:h-[800px]"
+    imageHeight: "h-[400px] md:h-[600px] lg:h-[750px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.opticalSecuritySystems.title",
@@ -184,7 +184,7 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage8.jpg",
     imagePosition: "left",
-    imageHeight: "lg:h-[750px]"
+    imageHeight: "h-[400px] md:h-[600px] lg:h-[750px]"
   },
   {
     titleKey: "projectsPage.electronicsSection.occupationalHealthSafetySystems.title",
@@ -208,6 +208,6 @@ export const projectSections: ProjectSectionConfig[] = [
     ],
     imageFilename: "projectsPageImage9.jpg",
     imagePosition: "right",
-    imageHeight: "lg:h-[750px]"
+    imageHeight: "h-[400px] md:h-[550px] lg:h-[700px]"
   }
 ];

@@ -18,7 +18,7 @@ export const AboutContentBlock = ({
   const imageBlock = image ? (
     <div className="relative">
       <div 
-        className={`w-full ${imageHeight} bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg`}
+        className={`w-full ${imageHeight} bg-cover bg-center bg-no-repeat rounded-2xl`}
         style={{ backgroundImage: `url(${image})` }}
         role="img"
         aria-label="About illustration"

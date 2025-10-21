@@ -28,7 +28,7 @@ export const ProjectHero = ({
  
       {/* Right side image */}
       <div 
-        className="absolute top-0 right-0 w-full md:w-2/3 h-full bg-cover bg-center bg-no-repeat z-5"
+        className="absolute top-0 right-0 w-2/3 md:w-2/3 h-full bg-cover bg-center bg-no-repeat z-5"
         style={{
           backgroundImage: `url(${overlayImageUrl})`,
           maskImage: "linear-gradient(to left, black 70%, transparent 100%)",

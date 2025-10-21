@@ -35,7 +35,7 @@ export const ServiceContentBlock = ({
   const imageBlock = image ? (
     <div className="relative">
       <div 
-        className={`w-full ${imageHeight} bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg`}
+        className={`w-full ${imageHeight} bg-cover bg-center bg-no-repeat rounded-2xl`}
         style={{ backgroundImage: `url(${image})` }}
         role="img"
         aria-label="Service illustration"
@@ -43,7 +43,7 @@ export const ServiceContentBlock = ({
     </div>
   ) : logoSvg ? (
     <div className="relative">
-      <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm">
+      <div className="bg-white rounded-2xl p-6 md:p-8">
         <div 
           className="w-full h-auto flex items-center justify-center"
           dangerouslySetInnerHTML={{ __html: logoSvg }}

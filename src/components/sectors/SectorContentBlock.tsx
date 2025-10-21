@@ -30,7 +30,7 @@ export const SectorContentBlock = ({
   const imageBlock = image ? (
     <div className="relative">
       <div 
-        className="w-full h-[400px] md:h-[500px] lg:h-[600px] bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg"
+        className="w-full h-[400px] md:h-[500px] lg:h-[500px] bg-cover bg-center bg-no-repeat rounded-2xl"
         style={{ backgroundImage: `url(${image})` }}
         role="img"
         aria-label="Sector illustration"

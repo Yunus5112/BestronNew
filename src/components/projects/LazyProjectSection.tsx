@@ -41,7 +41,7 @@ export const LazyProjectSection = ({
   const imageBlock = (
     <div className="relative">
       <div 
-        className={`w-full ${imageHeight} bg-cover bg-center bg-no-repeat rounded-2xl shadow-lg`}
+        className={`w-full ${imageHeight} bg-cover bg-center bg-no-repeat rounded-2xl`}
         style={{ backgroundImage: `url(${imageUrl})` }}
         role="img"
         aria-label="Project illustration"
