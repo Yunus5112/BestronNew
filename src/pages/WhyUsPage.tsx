@@ -6,10 +6,11 @@ import { WhyUsSection } from "../components/whyUs/WhyUsSection";
 import { WhyUsTextSection } from "../components/whyUs/WhyUsTextSection";
 import { WhyUsImageGrid } from "../components/whyUs/WhyUsImageGrid";
 import { CompetencyItem } from "../components/whyUs/CompetencyItem";
+import aboutBg from "../assets/images/about/aboutBg";
 
 export const WhyUsPage = () => {
   const t = useT();
-  const { whyUsImage, aboutImage } = useAssetUrl();
+  const { whyUsImage } = useAssetUrl();
 
   return (
     <>
@@ -17,7 +18,7 @@ export const WhyUsPage = () => {
       <WhyUsHero
         title={t("whyUsPage.mainTitle")}
         description={t("whyUsPage.description")}
-        backgroundImage={aboutImage("aboutBg.png")}
+        backgroundImage={`data:image/svg+xml;utf8,${encodeURIComponent(aboutBg)}`}
         overlayImage={whyUsImage("whyUsPageImage.jpg")}
       />
 

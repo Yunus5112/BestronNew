@@ -3,9 +3,10 @@ import { ProjectHero } from "../components/projects/ProjectHero";
 import { LazyProjectSection } from "../components/projects/LazyProjectSection";
 import { useAssetUrl } from "../hooks/useAssetUrl";
 import { projectSections } from "../data/projectSections";
+import aboutBg from "../assets/images/about/aboutBg";
 
 export const ProjectsPage = () => {
-  const { projectImage, aboutImage } = useAssetUrl();
+  const { projectImage } = useAssetUrl();
 
   return (
     <>
@@ -13,7 +14,7 @@ export const ProjectsPage = () => {
       <ProjectHero
         titleKey="projectsPage.mainTitle"
         descriptionKey="projectsPage.description"
-        backgroundImageUrl={aboutImage("aboutBg.png")}
+        backgroundImageUrl={`data:image/svg+xml;utf8,${encodeURIComponent(aboutBg)}`}
         overlayImageUrl={projectImage("projectsPageImage.jpg")}
       />
 

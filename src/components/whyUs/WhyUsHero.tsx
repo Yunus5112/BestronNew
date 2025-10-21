@@ -37,7 +37,7 @@ export const WhyUsHero = ({
 
       {/* Content */}
       <div className="relative z-30 py-16 lg:py-20 min-h-screen flex items-center">
-        <div className="max-w-4xl px-6 md:px-8 lg:px-16">
+        <div className="w-full max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] px-6 md:px-8 lg:px-16">
           <h1 
             className={`${Typography.sizes.h1} font-semibold leading-[1.2] mb-6 md:mb-8`}
             style={{ 

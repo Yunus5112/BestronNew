@@ -8,6 +8,7 @@ import { AboutList } from "./about/AboutList";
 import { VisionMissionSection } from "./about/VisionMissionSection";
 import { Text } from "./ui/Text";
 import { Heading } from "./ui/Heading";
+import aboutBg from "../assets/images/about/aboutBg";
 
 export const About = () => {
   const t = useT();
@@ -19,7 +20,7 @@ export const About = () => {
       <AboutHero
         title={t("about.mainTitle")}
         description={t("about.description1")}
-        backgroundImage={aboutImage("aboutBg.png")}
+        backgroundImage={`data:image/svg+xml;utf8,${encodeURIComponent(aboutBg)}`}
         overlayImage={aboutImage("aboutPageImage.jpg")}
       />
 

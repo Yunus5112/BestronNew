@@ -39,7 +39,7 @@ export const AboutHero = ({
 
       {/* Content */}
       <div className="relative z-30 py-8 lg:py-20 min-h-[60vh] lg:min-h-screen flex items-center">
-        <div className="max-w-[50%] lg:max-w-4xl px-4 sm:px-6 lg:px-16">
+        <div className="w-full max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] px-4 sm:px-6 lg:px-16">
           <h1 
             className="text-[20px] sm:text-[28px] md:text-[36px] lg:text-[56px] font-semibold leading-[1.2] mb-4 md:mb-8"
             style={{ 

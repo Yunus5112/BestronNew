@@ -7,10 +7,11 @@ import { ServiceSection } from "../components/services/ServiceSection";
 import { ServiceContentBlock } from "../components/services/ServiceContentBlock";
 import { ServiceList } from "../components/services/ServiceList";
 import { ServiceNoteSection } from "../components/services/ServiceNoteSection";
+import aboutBg from "../assets/images/about/aboutBg";
 
 export const ServicesPage = () => {
   const t = useT();
-  const { servicesImage, aboutImage } = useAssetUrl();
+  const { servicesImage } = useAssetUrl();
 
   return (
     <>
@@ -18,7 +19,7 @@ export const ServicesPage = () => {
       <SectorHero
         title={t("servicesPage.mainTitle")}
         description={t("servicesPage.description")}
-        backgroundImage={aboutImage("aboutBg.png")}
+        backgroundImage={`data:image/svg+xml;utf8,${encodeURIComponent(aboutBg)}`}
         overlayImage={servicesImage("servicesPageImage.jpg")}
       />
 

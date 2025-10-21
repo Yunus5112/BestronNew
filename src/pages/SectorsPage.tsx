@@ -6,10 +6,11 @@ import { SectorSection } from "../components/sectors/SectorSection";
 import { SectorContentBlock } from "../components/sectors/SectorContentBlock";
 import { SectorItem } from "../components/sectors/SectorItem";
 import { SectorImageGrid } from "../components/sectors/SectorImageGrid";
+import aboutBg from "../assets/images/about/aboutBg";
 
 export const SectorsPage = () => {
   const t = useT();
-  const { sectorsImage, aboutImage } = useAssetUrl();
+  const { sectorsImage } = useAssetUrl();
 
   return (
     <>
@@ -17,7 +18,7 @@ export const SectorsPage = () => {
       <SectorHero
         title={t("sectorsPage.mainTitle")}
         description={t("sectorsPage.description")}
-        backgroundImage={aboutImage("aboutBg.png")}
+        backgroundImage={`data:image/svg+xml;utf8,${encodeURIComponent(aboutBg)}`}
         overlayImage={sectorsImage("sectorsPageImage.jpg")}
       />
 
