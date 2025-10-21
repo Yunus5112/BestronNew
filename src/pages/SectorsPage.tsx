@@ -18,7 +18,7 @@ export const SectorsPage = () => {
         title={t("sectorsPage.mainTitle")}
         description={t("sectorsPage.description")}
         backgroundImage={aboutImage("aboutBg.png")}
-        overlayImage={sectorsImage("sectorsPageImage.png")}
+        overlayImage={sectorsImage("sectorsPageImage.jpg")}
       />
 
       {/* Automotive & Medical Sectors Section */}
@@ -26,7 +26,7 @@ export const SectorsPage = () => {
         <SectorContentBlock
           title={t("sectorsSection.title")}
           subtitle={t("sectorsSection.subtitle")}
-          image={sectorsImage("sectorsPageImage1.png")}
+          image={sectorsImage("sectorsPageImage1.jpg")}
           imagePosition="right"
         >
           <SectorItem
@@ -45,8 +45,8 @@ export const SectorsPage = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
           <SectorImageGrid 
             images={[
-              sectorsImage("sectorsPageImage2.png"),
-              sectorsImage("sectorsPageImage3.png")
+              sectorsImage("sectorsPageImage2.jpg"),
+              sectorsImage("sectorsPageImage3.jpg")
             ]}
             imageHeight="h-[180px] md:h-[220px] lg:h-[250px]"
           />

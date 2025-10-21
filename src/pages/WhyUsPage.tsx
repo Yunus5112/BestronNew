@@ -18,7 +18,7 @@ export const WhyUsPage = () => {
         title={t("whyUsPage.mainTitle")}
         description={t("whyUsPage.description")}
         backgroundImage={aboutImage("aboutBg.png")}
-        overlayImage={whyUsImage("whyUsPageImage.png")}
+        overlayImage={whyUsImage("whyUsPageImage.jpg")}
       />
 
       {/* Why Us Details Section */}
@@ -39,12 +39,12 @@ export const WhyUsPage = () => {
           <WhyUsImageGrid 
             images={[
               {
-                src: whyUsImage("whyUsPageImage1.png"),
+                src: whyUsImage("whyUsPageImage1.jpg"),
                 height: "h-[300px] md:h-[400px] lg:h-[450px]",
                 alt: "Why us image 1"
               },
               {
-                src: whyUsImage("whyUsPageImage2.png"),
+                src: whyUsImage("whyUsPageImage2.jpg"),
                 height: "h-[300px] md:h-[500px] lg:h-[550px]",
                 alt: "Why us image 2"
               }

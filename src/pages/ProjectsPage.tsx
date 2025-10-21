@@ -14,7 +14,7 @@ export const ProjectsPage = () => {
         titleKey="projectsPage.mainTitle"
         descriptionKey="projectsPage.description"
         backgroundImageUrl={aboutImage("aboutBg.png")}
-        overlayImageUrl={projectImage("projectsPageImage.png")}
+        overlayImageUrl={projectImage("projectsPageImage.jpg")}
       />
 
       {/* Project Sections */}

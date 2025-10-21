@@ -18,7 +18,6 @@ export const ServiceContentBlock = ({
   title,
   intro,
   children,
-  conclusion,
   image,
   imagePosition = "right",
   imageHeight = "h-[400px] md:h-[500px] lg:h-[600px]",
@@ -30,7 +29,6 @@ export const ServiceContentBlock = ({
       <Heading level="h2">{title}</Heading>
       {intro && <Text>{intro}</Text>}
       {children}
-      {conclusion && <Text>{conclusion}</Text>}
     </div>
   );
 

@@ -23,7 +23,7 @@ export const Services = () => {
         {/* Big tall card on the left spanning 2 rows */}
         <ServiceCard
           iconSvg={rdIcon}
-          title={t("services.items.r_and_d.title") ?? "Arge Ürün Geliştirme"}
+          title={t("services.items.r_and_d.title") ?? "Ürün Geliştirme"}
           description={t("services.items.r_and_d.desc") ?? "Bestron Technology, fikirden prototipe, prototipten seri üretime kadar tüm süreçlerde yenilikçi çözümler sunar."}
           imageUrl={rdImageUrl}
           imageAlt="R&D Illustration"
@@ -39,7 +39,7 @@ export const Services = () => {
         
         <ServiceCard
           iconSvg={sunIcon}
-          title={t("services.items.web_mobile.title") ?? "Web Tasarım & Mobil Yazılım"}
+          title={t("services.items.web_mobile.title") ?? "Web & Mobil Yazılım"}
           description={t("services.items.web_mobile.desc") ?? "Kullanıcı odaklı web ve mobil uygulamalar geliştirir, modern teknolojilerle güvenli, hızlı ve ölçeklenebilir çözümler sunar."}
         />
         
@@ -53,7 +53,7 @@ export const Services = () => {
         <SpecialServiceCard
           iconSvg={tubitakLogo}
           title={t("services.items.public_grants.title") ?? "Kamu Destekleri & Proje Danışmanlığı"}
-          description={t("services.items.public_grants.desc") ?? "TÜBİTAK, KOSGEB ve diğer kamu destekli projelerde danışmanlık sağlar; proje yazımı, bütçe hazırlığı süreçlerinde müşterilerimizin yanında yer alır."}
+          description={t("services.items.public_grants.desc") ?? "TÜBİTAK & TEYDEB başvuru hazırlığı, proje yönetimi, Bestron Technology, Ar-Ge odaklı projelerde müşterilerine sadece teknik değil, stratejik destek de sunar. "}
           logoSvg={teydepLogo}
         />
 

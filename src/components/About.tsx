@@ -20,7 +20,7 @@ export const About = () => {
         title={t("about.mainTitle")}
         description={t("about.description1")}
         backgroundImage={aboutImage("aboutBg.png")}
-        overlayImage={aboutImage("aboutPageImage.png")}
+        overlayImage={aboutImage("aboutPageImage.jpg")}
       />
 
       {/* Additional Text Section */}
@@ -36,7 +36,7 @@ export const About = () => {
       {/* Principles Section */}
       <AboutSection>
         <AboutContentBlock
-          image={aboutImage("aboutPageImage2.png")}
+          image={aboutImage("aboutPageImage2.jpg")}
           imagePosition="right"
         >
           <Text>{t("about.section2Title")}</Text>
@@ -64,7 +64,7 @@ export const About = () => {
       {/* Team Section */}
       <AboutSection paddingTop="pt-8 lg:pt-12">
         <AboutContentBlock
-          image={aboutImage("aboutPageImage3.png")}
+          image={aboutImage("aboutPageImage3.jpg")}
           imagePosition="left"
           imageHeight="h-[200px] md:h-[250px] lg:h-[300px]"
         >

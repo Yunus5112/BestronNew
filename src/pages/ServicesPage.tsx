@@ -19,7 +19,7 @@ export const ServicesPage = () => {
         title={t("servicesPage.mainTitle")}
         description={t("servicesPage.description")}
         backgroundImage={aboutImage("aboutBg.png")}
-        overlayImage={servicesImage("servicesPageImage.png")}
+        overlayImage={servicesImage("servicesPageImage.jpg")}
       />
 
       {/* R&D & Product Development Section */}
@@ -28,7 +28,7 @@ export const ServicesPage = () => {
           title={t("servicesPage.rdSection.title")}
           intro={t("servicesPage.rdSection.intro")}
           conclusion={t("servicesPage.rdSection.conclusion")}
-          image={servicesImage("servicesPageImage1.png")}
+          image={servicesImage("servicesPageImage1.jpg")}
           imagePosition="right"
           imageHeight="h-[300px] md:h-[450px] lg:h-[500px]"
         >
@@ -41,12 +41,20 @@ export const ServicesPage = () => {
         <ServiceContentBlock
           title={t("servicesPage.manufacturingSection.title")}
           intro={t("servicesPage.manufacturingSection.intro")}
-          conclusion={t("servicesPage.manufacturingSection.conclusion")}
-          image={servicesImage("servicesPageImage2.png")}
+          image={servicesImage("servicesPageImage2.jpg")}
           imagePosition="left"
           imageHeight="h-[400px] md:h-[600px] lg:h-[750px]"
         >
           <ServiceList items={t<string[]>("servicesPage.manufacturingSection.services")} />
+          <p 
+            className="text-[16px] sm:text-[18px] leading-[1.5] mt-6"
+            style={{ 
+              fontFamily: "Inter, ui-sans-serif, system-ui",
+              color: "#0C176C"
+            }}
+          >
+            {t("servicesPage.manufacturingSection.conclusion")}
+          </p>
           <ServiceNoteSection
             title={t("servicesPage.manufacturingSection.note.title")}
             items={t<Array<{title: string, description: string}>>("servicesPage.manufacturingSection.note.items")}
@@ -59,11 +67,19 @@ export const ServicesPage = () => {
         <ServiceContentBlock
           title={t("servicesPage.tubitakSection.title")}
           intro={t("servicesPage.tubitakSection.intro")}
-          conclusion={t("servicesPage.tubitakSection.conclusion")}
           logoSvg={kosgebAndTeydeb}
           imagePosition="right"
         >
           <ServiceList items={t<string[]>("servicesPage.tubitakSection.services")} />
+          <p 
+            className="text-[16px] sm:text-[18px] leading-[1.5] mt-6"
+            style={{ 
+              fontFamily: "Inter, ui-sans-serif, system-ui",
+              color: "#0C176C"
+            }}
+          >
+            {t("servicesPage.tubitakSection.conclusion")}
+          </p>
         </ServiceContentBlock>
       </ServiceSection>
 

@@ -30,7 +30,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage1.png",
+    imageFilename: "projectsPageImage1.jpg",
     imagePosition: "right",
     imageHeight: "h-[400px] md:h-[600px] lg:h-[850px]"
   },
@@ -46,7 +46,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage2.png",
+    imageFilename: "projectsPageImage2.jpg",
     imagePosition: "left",
     imageHeight: "lg:h-[500px]"
   },
@@ -69,7 +69,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage3.png",
+    imageFilename: "projectsPageImage3.jpg",
     imagePosition: "right",
     imageHeight: "lg:h-[750px]"
   },
@@ -93,7 +93,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage4.png",
+    imageFilename: "projectsPageImage4.jpg",
     imagePosition: "left",
     imageHeight: "lg:h-[800px]"
   },
@@ -119,7 +119,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage5.png",
+    imageFilename: "projectsPageImage5.jpg",
     imagePosition: "right",
     imageHeight: "lg:h-[1000px]"
   },
@@ -135,7 +135,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage6.png",
+    imageFilename: "projectsPageImage6.jpg",
     imagePosition: "left",
     imageHeight: "lg:h-[500px]"
   },
@@ -160,7 +160,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage7.png",
+    imageFilename: "projectsPageImage7.jpg",
     imagePosition: "right",
     imageHeight: "lg:h-[800px]"
   },
@@ -182,7 +182,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage8.png",
+    imageFilename: "projectsPageImage8.jpg",
     imagePosition: "left",
     imageHeight: "lg:h-[750px]"
   },
@@ -206,7 +206,7 @@ export const projectSections: ProjectSectionConfig[] = [
         ]
       }
     ],
-    imageFilename: "projectsPageImage9.png",
+    imageFilename: "projectsPageImage9.jpg",
     imagePosition: "right",
     imageHeight: "lg:h-[750px]"
   }
