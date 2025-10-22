@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { Colors, Typography } from "../lib/theme";
-import Button from "../ui/Button";
 
 interface HeroContentProps {
   titleLead: string;
@@ -13,9 +12,7 @@ interface HeroContentProps {
 
 export const HeroContent = ({ 
   titleLead, 
-  titleEmphasis, 
-  ctaText,
-  onCtaClick,
+  titleEmphasis,
   children,
   className = "" 
 }: HeroContentProps) => {
