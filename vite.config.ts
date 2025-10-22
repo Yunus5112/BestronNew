@@ -5,4 +5,9 @@ import { defineConfig } from "vite";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/BestronNew/', // GitHub Pages için repo adını ekle
+  build: {
+    outDir: 'dist',
+    sourcemap: false,
+  },
 });
