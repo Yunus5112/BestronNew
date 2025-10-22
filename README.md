@@ -1,7 +1,7 @@
 
 # React + Vite Başlangıç Şablonu
 
-Bu proje, modern bir React uygulaması başlatmak için temel bir yapı sunar. Vite kullanılarak yapılandırılmıştır ve Tailwind CSS ile birlikte gelir.
+Bu proje, modern bir React uygulaması başlatmak için temel bir yapı sunar. Vite kullanılarak yapılandırılmıştır ve Tailwind CSS ile birlikte gelir
 
 ## 🚀 Hızlı Başlangıç
 
