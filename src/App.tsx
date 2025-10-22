@@ -16,7 +16,7 @@ const App = () => {
   
   return (
     <I18nProvider>
-      <Router basename="/BestronNew">
+      <Router basename="/">
         <ScrollToTop />
         {isComingSoon ? (
           <ComingSoon />
