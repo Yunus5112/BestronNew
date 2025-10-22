@@ -3,13 +3,11 @@ import { format } from 'date-fns';
 import { tr } from 'date-fns/locale';
 
 // EmailJS Configuration
-// TODO: Replace these with your actual EmailJS credentials
-// Get them from: https://www.emailjs.com/
 const EMAILJS_CONFIG = {
-  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || 'YOUR_SERVICE_ID',
-  contactTemplateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID || 'YOUR_CONTACT_TEMPLATE_ID',
-  meetingTemplateId: import.meta.env.VITE_EMAILJS_MEETING_TEMPLATE_ID || 'YOUR_MEETING_TEMPLATE_ID',
-  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'YOUR_PUBLIC_KEY',
+  serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || 'service_iwy8ymh',
+  contactTemplateId: import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID || 'template_qurnyux',
+  meetingTemplateId: import.meta.env.VITE_EMAILJS_MEETING_TEMPLATE_ID || 'template_rmb9x2o',
+  publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || 'zFG-PCq0DeY4mKq14',
 };
 
 interface ContactEmailParams {
@@ -57,6 +55,9 @@ export const sendContactEmail = async (
       };
     }
 
+    // Debug: Log current configuration
+    console.log('🔧 EmailJS Config:', EMAILJS_CONFIG);
+    
     // Check if EmailJS is configured
     if (
       EMAILJS_CONFIG.serviceId === 'YOUR_SERVICE_ID' ||
@@ -77,16 +78,19 @@ export const sendContactEmail = async (
     }
 
     // Send email using EmailJS
+    const templateParams = {
+      from_name: params.name,
+      from_email: params.email,
+      message: params.message,
+      reply_to: params.email,
+    };
+
+    console.log('📧 Sending email with params:', templateParams);
+
     const response = await emailjs.send(
       EMAILJS_CONFIG.serviceId,
       EMAILJS_CONFIG.contactTemplateId,
-      {
-        to_email: 'info@bestrontechnology.com',
-        from_name: params.name,
-        from_email: params.email,
-        message: params.message,
-        reply_to: params.email,
-      },
+      templateParams,
       EMAILJS_CONFIG.publicKey
     );
 

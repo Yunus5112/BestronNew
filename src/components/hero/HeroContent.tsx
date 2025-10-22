@@ -34,11 +34,11 @@ export const HeroContent = ({
       
       {children}
       
-      <div className="mt-4 sm:mt-6 lg:mt-10">
+      {/* <div className="mt-4 sm:mt-6 lg:mt-10">
         <Button onClick={onCtaClick}>
           {ctaText}
         </Button>
-      </div>
+      </div> */}
     </div>
   );
 };
