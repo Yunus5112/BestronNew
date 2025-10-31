@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Colors, Typography } from "../lib/theme";
+import LanguageSwitcher from "../LanguageSwitcher";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -83,6 +84,11 @@ export const MobileMenu = ({ isOpen, onClose, navItems, t }: MobileMenuProps) =>
               );
             })}
           </ul>
+          
+          {/* Language Switcher */}
+          <div className="mt-6 pt-6 border-t border-slate-200">
+            <LanguageSwitcher alignDropdown="left" />
+          </div>
         </nav>
       </div>
     </>

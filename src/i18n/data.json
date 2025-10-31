@@ -324,9 +324,12 @@
         "email": "Email",
         "message": "Mesaj",
         "submit": "Gönder",
+        "submitting": "Gönderiliyor...",
+        "successMessage": "Mesajınız başarıyla gönderildi!",
+        "errorMessage": "Mesaj gönderilemedi. Lütfen tekrar deneyin.",
         "placeholders": {
-          "name": "Ad Soyad",
-          "email": "example@email.com",
+          "name": "Adınızı ve soyadınızı girin",
+          "email": "E-posta adresinizi girin",
           "message": "Mesajınızı yazın..."
         }
       }
@@ -434,10 +437,13 @@
         "email": "Email",
         "message": "Message",
         "submit": "Send",
+        "submitting": "Sending...",
+        "successMessage": "Your message has been sent successfully!",
+        "errorMessage": "Message could not be sent. Please try again.",
         "placeholders": {
-          "name": "Full Name",
-          "email": "example@email.com",
-          "message": "Write your message...."
+          "name": "Enter your full name",
+          "email": "Enter your email address",
+          "message": "Write your message..."
         }
       }
     },
@@ -699,9 +705,12 @@
         "email": "Email",
         "message": "Message",
         "submit": "Send",
+        "submitting": "Sending...",
+        "successMessage": "Your message has been sent successfully!",
+        "errorMessage": "Message could not be sent. Please try again.",
         "placeholders": {
-          "name": "Name Surname",
-          "email": "example@email.com",
+          "name": "Enter your name and surname",
+          "email": "Enter your email address",
           "message": "Write your message..."
         }
       }
@@ -1074,9 +1083,12 @@
         "email": "Email",
         "message": "Nachricht",
         "submit": "Senden",
+        "submitting": "Wird gesendet...",
+        "successMessage": "Ihre Nachricht wurde erfolgreich gesendet!",
+        "errorMessage": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut.",
         "placeholders": {
-          "name": "Vor- und Nachname",
-          "email": "example@email.com",
+          "name": "Geben Sie Ihren Vor- und Nachnamen ein",
+          "email": "Geben Sie Ihre E-Mail-Adresse ein",
           "message": "Schreiben Sie Ihre Nachricht..."
         }
       }

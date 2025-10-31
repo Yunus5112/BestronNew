@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { useT } from "../../i18n/I18nProvider";
 import { FormField } from "./FormField";
 import Button from "../ui/Button";
 import { Typography } from "../lib/theme";
@@ -16,6 +17,7 @@ export const ContactForm = ({
   submitStatus = 'idle',
   className = "" 
 }: ContactFormProps) => {
+  const t = useT();
   const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -40,27 +42,27 @@ export const ContactForm = ({
 
           <FormField
             id="name"
-            label="Ad Soyad"
+            label={t("contact.form.name")}
             type="text"
-            placeholder="Adınızı ve soyadınızı girin"
+            placeholder={t("contact.form.placeholders.name")}
             required
             disabled={isSubmitting}
           />
 
           <FormField
             id="email"
-            label="E-posta"
+            label={t("contact.form.email")}
             type="email"
-            placeholder="E-posta adresinizi girin"
+            placeholder={t("contact.form.placeholders.email")}
             required
             disabled={isSubmitting}
           />
 
           <FormField
             id="message"
-            label="Mesaj"
+            label={t("contact.form.message")}
             type="textarea"
-            placeholder="Mesajınızı yazın"
+            placeholder={t("contact.form.placeholders.message")}
             rows={5}
             required
             disabled={isSubmitting}
@@ -76,7 +78,7 @@ export const ContactForm = ({
                 fontFamily: Typography.fontFamily
               }}
             >
-              ✅ Mesajınız başarıyla gönderildi!
+              ✅ {t("contact.form.successMessage")}
             </div>
           )}
 
@@ -89,7 +91,7 @@ export const ContactForm = ({
                 fontFamily: Typography.fontFamily
               }}
             >
-              ❌ Mesaj gönderilemedi. Lütfen tekrar deneyin.
+              ❌ {t("contact.form.errorMessage")}
             </div>
           )}
 
@@ -98,7 +100,7 @@ export const ContactForm = ({
             type="submit"
             disabled={isSubmitting}
           >
-            {isSubmitting ? 'Gönderiliyor...' : 'Gönder'}
+            {isSubmitting ? t("contact.form.submitting") : t("contact.form.submit")}
           </Button>
         </form>
       </div>
