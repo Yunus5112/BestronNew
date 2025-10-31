@@ -5,6 +5,11 @@ import locationIcon from "../../assets/locationIcon";
 import mapIcon from "../../assets/images/mapIcon";
 import LanguageSwitcher from "../LanguageSwitcher";
 
+// Import JPG icons
+const whatsappIconUrl = new URL("../../assets/icons/whatsappIcon.jpg", import.meta.url).href;
+const linkedinIconUrl = new URL("../../assets/icons/linkedinIcon.jpg", import.meta.url).href;
+const instagramIconUrl = new URL("../../assets/icons/instagramIcon.jpg", import.meta.url).href;
+
 interface FooterContactInfoProps {
   phone: string;
   email: string;
@@ -39,6 +44,19 @@ export const FooterContactInfo = ({
             dangerouslySetInnerHTML={{ __html: phoneIcon }}
             aria-hidden="true"
           />
+          <a
+            href={`https://wa.me/${phone.replace(/\s/g, '').replace(/\+/g, '')}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+            aria-label="Contact us on WhatsApp"
+          >
+            <img
+              src={whatsappIconUrl}
+              alt="WhatsApp"
+              className="w-[22px] h-[22px] flex-shrink-0"
+            />
+          </a>
           <a 
             href={`tel:${phone.replace(/\s/g, '')}`}
             className="text-[16px] hover:text-primary transition-colors"
@@ -52,21 +70,53 @@ export const FooterContactInfo = ({
         <LanguageSwitcher />
       </div>
 
-      {/* Email */}
-      <div className="flex items-center gap-3">
-        <div
-          className="w-6 h-5 flex-shrink-0"
-          dangerouslySetInnerHTML={{ __html: mailIcon }}
-          aria-hidden="true"
-        />
-        <a 
-          href={`mailto:${email}`}
-          className="text-[16px] hover:text-primary transition-colors underline"
-          style={textStyle}
-          aria-label={`Email ${email}`}
-        >
-          {email}
-        </a>
+      {/* Email with Social Media on right */}
+      <div className="flex items-center justify-between flex-wrap gap-2">
+        <div className="flex items-center gap-3">
+          <div
+            className="w-6 h-5 flex-shrink-0"
+            dangerouslySetInnerHTML={{ __html: mailIcon }}
+            aria-hidden="true"
+          />
+          <a 
+            href={`mailto:${email}`}
+            className="text-[16px] hover:text-primary transition-colors underline"
+            style={textStyle}
+            aria-label={`Email ${email}`}
+          >
+            {email}
+          </a>
+        </div>
+        
+        {/* Social Media Links - Right side */}
+        <div className="flex items-center gap-3">
+          <a
+            href="https://www.linkedin.com/company/bestron-technology"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+            aria-label="Visit our LinkedIn page"
+          >
+            <img
+              src={linkedinIconUrl}
+              alt="LinkedIn"
+              className="w-6 h-6"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/bestron_technology/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity"
+            aria-label="Visit our Instagram page"
+          >
+            <img
+              src={instagramIconUrl}
+              alt="Instagram"
+              className="w-6 h-6"
+            />
+          </a>
+        </div>
       </div>
 
       {/* Address */}

@@ -55,10 +55,18 @@ export const LazyProjectSection = ({
       style={{ backgroundColor: Colors.background }}
     >
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
-          {imagePosition === "left" && imageBlock}
-          {contentBlock}
-          {imagePosition === "right" && imageBlock}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
+          {imagePosition === "left" ? (
+            <>
+              <div className="w-full lg:w-auto order-1 lg:order-1">{imageBlock}</div>
+              <div className="w-full lg:w-auto order-2 lg:order-2">{contentBlock}</div>
+            </>
+          ) : (
+            <>
+              <div className="w-full lg:w-auto order-1 lg:order-2">{imageBlock}</div>
+              <div className="w-full lg:w-auto order-2 lg:order-1">{contentBlock}</div>
+            </>
+          )}
         </div>
       </Container>
     </section>

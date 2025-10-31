@@ -2,10 +2,20 @@ import { useState } from "react";
 import { cn } from "./lib/cn";
 import { useI18n, type Lang } from "../i18n/I18nProvider";
 import earth from "../assets/images/earth";
+import trFlag from "../assets/flags/trFlag";
+import germanyFlag from "../assets/flags/germanyFlag";
+import ukFlag from "../assets/flags/ukFlag";
 
 export const LanguageSwitcher = () => {
   const { lang, setLang } = useI18n();
   const [open, setOpen] = useState(false);
+  
+  const getFlagIcon = (code: string) => {
+    if (code === "TR") return trFlag;
+    if (code === "DE") return germanyFlag;
+    if (code === "EN") return ukFlag;
+    return null;
+  };
 
   return (
     <div className="relative">
@@ -35,7 +45,7 @@ export const LanguageSwitcher = () => {
               <button
                 type="button"
                 className={cn(
-                  "w-full text-left px-4 py-2 text-sm hover:bg-slate-50",
+                  "w-full text-left px-4 py-2 text-sm hover:bg-slate-50 flex items-center gap-2",
                   code === lang && "text-blue-900 font-semibold"
                 )}
                 onClick={() => {
@@ -45,6 +55,12 @@ export const LanguageSwitcher = () => {
                 role="option"
                 aria-selected={code === lang}
               >
+                {getFlagIcon(code) && (
+                  <div 
+                    className="w-3 h-2 flex-shrink-0"
+                    dangerouslySetInnerHTML={{ __html: getFlagIcon(code)! }}
+                  />
+                )}
                 {code}
               </button>
             </li>
