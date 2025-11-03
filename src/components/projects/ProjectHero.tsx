@@ -17,7 +17,7 @@ export const ProjectHero = ({
   const t = useT();
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-[40vh] md:min-h-screen overflow-hidden">
       {/* Background image */}
       <div 
         className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat z-0"
@@ -39,8 +39,9 @@ export const ProjectHero = ({
       />
 
       {/* Content */}
-      <div className="relative z-30 py-16 lg:py-20 min-h-screen flex items-center">
-        <div className="w-full max-w-[90%] sm:max-w-[70%] lg:max-w-[50%] px-6 md:px-8 lg:px-16">
+      <div className="relative z-30 py-8 lg:py-16 md:py-16 min-h-[40vh] md:min-h-screen flex items-center">
+        <div className="w-full max-w-7xl mx-auto px-6 sm:px-6 md:px-8 lg:px-8">
+          <div className="w-full max-w-[90%] sm:max-w-[70%] lg:max-w-[50%]">
           <h1 
             className={`${Typography.sizes.h1} font-semibold leading-[1.2] mb-6 md:mb-8`}
             style={{ 
@@ -52,7 +53,7 @@ export const ProjectHero = ({
           </h1>
 
           <p 
-            className={`${Typography.sizes.bodyLarge} leading-[1.5]`}
+            className={`${Typography.sizes.bodyLarge} leading-[1.5] hidden md:block`}
             style={{ 
               fontFamily: Typography.fontFamily,
               color: Colors.primary
@@ -60,6 +61,7 @@ export const ProjectHero = ({
           >
             {t(descriptionKey)}
           </p>
+          </div>
         </div>
       </div>
     </section>

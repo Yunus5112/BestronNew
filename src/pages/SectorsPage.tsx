@@ -43,15 +43,17 @@ export const SectorsPage = () => {
 
       {/* Logistics, Energy & Other Sectors Section */}
       <SectorSection>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
-          <SectorImageGrid 
-            images={[
-              sectorsImage("sectorsPageImage2.jpg"),
-              sectorsImage("sectorsPageImage3.jpg")
-            ]}
-            imageHeight="h-[180px] md:h-[220px] lg:h-[250px]"
-          />
-          <div className="space-y-6 md:space-y-8">
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 items-start">
+          <div className="w-full lg:w-auto order-1 lg:order-1">
+            <SectorImageGrid 
+              images={[
+                sectorsImage("sectorsPageImage2.jpg"),
+                sectorsImage("sectorsPageImage3.jpg")
+              ]}
+              imageHeight="h-[180px] md:h-[220px] lg:h-[250px]"
+            />
+          </div>
+          <div className="w-full lg:w-auto order-2 lg:order-2 space-y-6 md:space-y-8">
             <SectorItem
               title={t("sectorsSection.logistics.title")}
               description={t("sectorsSection.logistics.description")}
