@@ -112,20 +112,36 @@
       (function(l) {
         // Sadece query string'de ?/ varsa işlem yap (döngü önleme)
         if (l.search && l.search[1] === '/' && l.search.length > 2) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
+          // Query string'i parse et: ?/projects?a=b&c=d -> /projects?a=b&c=d
+          var searchWithoutQuestion = l.search.slice(1); // /projects veya /projects?a=b&c=d
+          
+          // & karakterleri ile ayrılmış query parametrelerini bul
+          var parts = searchWithoutQuestion.split('&');
+          var pathPart = parts[0]; // İlk kısım path olacak: /projects veya /projects?a=b
+          
+          // Eğer pathPart içinde ? varsa, gerçek query parametreleri var demektir
+          var pathAndQuery = pathPart.split('?');
+          var redirectPath = pathAndQuery[0]; // /projects
+          
+          // Geri kalan query parametrelerini topla
+          var queryParams = [];
+          if (pathAndQuery.length > 1) {
+            queryParams.push(pathAndQuery[1]); // İlk query parametresi
+          }
+          
+          // Diğer & ile ayrılmış parametreleri ekle
+          for (var i = 1; i < parts.length; i++) {
+            queryParams.push(parts[i].replace(/~and~/g, '&'));
+          }
+          
+          // Query string'i oluştur
+          var queryString = queryParams.length > 0 ? '?' + queryParams.join('&') : '';
           
           // Yeni URL'yi oluştur
-          var newPath = l.pathname;
-          // Eğer pathname '/' ile bitiyorsa, son '/' karakterini kaldır
-          if (newPath.slice(-1) === '/') {
-            newPath = newPath.slice(0, -1);
-          }
-          var newUrl = newPath + decoded + l.hash;
+          var newUrl = redirectPath + queryString + l.hash;
           
           // Yeni URL mevcut URL'den farklıysa ve döngü oluşturmayacaksa işlem yap
-          if (newUrl !== l.pathname + l.search + l.hash) {
+          if (newUrl !== l.pathname + l.search + l.hash && newUrl !== l.pathname) {
             window.history.replaceState(null, null, newUrl);
           }
         }

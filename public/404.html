@@ -2,7 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestron Technology</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #f8fafc;
+        color: #334155;
+      }
+      .loading {
+        text-align: center;
+      }
+      .spinner {
+        border: 3px solid #e2e8f0;
+        border-top: 3px solid #0b2b7a;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        animation: spin 1s linear infinite;
+        margin: 0 auto 16px;
+      }
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // MIT License
@@ -27,19 +57,26 @@
 
       var l = window.location;
       
-      // Eğer URL zaten ?/ ile başlıyorsa veya ana sayfa ise, redirect yapma (döngü önleme)
-      if (l.search[1] === '/' || l.pathname === '/' || l.pathname.endsWith('/index.html')) {
-        // Ana sayfaya yönlendir
-        if (l.pathname !== '/' && !l.pathname.endsWith('/index.html')) {
-          l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/');
-        }
+      // Eğer URL zaten ?/ ile başlıyorsa (query string'de redirect var), redirect yapma (döngü önleme)
+      if (l.search && l.search.length > 1 && l.search[1] === '/') {
+        // Zaten düzeltilmiş URL, ana sayfaya yönlendir
+        l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + l.pathname + l.search + l.hash);
         return;
       }
       
-      // Sadece gerçek 404 durumunda redirect yap
+      // Ana sayfa ise redirect yapma
+      if (l.pathname === '/' || l.pathname === '/index.html' || l.pathname.endsWith('/index.html')) {
+        return;
+      }
+      
+      // Gerçek 404 durumunda redirect yap
+      // /projects -> /?/projects
+      var basePath = l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
+      var pathSegments = l.pathname.slice(1).split('/').slice(pathSegmentsToKeep);
+      var redirectPath = pathSegments.join('/').replace(/&/g, '~and~');
+      
       var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
-        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        basePath + '/?/' + redirectPath +
         (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
         l.hash;
       
@@ -50,5 +87,9 @@
     </script>
   </head>
   <body>
+    <div class="loading">
+      <div class="spinner"></div>
+      <p>Yönlendiriliyor...</p>
+    </div>
   </body>
 </html>
