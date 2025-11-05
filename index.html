@@ -110,13 +110,24 @@
       // the correct url will be waiting in the browser's history for
       // the single page app to route accordingly.
       (function(l) {
-        if (l.search[1] === '/' ) {
+        // Sadece query string'de ?/ varsa işlem yap (döngü önleme)
+        if (l.search && l.search[1] === '/' && l.search.length > 2) {
           var decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
           }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
-          );
+          
+          // Yeni URL'yi oluştur
+          var newPath = l.pathname;
+          // Eğer pathname '/' ile bitiyorsa, son '/' karakterini kaldır
+          if (newPath.slice(-1) === '/') {
+            newPath = newPath.slice(0, -1);
+          }
+          var newUrl = newPath + decoded + l.hash;
+          
+          // Yeni URL mevcut URL'den farklıysa ve döngü oluşturmayacaksa işlem yap
+          if (newUrl !== l.pathname + l.search + l.hash) {
+            window.history.replaceState(null, null, newUrl);
+          }
         }
       }(window.location))
     </script>

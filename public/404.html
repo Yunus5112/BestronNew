@@ -22,16 +22,31 @@
       // https://username.github.io/repo-name/one/two?a=b&c=d#qwe becomes
       // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
       // Otherwise, leave pathSegmentsToKeep as 0.
-      var pathSegmentsToKeep = 1;
+      // Custom domain kullanılıyorsa 0 olmalı
+      var pathSegmentsToKeep = 0;
 
       var l = window.location;
-      l.replace(
-        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+      
+      // Eğer URL zaten ?/ ile başlıyorsa veya ana sayfa ise, redirect yapma (döngü önleme)
+      if (l.search[1] === '/' || l.pathname === '/' || l.pathname.endsWith('/index.html')) {
+        // Ana sayfaya yönlendir
+        if (l.pathname !== '/' && !l.pathname.endsWith('/index.html')) {
+          l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/');
+        }
+        return;
+      }
+      
+      // Sadece gerçek 404 durumunda redirect yap
+      var newUrl = l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
         l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
         l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
         (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
-        l.hash
-      );
+        l.hash;
+      
+      // Yeni URL mevcut URL ile aynı değilse redirect yap
+      if (newUrl !== l.href) {
+        l.replace(newUrl);
+      }
     </script>
   </head>
   <body>
